@@ -47,7 +47,8 @@
                             <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                            <li class="nav-item current"><a class="nav-link" href="http://localhost:3000/#clients">Clients</a></li>
+                            <li class="nav-item current"><a class="nav-link"
+                                    href="http://localhost:3000/#clients">Clients</a></li>
                             <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
@@ -56,14 +57,16 @@
                     </nav>
                     <!-- Start Header Right  -->
                     <div class="header-right">
-                        <a class="rn-btn" target="_blank" href="https://themeforest.net/checkout/from_item/33188244?license=regular"><span>BUY NOW</span></a>
+                        <a class="rn-btn" target="_blank"
+                            href="https://themeforest.net/checkout/from_item/33188244?license=regular"><span>BUY
+                                NOW</span></a>
                         <div class="hamberger-menu d-block d-xl-none">
                             <i id="menuBtn" class="feather-menu humberger-menu"></i>
                         </div>
                         <div class="close-menu d-block">
                             <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
+                                <i data-feather="x"></i>
+                            </span>
                         </div>
                     </div>
                     <!-- End Header Right  -->
@@ -103,18 +106,30 @@
                 <div class="social-share-style-1 mt--40">
                     <span class="title">find with me</span>
                     <ul class="social-share d-flex liststyle">
-                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-facebook">
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                                 </svg></a>
                         </li>
-                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20"
+                                        rx="5" ry="5"></rect>
                                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                                 </svg></a>
                         </li>
-                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
                                     <rect x="2" y="9" width="4" height="12"></rect>
                                     <circle cx="4" cy="4" r="2"></circle>
                                 </svg></a>
@@ -146,19 +161,20 @@
                                             <!-- type headline start-->
                                             <span class="cd-headline clip is-full-width">
                                                 <span>a </span>
-                                        <!-- ROTATING TEXT -->
-                                        <span class="cd-words-wrapper">
+                                                <!-- ROTATING TEXT -->
+                                                <span class="cd-words-wrapper">
                                                     <b class="is-visible">Developer.</b>
                                                     <b class="is-hidden">Professional Coder.</b>
                                                     <b class="is-hidden">Developer.</b>
                                                 </span>
-                                        </span>
-                                        <!-- type headline end -->
+                                            </span>
+                                            <!-- type headline end -->
                                         </span>
                                     </h1>
 
                                     <div>
-                                        <p class="description">I use animation as a third dimension by which to simplify
+                                        <p class="description">I use animation as a third dimension by which to
+                                            simplify
                                             experiences and kuiding thro each and every interaction. I’m not adding
                                             motion
                                             just to spruce things up, but doing it in ways that.</p>
@@ -169,11 +185,14 @@
                                         <div class="social-share-inner-left">
                                             <span class="title">find with me</span>
                                             <ul class="social-share d-flex liststyle">
-                                                <li class="facebook"><a href="#"><i data-feather="facebook"></i></a>
+                                                <li class="facebook"><a href="#"><i
+                                                            data-feather="facebook"></i></a>
                                                 </li>
-                                                <li class="instagram"><a href="#"><i data-feather="instagram"></i></a>
+                                                <li class="instagram"><a href="#"><i
+                                                            data-feather="instagram"></i></a>
                                                 </li>
-                                                <li class="linkedin"><a href="#"><i data-feather="linkedin"></i></a>
+                                                <li class="linkedin"><a href="#"><i
+                                                            data-feather="linkedin"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -182,9 +201,13 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-01.png') }}" alt="Icons Images"></li>
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-02.png') }}" alt="Icons Images"></li>
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-03.png') }}" alt="Icons Images"></li>
+                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-01.png') }}"
+                                                        alt="Icons Images"></li>
+                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-02.png') }}"
+                                                        alt="Icons Images"></li>
+                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-03.png') }}"
+                                                        alt="Icons Images"></li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -195,7 +218,8 @@
                         <div class="order-1 order-lg-2 col-lg-5">
                             <div class="thumbnail">
                                 <div class="inner">
-                                    <img src="{{ asset('frontend/assets/images/slider/banner-01.png') }}" alt="Personal Portfolio Images">
+                                    <img src="{{ asset('frontend/assets/images/slider/banner-01.png') }}"
+                                        alt="Personal Portfolio Images">
                                 </div>
                             </div>
                         </div>
@@ -210,7 +234,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500"
+                            data-aos-delay="100" data-aos-once="true">
                             <span class="subtitle">Features</span>
                             <h2 class="title">What I Do</h2>
                         </div>
@@ -219,7 +244,8 @@
                 <div class="row row--25 mt_md--10 mt_sm--10">
 
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -229,7 +255,8 @@
                                     <h4 class="title"><a href="#">Business Stratagy</a></h4>
                                     <p class="description">I throw myself down among the tall grass by the stream as I
                                         lie close to the earth.</p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -237,7 +264,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -247,7 +275,8 @@
                                     <h4 class="title"><a href="#">App Development</a></h4>
                                     <p class="description"> It uses a dictionary of over 200 Latin words, combined with
                                         a handful of model sentence.</p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -255,7 +284,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -265,7 +295,8 @@
                                     <h4 class="title"><a href="#">App Development</a></h4>
                                     <p class="description">I throw myself down among the tall grass by the stream as I
                                         lie close to the earth.</p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -273,7 +304,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -284,7 +316,8 @@
                                     <p class="description">There are many variations of passages of Lorem Ipsum
                                         available, but the majority.
                                     </p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -292,7 +325,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -302,7 +336,8 @@
                                     <h4 class="title"><a href="#">CEO Marketing</a></h4>
                                     <p class="description">always free from repetition,
                                         injected humour, or non-characteristic words etc.</p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -310,7 +345,8 @@
                     </div>
                     <!-- End SIngle Service -->
                     <!-- Start Single Service -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-service">
                             <div class="inner">
                                 <div class="icon">
@@ -320,7 +356,8 @@
                                     <h4 class="title"><a href="#">Personal Portfolio April</a></h4>
                                     <p class="description"> It uses a dictionary of over 200 Latin words, combined with
                                         a handful of model sentence.</p>
-                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button" href="#"><i
+                                            class="feather-arrow-right"></i></a>
                                 </div>
                             </div>
                             <a class="over-link" href="#"></a>
@@ -347,12 +384,14 @@
 
                 <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-01.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-01.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -362,11 +401,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        600</span>
+                                                600</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">The services provide for design <i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                                class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -374,12 +413,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-02.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-02.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -389,7 +430,7 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        750</span>
+                                                750</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Mobile app landing design & app
@@ -401,12 +442,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-03.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-03.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -416,10 +459,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        630</span>
+                                                630</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Logo design creativity & Application
+                                    <h4 class="title"><a href="javascript:void(0)">Logo design creativity &
+                                            Application
                                             <i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
@@ -428,12 +472,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-04.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-04.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -443,7 +489,7 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        360</span>
+                                                360</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Mobile app landing design &
@@ -455,12 +501,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-05.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-05.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -470,11 +518,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        280</span>
+                                                280</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">Design for tecnology & services<i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                                class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -482,12 +530,14 @@
                     <!-- End Single Portfolio -->
 
                     <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="rn-portfolio" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-06.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/portfolio/portfolio-06.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -497,11 +547,11 @@
                                         </div>
                                         <div class="meta">
                                             <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
-                                        690</span>
+                                                690</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="javascript:void(0)">App for tecnology & services<i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                                class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -526,24 +576,29 @@
                     <div class="col-lg-12">
                         <ul class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education</a>
+                                <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education"
+                                    role="tab" aria-controls="education" aria-selected="true">education</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">professional
+                                <a class="nav-link" id="professional-tab" data-bs-toggle="tab" href="#professional"
+                                    role="tab" aria-controls="professional" aria-selected="false">professional
                                     Skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">experience</a>
+                                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience"
+                                    role="tab" aria-controls="experience" aria-selected="false">experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="interview-tab" data-bs-toggle="tab" href="#interview" role="tab" aria-controls="interview" aria-selected="false">interview</a>
+                                <a class="nav-link" id="interview-tab" data-bs-toggle="tab" href="#interview"
+                                    role="tab" aria-controls="interview" aria-selected="false">interview</a>
                             </li>
                         </ul>
 
                         <!-- Start Tab Content Wrapper  -->
                         <div class="rn-nav-content tab-content" id="myTabContents">
                             <!-- Start Single Tab  -->
-                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
+                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel"
+                                aria-labelledby="education-tab">
                                 <div class="personal-experience-inner mt--40">
                                     <div class="row">
                                         <!-- Start Skill List Area  -->
@@ -672,7 +727,7 @@
                                                                 <div class="title">
                                                                     <h4>Diploma in Computer Science</h4>
                                                                     <span>Works at Plugin Development (2016 -
-                                                                2020)</span>
+                                                                        2020)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>5.00/5</span>
@@ -696,7 +751,8 @@
                             <!-- End Single Tab  -->
 
                             <!-- Start Single Tab  -->
-                            <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
+                            <div class="tab-pane fade " id="professional" role="tabpanel"
+                                aria-labelledby="professional-tab">
                                 <div class="personal-experience-inner mt--40">
                                     <div class="row row--40">
 
@@ -710,8 +766,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">PHOTOSHOT</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">100%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.5s" data-wow-delay=".3s"
+                                                                role="progressbar" style="width: 100%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">100%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -720,8 +780,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">FIGMA</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">95%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.6s" data-wow-delay=".4s"
+                                                                role="progressbar" style="width: 95%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">95%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -730,8 +794,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">ADOBE XD</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">60%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.7s" data-wow-delay=".5s"
+                                                                role="progressbar" style="width: 60%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">60%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -740,8 +808,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">ADOBE ILLUSTRATOR</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">70%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.8s" data-wow-delay=".6s"
+                                                                role="progressbar" style="width: 70%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -750,8 +822,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">DESIGN</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">90%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.9s" data-wow-delay=".7s"
+                                                                role="progressbar" style="width: 90%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -771,8 +847,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">HTML</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">85%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.5s" data-wow-delay=".3s"
+                                                                role="progressbar" style="width: 85%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">85%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -781,8 +861,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">CSS</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">80%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.6s" data-wow-delay=".4s"
+                                                                role="progressbar" style="width: 80%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">80%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -791,8 +875,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">JAVASCRIPT</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">90%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.7s" data-wow-delay=".5s"
+                                                                role="progressbar" style="width: 90%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">90%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -801,8 +889,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">SOFTWARE</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">75%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.8s" data-wow-delay=".6s"
+                                                                role="progressbar" style="width: 75%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">75%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -811,8 +903,12 @@
                                                     <div class="progress-charts">
                                                         <h6 class="heading heading-h6">PLUGIN</h6>
                                                         <div class="progress">
-                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span
-                                                            class="percent-label">70%</span></div>
+                                                            <div class="progress-bar wow fadeInLeft"
+                                                                data-wow-duration="0.9s" data-wow-delay=".7s"
+                                                                role="progressbar" style="width: 70%"
+                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                aria-valuemax="100"><span
+                                                                    class="percent-label">70%</span></div>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Progress Charts -->
@@ -828,7 +924,8 @@
                             <!-- End Single Tab  -->
 
                             <!-- Start Single Tab  -->
-                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                            <div class="tab-pane fade" id="experience" role="tabpanel"
+                                aria-labelledby="experience-tab">
                                 <div class="personal-experience-inner mt--40">
                                     <div class="row">
                                         <!-- Start Skill List Area  -->
@@ -957,7 +1054,7 @@
                                                                 <div class="title">
                                                                     <h4>Diploma in Computer Science</h4>
                                                                     <span>Works at Plugin Development (2016 -
-                                                                2020)</span>
+                                                                        2020)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>5.00/5</span>
@@ -981,7 +1078,8 @@
                             <!-- End Single Tab  -->
 
                             <!-- Start Single Tab  -->
-                            <div class="tab-pane fade" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+                            <div class="tab-pane fade" id="interview" role="tabpanel"
+                                aria-labelledby="interview-tab">
                                 <div class="personal-experience-inner mt--40">
                                     <div class="row">
                                         <!-- Start Skill List Area  -->
@@ -992,7 +1090,9 @@
                                                 <div class="experience-list">
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="300" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1012,7 +1112,9 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="500" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1032,7 +1134,9 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="700" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1064,7 +1168,9 @@
                                                 <div class="experience-list">
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="500" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1084,7 +1190,9 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="700" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
@@ -1104,13 +1212,15 @@
                                                     <!-- End Single List  -->
 
                                                     <!-- Start Single List  -->
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" class="resume-single-list">
+                                                    <div data-aos="fade-up" data-aos-duration="500"
+                                                        data-aos-delay="900" data-aos-once="true"
+                                                        class="resume-single-list">
                                                         <div class="inner">
                                                             <div class="heading">
                                                                 <div class="title">
                                                                     <h4>Diploma in Computer Science</h4>
                                                                     <span>Works at Plugin Development (2016 -
-                                                                2020)</span>
+                                                                        2020)</span>
                                                                 </div>
                                                                 <div class="date-of-time">
                                                                     <span>5.00/5</span>
@@ -1157,7 +1267,8 @@
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--1st.png') }}" alt="Testimonial-image">
+                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--1st.png') }}"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Rainbow-Themes</span>
@@ -1172,11 +1283,16 @@
                                                 <span class="date">via Upwork - Mar 4, 2015 - Aug 30, 2021</span>
                                             </div>
                                             <div class="rating">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
                                             </div>
                                         </div>
                                         <div class="seperator"></div>
@@ -1195,7 +1311,8 @@
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--2nd.png') }}" alt="Testimonial-image">
+                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--2nd.png') }}"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Bound - Trolola</span>
@@ -1210,11 +1327,16 @@
                                                 <span class="date">Upwork - Mar 4, 2016 - Aug 30, 2021</span>
                                             </div>
                                             <div class="rating">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
                                             </div>
                                         </div>
                                         <div class="seperator"></div>
@@ -1233,7 +1355,8 @@
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--3rd.png') }}" alt="Testimonial-image">
+                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--3rd.png') }}"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Glassfisom</span>
@@ -1248,11 +1371,16 @@
                                                 <span class="date">Fiver - Mar 4, 2015 - Aug 30, 2021</span>
                                             </div>
                                             <div class="rating">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
                                             </div>
                                         </div>
                                         <div class="seperator"></div>
@@ -1272,7 +1400,8 @@
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--4th.png') }}" alt="Testimonial-image">
+                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--4th.png') }}"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">NCD - Design</span>
@@ -1284,14 +1413,20 @@
                                         <div class="title-area">
                                             <div class="title-info">
                                                 <h3 class="title">CEO - Marketing</h3>
-                                                <span class="date">Thoda Department - Mar 4, 2018 - Aug 30, 2021</span>
+                                                <span class="date">Thoda Department - Mar 4, 2018 - Aug 30,
+                                                    2021</span>
                                             </div>
                                             <div class="rating">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
                                             </div>
                                         </div>
                                         <div class="seperator"></div>
@@ -1311,7 +1446,8 @@
                                 <div class="inner">
                                     <div class="card-info">
                                         <div class="card-thumbnail">
-                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--5th.png') }}" alt="Testimonial-image">
+                                            <img src="{{ asset('frontend/assets/images/testimonial/final-home--5th.png') }}"
+                                                alt="Testimonial-image">
                                         </div>
                                         <div class="card-content">
                                             <span class="subtitle mt--10">Default name</span>
@@ -1326,11 +1462,16 @@
                                                 <span class="date">via Upwork - Mar 4, 2015 - Aug 30, 2021</span>
                                             </div>
                                             <div class="rating">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
-                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}" alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
+                                                <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                    alt="rating-image">
                                             </div>
                                         </div>
                                         <div class="seperator"></div>
@@ -1366,33 +1507,44 @@
                     <div class="col-lg-4">
                         <div class="d-flex flex-wrap align-content-start h-100">
                             <div class="position-sticky clients-wrapper sticky-top rbt-sticky-top-adjust">
-                                <ul class="nav tab-navigation-button flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+                                <ul class="nav tab-navigation-button flex-column nav-pills me-3" id="v-pills-tab"
+                                    role="tablist">
 
                                     <li class="nav-item">
-                                        <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="tab" href="#v-pills-Javascript" role="tab" aria-selected="true">JavaScript</a>
+                                        <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="tab"
+                                            href="#v-pills-Javascript" role="tab"
+                                            aria-selected="true">JavaScript</a>
                                     </li>
 
 
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="tab" href="#v-pills-Design" role="tab" aria-selected="true">Product Design</a>
+                                        <a class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="tab"
+                                            href="#v-pills-Design" role="tab" aria-selected="true">Product
+                                            Design</a>
                                     </li>
 
 
                                     <li class="nav-item">
-                                        <a class="nav-link" id="v-pills-wordpress-tab" data-bs-toggle="tab" href="#v-pills-Wordpress" role="tab" aria-selected="true">Wordpress</a>
+                                        <a class="nav-link" id="v-pills-wordpress-tab" data-bs-toggle="tab"
+                                            href="#v-pills-Wordpress" role="tab"
+                                            aria-selected="true">Wordpress</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" id="v-pills-settings-tabs" data-bs-toggle="tab" href="#v-pills-settings" role="tab" aria-selected="true">HTML to React</a>
+                                        <a class="nav-link" id="v-pills-settings-tabs" data-bs-toggle="tab"
+                                            href="#v-pills-settings" role="tab" aria-selected="true">HTML to
+                                            React</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" id="v-pills-laravel-tabs" data-bs-toggle="tab" href="#v-pills-laravel" role="tab" aria-selected="true">React
+                                        <a class="nav-link" id="v-pills-laravel-tabs" data-bs-toggle="tab"
+                                            href="#v-pills-laravel" role="tab" aria-selected="true">React
                                             To Laravel</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" id="v-pills-python-tabs" data-bs-toggle="tab" href="#v-pills-python" role="tab" aria-selected="true">Python</a>
+                                        <a class="nav-link" id="v-pills-python-tabs" data-bs-toggle="tab"
+                                            href="#v-pills-python" role="tab" aria-selected="true">Python</a>
                                     </li>
 
 
@@ -1406,17 +1558,21 @@
                             <div class="d-flex align-items-start">
                                 <div class="tab-content" id="v-pills-tabContent">
 
-                                    <div class="tab-pane fade" id="v-pills-Javascript" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <div class="tab-pane fade" id="v-pills-Javascript" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1426,10 +1582,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1439,10 +1598,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1452,10 +1614,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1465,10 +1630,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1478,10 +1646,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1491,10 +1662,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1504,10 +1678,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1517,10 +1694,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1530,10 +1710,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1543,10 +1726,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1556,10 +1742,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1568,17 +1757,21 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade show active" id="v-pills-Design" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <div class="tab-pane fade show active" id="v-pills-Design" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1588,10 +1781,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1601,10 +1797,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1614,10 +1813,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1627,10 +1829,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1640,10 +1845,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1653,10 +1861,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1666,10 +1877,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1679,10 +1893,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1692,10 +1909,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1705,10 +1925,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1718,10 +1941,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1730,17 +1956,21 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-Wordpress" role="tabpanel" aria-labelledby="v-pills-wordpress-tab">
+                                    <div class="tab-pane fade" id="v-pills-Wordpress" role="tabpanel"
+                                        aria-labelledby="v-pills-wordpress-tab">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1750,10 +1980,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1763,10 +1996,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1776,10 +2012,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1789,10 +2028,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1802,10 +2044,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1815,10 +2060,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1828,10 +2076,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1841,10 +2092,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1854,10 +2108,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1867,10 +2124,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1880,10 +2140,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1892,17 +2155,21 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tabs">
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                        aria-labelledby="v-pills-settings-tabs">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1912,10 +2179,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1925,10 +2195,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1938,10 +2211,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1951,10 +2227,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1964,10 +2243,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1977,10 +2259,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1990,10 +2275,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2003,10 +2291,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2016,10 +2307,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2029,10 +2323,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2042,10 +2339,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2054,17 +2354,21 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-laravel" role="tabpanel" aria-labelledby="v-pills-laravel-tabs">
+                                    <div class="tab-pane fade" id="v-pills-laravel" role="tabpanel"
+                                        aria-labelledby="v-pills-laravel-tabs">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2074,10 +2378,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2087,10 +2394,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2100,10 +2410,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2113,10 +2426,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2126,10 +2442,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2139,10 +2458,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2152,10 +2474,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2165,10 +2490,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2178,10 +2506,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2191,10 +2522,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2204,10 +2538,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2216,17 +2553,21 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-python" role="tabpanel" aria-labelledby="v-pills-python-tabs">
+                                    <div class="tab-pane fade" id="v-pills-python" role="tabpanel"
+                                        aria-labelledby="v-pills-python-tabs">
                                         <div class="client-card">
 
                                             <!-- Start Single Brand  -->
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2236,10 +2577,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smiths Marth</a></span>
+                                                    <div class="client-name"><span><a href="#">Smiths
+                                                                Marth</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2249,10 +2593,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Add Dev</a></span>
+                                                    <div class="client-name"><span><a href="#">Add
+                                                                Dev</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2262,10 +2609,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client4.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client4.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jone Due</a></span>
+                                                    <div class="client-name"><span><a href="#">Jone
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2275,10 +2625,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">John Due</a></span>
+                                                    <div class="client-name"><span><a href="#">John
+                                                                Due</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2288,10 +2641,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Adon Smith</a></span>
+                                                    <div class="client-name"><span><a href="#">Adon
+                                                                Smith</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2301,10 +2657,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Smitha Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Smitha
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2314,10 +2673,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client2.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client2.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Sultana Mila</a></span>
+                                                    <div class="client-name"><span><a href="#">Sultana
+                                                                Mila</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2327,10 +2689,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Jannat</a></span>
+                                                    <div class="client-name"><span><a
+                                                                href="#">Jannat</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2340,10 +2705,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client5.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client5.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Mila Dus</a></span>
+                                                    <div class="client-name"><span><a href="#">Mila
+                                                                Dus</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2353,10 +2721,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client1.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client1.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2366,10 +2737,13 @@
                                             <div class="main-content">
                                                 <div class="inner text-center">
                                                     <div class="thumbnail">
-                                                        <a href="#"><img src="{{ asset('frontend/assets/images/client/png/client3.png') }}" alt="Client-image"></a>
+                                                        <a href="#"><img
+                                                                src="{{ asset('frontend/assets/images/client/png/client3.png') }}"
+                                                                alt="Client-image"></a>
                                                     </div>
                                                     <div class="seperator"></div>
-                                                    <div class="client-name"><span><a href="#">Marth Smiths</a></span>
+                                                    <div class="client-name"><span><a href="#">Marth
+                                                                Smiths</a></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2391,7 +2765,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-xl-5 mb_md--40 mb_sm--40 small-margin-pricing">
-                        <div class="d-block d-lg-flex text-center d-lg-left section-flex flex-wrap align-content-start h-100">
+                        <div
+                            class="d-block d-lg-flex text-center d-lg-left section-flex flex-wrap align-content-start h-100">
                             <div class="position-sticky sticky-top rbt-sticky-top-adjust">
                                 <div class="section-title text-left">
                                     <span class="subtitle text-center text-lg-left">Pricing</span>
@@ -2406,19 +2781,24 @@
                         <div class="navigation-wrapper">
                             <ul class="nav " id="myTab" role="tablist">
                                 <li class="nav-item ">
-                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab" href="#test" role="tab" aria-controls="test" aria-selected="false">Static</a>
+                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab" href="#test"
+                                        role="tab" aria-controls="test" aria-selected="false">Static</a>
                                 </li>
 
                                 <li class="nav-item  recommended">
-                                    <a class="nav-style active" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Standard</a>
+                                    <a class="nav-style active" id="profile-tab" data-bs-toggle="tab"
+                                        href="#profile" role="tab" aria-controls="profile"
+                                        aria-selected="true">Standard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-style" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Premium</a>
+                                    <a class="nav-style" id="contact-tab" data-bs-toggle="tab" href="#contact"
+                                        role="tab" aria-controls="contact" aria-selected="false">Premium</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
 
-                                <div class="tab-pane fade " id="test" role="tabpanel" aria-labelledby="test-tab">
+                                <div class="tab-pane fade " id="test" role="tabpanel"
+                                    aria-labelledby="test-tab">
                                     <!-- Pricing Start -->
                                     <div class="rn-pricing">
                                         <div class="pricing-header">
@@ -2510,7 +2890,8 @@
                                     <!-- End -->
                                 </div>
 
-                                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
                                     <!-- Pricing Start -->
                                     <div class="rn-pricing">
                                         <div class="pricing-header">
@@ -2602,7 +2983,8 @@
                                     <!-- End -->
                                 </div>
 
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="tab-pane fade" id="contact" role="tabpanel"
+                                    aria-labelledby="contact-tab">
                                     <!-- Pricing Start -->
                                     <div class="rn-pricing">
                                         <div class="pricing-header">
@@ -2706,7 +3088,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                            data-aos-once="true" class="section-title text-center">
                             <span class="subtitle">Visit my blog and keep your feedback</span>
                             <h2 class="title">My Blog</h2>
                         </div>
@@ -2715,12 +3098,14 @@
                 <div class="row row--25 mt--30 mt_md--10 mt_sm--10">
 
                     <!-- Start Single blog -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/blog/blog-01.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/blog/blog-01.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -2732,7 +3117,8 @@
                                             <span><i class="feather-clock"></i> 2 min read</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">T-shirt design is the part of design
+                                    <h4 class="title"><a href="javascript:void(0)">T-shirt design is the part of
+                                            design
                                             <i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
@@ -2741,12 +3127,14 @@
                     <!-- End Single blog -->
 
                     <!-- Start Single blog -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/blog/blog-02.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/blog/blog-02.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -2758,8 +3146,8 @@
                                             <span><i class="feather-clock"></i> 2 hour read</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">The services provide for design <i
-                                        class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a href="javascript:void(0)">The services provide for design
+                                            <i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -2767,12 +3155,14 @@
                     <!-- End Single blog -->
 
                     <!-- Start Single blog -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
                         <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img src="{{ asset('frontend/assets/images/blog/blog-03.jpg') }}" alt="Personal Portfolio Images">
+                                        <img src="{{ asset('frontend/assets/images/blog/blog-03.jpg') }}"
+                                            alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -2812,7 +3202,8 @@
                     <div class="col-lg-5">
                         <div class="contact-about-area">
                             <div class="thumbnail">
-                                <img src="{{ asset('frontend/assets/images/contact/contact1.png') }}" alt="contact-img">
+                                <img src="{{ asset('frontend/assets/images/contact/contact1.png') }}"
+                                    alt="contact-img">
                             </div>
                             <div class="title-area">
                                 <h4 class="title">Nevine Acotanza</h4>
@@ -2822,7 +3213,8 @@
                                 <p>I am available for freelance work. Connect with me via and call in to my account.
                                 </p>
                                 <span class="phone">Phone: <a href="tel:01941043264">+01234567890</a></span>
-                                <span class="mail">Email: <a href="mailto:admin@example.com">admin@example.com</a></span>
+                                <span class="mail">Email: <a
+                                        href="mailto:admin@example.com">admin@example.com</a></span>
                             </div>
                             <div class="social-area">
                                 <div class="name">FIND WITH ME</div>
@@ -2830,6 +3222,7 @@
                                     <a href="#"><i data-feather="facebook"></i></a>
                                     <a href="#"><i data-feather="linkedin"></i></a>
                                     <a href="#"><i data-feather="instagram"></i></a>
+
                                 </div>
                             </div>
                         </div>
@@ -2838,33 +3231,38 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="mail.php">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form"
+                                    method="POST" action="mail.php">
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
+                                            <input class="form-control form-control-lg" name="contact-name"
+                                                id="contact-name" type="text">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-phone">Phone Number</label>
-                                            <input class="form-control" name="contact-phone" id="contact-phone" type="text">
+                                            <input class="form-control" name="contact-phone" id="contact-phone"
+                                                type="text">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
+                                            <input class="form-control form-control-sm" id="contact-email"
+                                                name="contact-email" type="email">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="subject">subject</label>
-                                            <input class="form-control form-control-sm" id="subject" name="subject" type="text">
+                                            <input class="form-control form-control-sm" id="subject"
+                                                name="subject" type="text">
                                         </div>
                                     </div>
 
@@ -2904,7 +3302,9 @@
                             <div class="col-lg-6">
                                 <div class="portfolio-popup-thumbnail">
                                     <div class="image">
-                                        <img class="w-100" src="{{ asset('frontend/assets/images/portfolio/portfolio-04.jpg') }}" alt="slide">
+                                        <img class="w-100"
+                                            src="{{ asset('frontend/assets/images/portfolio/portfolio-04.jpg') }}"
+                                            alt="slide">
                                     </div>
                                 </div>
                             </div>
@@ -2914,8 +3314,10 @@
                                     <h3>
                                         <span>Featured - Design</span> App Design Development.
                                     </h3>
-                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -2951,7 +3353,8 @@
                     <!-- End of .modal-header -->
 
                     <div class="modal-body">
-                        <img src="{{ asset('frontend/assets/images/blog/blog-big-01.jpg') }}" alt="news modal" class="img-fluid modal-feat-img">
+                        <img src="{{ asset('frontend/assets/images/blog/blog-big-01.jpg') }}" alt="news modal"
+                            class="img-fluid modal-feat-img">
                         <div class="news-details">
                             <span class="date">2 May, 2021</span>
                             <h2 class="title">Digital Marketo to Their New Office.</h2>
@@ -3065,18 +3468,24 @@
                 <div class="rn-modal-inner">
                     <div class="demo-top text-center">
                         <h4 class="title">InBio</h4>
-                        <p class="subtitle">Its a personal portfolio template. You can built any personal website easily.</p>
+                        <p class="subtitle">Its a personal portfolio template. You can built any personal website
+                            easily.</p>
                     </div>
                     <ul class="popuptab-area nav nav-tabs" id="popuptab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active demo-dark" id="demodark-tab" data-bs-toggle="tab" href="#demodark" role="tab" aria-controls="demodark" aria-selected="true">Dark Demo</a>
+                            <a class="nav-link active demo-dark" id="demodark-tab" data-bs-toggle="tab"
+                                href="#demodark" role="tab" aria-controls="demodark"
+                                aria-selected="true">Dark Demo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link demo-light" id="demolight-tab" data-bs-toggle="tab" href="#demolight" role="tab" aria-controls="demolight" aria-selected="false">Light Demo</a>
+                            <a class="nav-link demo-light" id="demolight-tab" data-bs-toggle="tab"
+                                href="#demolight" role="tab" aria-controls="demolight"
+                                aria-selected="false">Light Demo</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="popuptabContent">
-                        <div class="tab-pane show active" id="demodark" role="tabpanel" aria-labelledby="demodark-tab">
+                        <div class="tab-pane show active" id="demodark" role="tabpanel"
+                            aria-labelledby="demodark-tab">
                             <div class="content">
                                 <div class="row">
 
@@ -3086,10 +3495,12 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/main-demo.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/main-demo.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -3107,15 +3518,18 @@
                                             <div class="inner badge-2">
                                                 <div class="thumbnail">
                                                     <a href="index-technician.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-technician.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-technician.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-technician.html">Technician</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="index-technician.html">Technician</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3128,10 +3542,12 @@
                                             <div class="inner badge-2">
                                                 <div class="thumbnail">
                                                     <a href="index-model.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-model-v2.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-model-v2.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
@@ -3149,15 +3565,18 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="home-consulting.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-consulting.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-consulting.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-consulting.html">Consulting</a></h3>
+                                                    <h3 class="title"><a href="home-consulting.html">Consulting</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3170,15 +3589,18 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="fashion-designer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/fashion-designer.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/fashion-designer.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="fashion-designer.html">Fashion Designer</a></h3>
+                                                    <h3 class="title"><a href="fashion-designer.html">Fashion
+                                                            Designer</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3191,15 +3613,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index-developer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/developer.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/developer.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-developer.html">Developer</a></h3>
+                                                    <h3 class="title"><a href="index-developer.html">Developer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3212,15 +3637,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="instructor-fitness.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/instructor-fitness.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/instructor-fitness.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="instructor-fitness.html">Fitness Instructor</a></h3>
+                                                    <h3 class="title"><a href="instructor-fitness.html">Fitness
+                                                            Instructor</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3232,15 +3660,18 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="home-web-Developer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-model.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-model.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-web-Developer.html">Web Developer</a></h3>
+                                                    <h3 class="title"><a href="home-web-Developer.html">Web
+                                                            Developer</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3253,15 +3684,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-designer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-video.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-video.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-designer.html">Designer</a></h3>
+                                                    <h3 class="title"><a href="home-designer.html">Designer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3274,15 +3708,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-content-writer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/text-rotet.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/text-rotet.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-content-writer.html">Content Writter</a></h3>
+                                                    <h3 class="title"><a href="home-content-writer.html">Content
+                                                            Writter</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3295,15 +3732,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-instructor.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-boxed.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-boxed.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-instructor.html">Instructor</a></h3>
+                                                    <h3 class="title"><a href="home-instructor.html">Instructor</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3316,15 +3756,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-freelancer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-sticky.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-sticky.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-freelancer.html">Freelancer</a></h3>
+                                                    <h3 class="title"><a href="home-freelancer.html">Freelancer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3337,15 +3780,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-photographer.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-bg-image.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-bg-image.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-photographer.html">Photographer</a>
+                                                    <h3 class="title"><a
+                                                            href="home-photographer.html">Photographer</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3359,15 +3805,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index-politician.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/front-end.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/front-end.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-politician.html">Politician</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="index-politician.html">Politician</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3380,7 +3829,9 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="#">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/coming-soon.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/coming-soon.png') }}"
+                                                            alt="Personal Portfolio">
                                                     </a>
                                                 </div>
                                                 <div class="inner">
@@ -3406,15 +3857,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/main-demo-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/main-demo-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-white-version.html">Main Demo</a></h3>
+                                                    <h3 class="title"><a href="index-white-version.html">Main
+                                                            Demo</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3427,15 +3881,19 @@
                                             <div class="inner badge-2">
                                                 <div class="thumbnail">
                                                     <a href="index-technician-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-technician-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-technician-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-technician-white-version.html">Technician</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="index-technician-white-version.html">Technician</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3448,15 +3906,18 @@
                                             <div class="inner badge-2">
                                                 <div class="thumbnail">
                                                     <a href="index-model-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-model-v2-white.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-model-v2-white.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-model-white-version.html">Model</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="index-model-white-version.html">Model</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3469,15 +3930,18 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="home-consulting-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-consulting-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-consulting-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-consulting-white-version.html">Consulting</a>
+                                                    <h3 class="title"><a
+                                                            href="home-consulting-white-version.html">Consulting</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3491,15 +3955,19 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="fashion-designer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/fashion-designer-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/fashion-designer-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="fashion-designer-white-version.html">Fashion Designer</a>
+                                                    <h3 class="title"><a
+                                                            href="fashion-designer-white-version.html">Fashion
+                                                            Designer</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3513,15 +3981,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index-developer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/developer-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/developer-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-developer-white-version.html">Developer</a>
+                                                    <h3 class="title"><a
+                                                            href="index-developer-white-version.html">Developer</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3534,15 +4005,19 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="instructor-fitness-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/instructor-fitness-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/instructor-fitness-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="instructor-fitness-white-version.html">Fitness Instructor</a>
+                                                    <h3 class="title"><a
+                                                            href="instructor-fitness-white-version.html">Fitness
+                                                            Instructor</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3555,15 +4030,19 @@
                                             <div class="inner badge-1">
                                                 <div class="thumbnail">
                                                     <a href="home-web-developer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-model-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-model-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-web-developer-white-version.html">Web Developer</a>
+                                                    <h3 class="title"><a
+                                                            href="home-web-developer-white-version.html">Web
+                                                            Developer</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3577,15 +4056,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-designer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-video-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-video-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-designer-white-version.html">Designer</a>
+                                                    <h3 class="title"><a
+                                                            href="home-designer-white-version.html">Designer</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -3599,15 +4081,18 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-content-writer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/text-rotet-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/text-rotet-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-content-writer-white-version.html">Content
+                                                    <h3 class="title"><a
+                                                            href="home-content-writer-white-version.html">Content
                                                             Writter</a></h3>
                                                 </div>
                                             </div>
@@ -3621,15 +4106,19 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-instructor-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-boxed-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-boxed-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-instructor-white-version.html">Instructor</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="home-instructor-white-version.html">Instructor</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3642,15 +4131,19 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-freelancer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/home-sticky-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/home-sticky-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-freelancer-white-version.html">Freelancer</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="home-freelancer-white-version.html">Freelancer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3663,15 +4156,19 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="home-photographer-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/index-bg-image-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/index-bg-image-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-photographer-white-version.html">Photographer</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="home-photographer-white-version.html">Photographer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3684,15 +4181,19 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="index-politician-white-version.html">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/front-end-white-version.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/front-end-white-version.png') }}"
+                                                            alt="Personal Portfolio">
                                                         <span class="overlay-content">
-                                                    <span class="overlay-text">View Demo <i
-                                                            class="feather-external-link"></i></span>
+                                                            <span class="overlay-text">View Demo <i
+                                                                    class="feather-external-link"></i></span>
                                                         </span>
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-politician-white-version.html">Politician</a></h3>
+                                                    <h3 class="title"><a
+                                                            href="index-politician-white-version.html">Politician</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -3705,7 +4206,9 @@
                                             <div class="inner">
                                                 <div class="thumbnail">
                                                     <a href="#">
-                                                        <img class="w-100" src="{{ asset('frontend/assets/images/demo/coming-soon.png') }}" alt="Personal Portfolio">
+                                                        <img class="w-100"
+                                                            src="{{ asset('frontend/assets/images/demo/coming-soon.png') }}"
+                                                            alt="Personal Portfolio">
                                                     </a>
                                                 </div>
                                                 <div class="inner">
@@ -3735,11 +4238,13 @@
 
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('frontend/assets/images/logo/logo-vertical.png') }}" alt="logo">
+                                <img src="{{ asset('frontend/assets/images/logo/logo-vertical.png') }}"
+                                    alt="logo">
                             </a>
                         </div>
 
-                        <p class="description mt--30">© 2022. All rights reserved by <a target="_blank" href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
+                        <p class="description mt--30">© 2022. All rights reserved by <a target="_blank"
+                                href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
                     </div>
                 </div>
             </div>

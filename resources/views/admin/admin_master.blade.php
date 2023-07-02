@@ -80,7 +80,8 @@
 
                     <div class="container-xxl flex-grow-1 container-p-y">
 
-                        @include('admin.index')
+                        @yield('admin')
+
 
                         <div class="content-backdrop fade">
 

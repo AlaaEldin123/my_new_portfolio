@@ -1,4 +1,6 @@
 
+@extends('admin.admin_master')
+@section('admin')
         <div class="row">
             <!-- Website Analytics -->
             <div class="col-lg-6 mb-4">
@@ -834,3 +836,4 @@
     <!-- / Content -->
 
 
+@endsection

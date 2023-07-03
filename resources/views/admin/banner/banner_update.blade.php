@@ -42,13 +42,13 @@
                                     X 760)</span></label>
                             <input type="file" name="image" onChange="mainThamUrl(this)" id="basic-default-phone"
                                 class="form-control phone-mask">
-                            @error('product_thambnail')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
+
                             <img src="{{ asset($banner->image) }}" width="100px" height="100px" alt="asd">
 
                             <img src="" name="image" id="mainThmb">
-
+                            @error('image')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
 

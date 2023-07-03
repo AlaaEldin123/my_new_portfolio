@@ -20,16 +20,19 @@ class BannerController extends Controller
     public function UpdateBanner(Request $request)
     {
 
+        if ($request->image) {
+            $request->validate([
 
-        // $request->validate(
-        //     [
-        //         'name' => 'required',
-        //         'welcome_title' => 'required',
-        //         'image' => 'required|image|mimes:jpeg,png,jpg,gif',
-        //         'short_description' => 'required',
-        //     ]
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif',
 
-        // );
+            ]);
+        }
+
+        $request->validate([
+            'name' => 'required',
+            'welcome_title' => 'required',
+            'short_description' => 'required',
+        ]);
 
         $old_image = $request->old_img;
         DB::beginTransaction();

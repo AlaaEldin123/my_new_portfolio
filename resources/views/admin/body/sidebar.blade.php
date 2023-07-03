@@ -36,7 +36,7 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item active">
-                    <a href="{{route('admin.banner.update')}}" class="menu-link">
+                    <a href="{{route('admin.banner.view')}}" class="menu-link">
                         <div data-i18n="Banner Edit">Banner Update</div>
                     </a>
                 </li>

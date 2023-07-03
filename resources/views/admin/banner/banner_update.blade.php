@@ -11,8 +11,13 @@
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{route('banner.update')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('banner.update') }}" enctype="multipart/form-data">
+
                         @csrf
+
+                        <input type="hidden" value="{{ $banner->image }}" name="old_img">
+                        <input type="hidden" value="{{ $banner->id }}" name="id">
+
                         <div class="mb-3">
                             <label class="form-label" for="basic-default-fullname">Name</label>
                             <input type="text" name="name" value="{{ $banner->name }}" class="form-control"
@@ -21,6 +26,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
                         <div class="mb-3">
                             <label class="form-label">Welcome Title</label>
                             <input type="text" name="welcome_title" value="{{ $banner->welcome_title }}"
@@ -34,19 +40,23 @@
 
                             <label class="form-label" for="basic-default-phone">Banner Image <span class="text-danger">(700
                                     X 760)</span></label>
-                            <input type="file" onChange="mainThamUrl(this)" required="" id="basic-default-phone"
+                            <input type="file" name="image" onChange="mainThamUrl(this)" id="basic-default-phone"
                                 class="form-control phone-mask">
                             @error('product_thambnail')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
-                            <img src="" id="mainThmb">
+                            <img src="{{ asset($banner->image) }}" width="100px" height="100px" alt="asd">
 
+                            <img src="" name="image" id="mainThmb">
 
                         </div>
+
+
                         <div class="mb-3">
                             <label class="form-label" for="basic-default-message">Message</label>
                             <textarea name="short_description" id="basic-default-message" class="form-control"
                                 placeholder="Write The Description Banner Here?">{{ $banner->short_description }}</textarea>
+
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror

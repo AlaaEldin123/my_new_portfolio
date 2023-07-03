@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('banners', function (Blueprint $table) {
+        Schema::create('banner_skills_icons', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->text('welcome_title')->nullable();
-            $table->string('image')->nullable();
-            $table->string('alt_imgage')->nullable();
-            $table->text('short_description')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('banners');
+        Schema::dropIfExists('banner_skills_icons');
     }
 };

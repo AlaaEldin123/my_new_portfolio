@@ -51,6 +51,7 @@ class BannerController extends Controller
                     'welcome_title' => $request->welcome_title,
                     'image' => $save_url,
                     'short_description' => $request->short_description,
+                    'alt_imgage'=>$request->alt_imgage,
                     'updated_at' => Carbon::now(),
                 ]);
             }
@@ -59,6 +60,7 @@ class BannerController extends Controller
                 'name' => $request->name,
                 'welcome_title' => $request->welcome_title,
                 'short_description' => $request->short_description,
+                'alt_imgage'=>$request->alt_imgage,
                 'updated_at' => Carbon::now(),
             ]);
 
@@ -81,5 +83,17 @@ class BannerController extends Controller
             return redirect()->back()->with($notification);
         }
     } // END METHOD
+
+
+public function SkillsIconeBannerView(){
+
+
+     } // END METHOD
+
+
+
+
+
+
 
 }

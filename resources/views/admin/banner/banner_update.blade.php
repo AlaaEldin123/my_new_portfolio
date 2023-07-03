@@ -53,6 +53,23 @@
 
 
                         <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Seo Image <span class="text-danger"></span></label>
+                            <input type="input" name="alt_imgage" id="basic-default-phone" value="{{$banner->alt_imgage}}"
+                                class="form-control phone-mask">
+
+
+                            @error('alt_imgage')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
+
+
+
+                        <div class="mb-3">
                             <label class="form-label" for="basic-default-message">Message</label>
                             <textarea name="short_description" id="basic-default-message" class="form-control"
                                 placeholder="Write The Description Banner Here?">{{ $banner->short_description }}</textarea>

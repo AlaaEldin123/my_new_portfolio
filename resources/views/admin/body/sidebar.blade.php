@@ -28,16 +28,22 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
-        <li class="menu-item active open">
+        <li class="menu-item active ">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                 <div data-i18n="Banner">Banner</div>
                 {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
             </a>
             <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item {{ request()->routeIs('admin.banner.view') ? 'active' : '' }}" >
                     <a href="{{route('admin.banner.view')}}" class="menu-link">
                         <div data-i18n="Banner Edit">Banner Update</div>
+                    </a>
+                </li>
+
+                <li class="menu-item {{ request()->routeIs('admin.banner.skills.icon.view') ? 'active' : '' }}">
+                    <a href="{{route('admin.banner.skills.icon.view')}}" class="menu-link">
+                        <div data-i18n="Banner Skills Icone">Banner Skills Icone</div>
                     </a>
                 </li>
 

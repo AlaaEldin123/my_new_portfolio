@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/banner/update', [BannerController::class, 'ViewUpdateBanner'])->name('admin.banner.view');
     Route::post('/banner/update', [BannerController::class, 'UpdateBanner'])->name('banner.update');
+    Route::post('/skills/icon/banner/view', [BannerController::class, 'SkillsIconeBannerView'])->name('admin.banner.skills.icon.view');
 
 
 });

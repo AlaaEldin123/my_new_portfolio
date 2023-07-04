@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/skills/icon/banner/view', [BannerController::class, 'SkillsIconeBannerView'])->name('admin.banner.skills.icon.view');
     Route::get('/add/skills/icon/banner', [BannerController::class, 'AddSkillsIconBanner'])->name('add_skills_banner_icon');
     Route::post('/insert/skills/icon/banner', [BannerController::class, 'InsertSkillsIconBanner'])->name('banner_skills_icon_insert');
-
+    Route::get('/delete/skills/icon/banner/{id}', [BannerController::class, 'DeleteSkillsIconBanner'])->name('delete_skills_banner_icon');
 
 
 });

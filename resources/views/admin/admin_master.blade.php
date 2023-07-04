@@ -176,8 +176,21 @@
         @endif
     </script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+
+    {{-- <script src="{{ asset('backend/assets/js/code.js') }}"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="{{ asset('backend/assets/js/code.js') }}"></script>
+
 
     @yield('custom_js')
+
+
+
+
+
+
 </body>
 
 </html>

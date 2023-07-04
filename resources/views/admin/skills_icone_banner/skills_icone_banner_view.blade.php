@@ -2,6 +2,31 @@
 
 @section('admin')
 
+
+    <script>
+        $(function() {
+            $(document).on("click", "#delete", function(e) {
+                e.preventDefault();
+                var link = $(this).attr("href");
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "Delete This Data?",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = link;
+                        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+                    }
+                });
+            });
+        });
+    </script>
+
+
     {{-- @section('custom_css')
     <!-- Font Awesome -->
 
@@ -19,48 +44,53 @@
             {{-- <a href=""class="btn rounded-pill btn-info waves-effect waves-light">Info</a> --}}
 
             <div class="d-flex justify-content-end mt-3">
-                <a href="{{route('add_skills_banner_icon')}}" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Skills Icons</a>
+                <a href="{{ route('add_skills_banner_icon') }}" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Skills
+                    Icons</a>
             </div>
 
 
 
 
 
-                <div class="table-responsive text-nowrap">
-                    <table id="example1" class="table table-bordered table-striped">
-                        <thead>
+            <div class="table-responsive text-nowrap">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image Icone</th>
+                            <th>Seo Image Icone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+
+                        @foreach ($banner_ikons as $item)
                             <tr>
-                                <th>Image Icone</th>
-                                <th>Seo Image Icone</th>
-                                <th>Actions</th>
+                                <td>
+                                    <img width="100px" height="100px" src="{{ asset($item->image) }}"
+                                        alt="{{ $item->alt_image }}">
+                                </td>
+
+                                <td>{{ $item->alt_image }}</td>
+
+                                <td>
+                                    <a href="index.html" class="btn rounded-pill btn-info waves-effect waves-light">Info</a>
+
+                                    <a href="{{ route('delete_skills_banner_icon', $item->id) }}"
+                                        class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
+                                    </a>
+
+                                </td>
+
                             </tr>
-                        </thead>
-                        <tbody class="table-border-bottom-0">
-
-                            @foreach ($banner_ikons as $item)
-                                <tr>
-                                    <td>
-                                        <img width="100px" height="100px" src="{{ asset($item->image) }}" alt="{{ $item->alt_image }}">
-                                    </td>
-                                    <td>{{ $item->alt_image }}</td>
-                                    <td>
-
-                                        <a href=""class="btn rounded-pill btn-info waves-effect waves-light">Info</a>
-                                        <a
-                                            href=""class="btn rounded-pill btn-danger waves-effect waves-light">Info</a>
-
-                                    </td>
-
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
-
 
         </div>
+
+
+    </div>
 
 
     </div>
@@ -98,22 +128,7 @@
     <!-- Toastr -->
     <script src="{{ asset('backend/lte/plugins/toastr/toastr.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script>
-        $(document).ready(function() {
-            $('.upload_job_file').click(function() {
-                var id = $(this).data('id');
-                $('#jo_id').val(id);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.upload_job_file').click(function() {
-                var id = $(this).data('id');
-                $('#jo_id_bl').val(id);
-            });
-        });
-    </script>
+
 
     <script>
         $(function() {
@@ -135,24 +150,36 @@
         });
     </script>
 
-    <script>
-        $(document).on('click', '#job_id', function() {
-            var id = $(this).attr('data-id');
-            $('#jo_id').val(id);
-        })
-    </script>
+
+
+<script>
+    $(function () {
+    $(document).on("click", "#delete", function (e) {
+        e.preventDefault();
+        var link = $(this).attr("href");
+        Swal.fire({
+            title: "Are you sure?",
+            text: "Delete This Data?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = link;
+                Swal.fire("Deleted!", "Your file has been deleted.", "success");
+            }
+        });
+    });
+});
+
+</script>
+
+
+
+
 @endsection
-
-
-
-
-
-
-
-
-
-
-
 
 
 

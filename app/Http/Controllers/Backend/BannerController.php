@@ -150,4 +150,34 @@ class BannerController extends Controller
             return redirect()->back()->with($notification);
         }
     } // END METHOD
+
+
+
+
+
+    public function DeleteSkillsIconBanner($id)
+    {
+
+        try {
+            $bannerSkillsIcon = BannerSkillsIcon::findOrFail($id);
+            $bannerSkillsIcon->delete();
+            $notification = array(
+                'message' => 'Banner Icon Skills Deleted Successfully',
+                'alert-type' => 'info'
+            );
+            DB::commit();
+            return redirect()->back()->with($notification);
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            $notification = array(
+                'message' => 'Failed to delete Banner Icon Skills',
+                'alert-type' => 'error'
+            );
+
+            return redirect()->back()->with($notification);
+        } // END METHOD
+
+
+    }
 }

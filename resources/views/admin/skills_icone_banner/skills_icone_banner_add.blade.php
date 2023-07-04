@@ -38,7 +38,7 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-primary waves-effect waves-light">Send</button>
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
                     </form>
                 </div>
             </div>

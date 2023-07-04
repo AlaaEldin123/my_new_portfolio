@@ -46,6 +46,12 @@
                         <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
                     </a>
                 </li>
+
+                <li class="menu-item {{ request()->routeIs('admin.banner.social.media.icon.view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin.banner.social.media.icon.view') }}" class="menu-link">
+                        <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
+                    </a>
+                </li>
             </ul>
         </li>
 

@@ -11,19 +11,24 @@
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('banner_skills_icon_insert') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('banner_social_media_icon_update') }}" enctype="multipart/form-data">
 
                         @csrf
+                        <input type="hidden" value="{{ $banner_ikons->image }}" name="old_img">
+                        <input type="hidden" value="{{ $banner_ikons->id }}" name="id">
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Skills Image Icone </label>
+                            <label class="form-label" for="basic-default-phone"> Skills Image Icone <span class="text-danger">(25px
+                                    X 23px)</span></label>
                             <input type="file" name="image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
-                            <img src="" id="mainThmb">
-                            @error('image')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
+                                <img src="{{ asset($banner_ikons->image) }}" width="100px" height="100px" alt="{{$banner_ikons->alt_image}}">
+
+                                <img src="" name="image" id="mainThmb">
+                                @error('image')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                         </div>
 
 
@@ -31,12 +36,25 @@
 
                             <label class="form-label" for="basic-default-phone">Seo Image <span
                                     class="text-danger"></span></label>
-                            <input type="text" name="alt_image" class="form-control">
+                            <input type="text" value="{{$banner_ikons->alt_image}}" name="alt_image"  class="form-control">
 
                             @error('alt_image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Seo Image <span
+                                    class="text-danger"></span></label>
+                            <input type="text" value="{{$banner_ikons->link}}" name="link"  class="form-control">
+
+                            @error('link')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
                     </form>
                 </div>

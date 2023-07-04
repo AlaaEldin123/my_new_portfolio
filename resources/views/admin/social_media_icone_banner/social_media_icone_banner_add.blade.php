@@ -7,17 +7,17 @@
         <div class="col-xl">
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Banner Skills Icone Insert</h5>
+                    <h5 class="mb-0">Banner Social Media Icone Insert</h5>
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('banner_skills_icon_insert') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('banner_social_media_icon_insert') }}" enctype="multipart/form-data">
 
                         @csrf
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Skills Image Icone </label>
+                            <label class="form-label" for="basic-default-phone"> Social Media Icone </label>
                             <input type="file" name="image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
                             <img src="" id="mainThmb">
@@ -37,6 +37,24 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">link <span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="link" class="form-control">
+
+                            @error('link')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
+
+
+
                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
                     </form>
                 </div>

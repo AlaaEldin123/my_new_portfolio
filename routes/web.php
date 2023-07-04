@@ -44,6 +44,16 @@ Route::middleware('auth')->group(function () {
 
 
 
+    // /////////////////// Banner Social Media Icon ///////////////////////
+
+    Route::get('/banner/social/icon/view', [BannerController::class, 'SocialMediaIconeBannerView'])->name('admin.banner.social.media.icon.view');
+    Route::get('/banner/social/icon/add', [BannerController::class, 'AddSocialMediaIconBanner'])->name('add_social_media_banner_icon');
+    Route::post('/banner/social/icon/insert', [BannerController::class, 'InsertSocialMediaIconBanner'])->name('banner_social_media_icon_insert');
+    Route::get('/banner/social/icon/delete/{id}', [BannerController::class, 'DeleteSocialMediaIconBanner'])->name('delete_social_media_banner_icon');
+    Route::get('/banner/social/icon/edit/{id}', [BannerController::class, 'EditSocialMediaIconBanner'])->name('edit_social_media_banner_icon');
+    Route::post('/banner/social/icon/update', [BannerController::class, 'UpdateSocialMediaIconBanner'])->name('banner_social_media_icon_update');
+
+
 
 });
 

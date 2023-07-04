@@ -106,10 +106,10 @@ class BannerController extends Controller
     {
 
 
-        // $request->validate([
-        //     'image' => 'required|mimes:jpeg,png,jpg,gif',
-        //     'alt_image' => 'required',
-        // ]);
+        $request->validate([
+            'image' => 'required|mimes:jpeg,png,jpg,gif',
+            'alt_image' => 'required',
+        ]);
 
 
         DB::beginTransaction();
@@ -180,4 +180,76 @@ class BannerController extends Controller
 
 
     }
+
+
+    public function EditSkillsIconBanner($id)
+    {
+        $banner_ikons = BannerSkillsIcon::findOrFail($id)->first();
+        return view('admin.skills_icone_banner.skills_icone_banner_edit', compact('banner_ikons'));
+    } // END METHOD
+
+
+    public function UpdateSkillsIconBanner(Request $request)
+    {
+        if ($request->image) {
+            $request->validate([
+
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif',
+
+            ]);
+        }
+
+        $request->validate([
+
+            'alt_image' => 'required',
+        ]);
+
+        $old_image = $request->old_img;
+        DB::beginTransaction();
+
+        try {
+
+            if ($request->image  != null) {
+                @unlink($old_image);
+                $image = $request->file('image');
+                $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
+                Image::make($image)->save('upload/banner/skills_icon/' . $name_gen);
+                $save_url = 'upload/banner/skills_icon/' . $name_gen;
+
+                BannerSkillsIcon::findOrFail($request->id)->update([
+                    'image' => $save_url,
+                    'alt_image' => $request->alt_image,
+                    'updated_at' => Carbon::now(),
+                ]);
+            }
+
+            BannerSkillsIcon::where('id', $request->id)->update([
+                'alt_image' => $request->alt_image,
+                'updated_at' => Carbon::now(),
+            ]);
+
+            DB::commit();
+
+            $notification = array(
+                'message' => 'Banner Skills Icone Updated Successfully',
+                'alert-type' => 'success'
+            );
+
+            return redirect()->route('admin.banner.skills.icon.view')->with($notification);
+        } catch (\Exception $e) {
+            DB::rollback();
+
+            $notification = array(
+                'message' => 'SomeThing Wrong Heppened',
+                'alert-type' => 'error'
+            );
+
+            return redirect()->back()->with($notification);
+        }
+    } // END METHOD
+
+
+
+
+
 }

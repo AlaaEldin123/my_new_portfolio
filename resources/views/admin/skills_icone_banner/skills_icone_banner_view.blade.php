@@ -73,7 +73,7 @@
                                 <td>{{ $item->alt_image }}</td>
 
                                 <td>
-                                    <a href="index.html" class="btn rounded-pill btn-info waves-effect waves-light">Info</a>
+                                    <a href="{{route('edit_skills_banner_icon', $item->id)}}" class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
 
                                     <a href="{{ route('delete_skills_banner_icon', $item->id) }}"
                                         class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete

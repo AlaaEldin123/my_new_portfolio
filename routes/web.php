@@ -35,10 +35,14 @@ Route::middleware('auth')->group(function () {
     Route::post('/banner/update', [BannerController::class, 'UpdateBanner'])->name('banner.update');
 
     ///////////////// Banner Skills Icone /////////////////////
-    Route::get('/skills/icon/banner/view', [BannerController::class, 'SkillsIconeBannerView'])->name('admin.banner.skills.icon.view');
-    Route::get('/add/skills/icon/banner', [BannerController::class, 'AddSkillsIconBanner'])->name('add_skills_banner_icon');
-    Route::post('/insert/skills/icon/banner', [BannerController::class, 'InsertSkillsIconBanner'])->name('banner_skills_icon_insert');
-    Route::get('/delete/skills/icon/banner/{id}', [BannerController::class, 'DeleteSkillsIconBanner'])->name('delete_skills_banner_icon');
+    Route::get('/banner/skills/icon/view', [BannerController::class, 'SkillsIconeBannerView'])->name('admin.banner.skills.icon.view');
+    Route::get('/banner/skills/icon/add', [BannerController::class, 'AddSkillsIconBanner'])->name('add_skills_banner_icon');
+    Route::post('/banner/skills/icon/insert', [BannerController::class, 'InsertSkillsIconBanner'])->name('banner_skills_icon_insert');
+    Route::get('/banner/skills/icon/delete/{id}', [BannerController::class, 'DeleteSkillsIconBanner'])->name('delete_skills_banner_icon');
+    Route::get('/banner/skills/icon/edit/{id}', [BannerController::class, 'EditSkillsIconBanner'])->name('edit_skills_banner_icon');
+    Route::post('/banner/skills/icon/update', [BannerController::class, 'UpdateSkillsIconBanner'])->name('banner_skills_icon_update');
+
+
 
 
 });

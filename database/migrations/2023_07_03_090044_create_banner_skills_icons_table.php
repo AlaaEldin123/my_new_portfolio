@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('banner_skills_icons', function (Blueprint $table) {
             $table->id();
             $table->string('image')->nullable();
-            $table->string('alt_imgage')->nullable();
+            $table->string('alt_image')->nullable();
             $table->timestamps();
         });
     }

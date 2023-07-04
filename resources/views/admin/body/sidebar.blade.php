@@ -35,18 +35,17 @@
                 {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
             </a>
             <ul class="menu-sub">
-                <li class="menu-item {{ request()->routeIs('admin.banner.view') ? 'active' : '' }}" >
-                    <a href="{{route('admin.banner.view')}}" class="menu-link">
+                <li class="menu-item {{ request()->routeIs('admin.banner.view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin.banner.view') }}" class="menu-link">
                         <div data-i18n="Banner Edit">Banner Update</div>
                     </a>
                 </li>
 
-                <li class="menu-item {{ request()->routeIs('admin.banner.skills.icon.view') ? 'active' : '' }}">
-                    <a href="{{route('admin.banner.skills.icon.view')}}" class="menu-link">
-                        <div data-i18n="Banner Skills Icone">Banner Skills Icone</div>
+                <li class="menu-item {{ request()->routeIs('admin.banner.skills.icon.view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin.banner.skills.icon.view') }}" class="menu-link">
+                        <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
                     </a>
                 </li>
-
             </ul>
         </li>
 

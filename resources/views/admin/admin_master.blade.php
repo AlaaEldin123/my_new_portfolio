@@ -56,6 +56,17 @@
     {{-- <script src="assets/vendor/js/template-customizer.js') }}"></script> --}}
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('backend/assets/js/config.js') }}"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
+
+    @yield('custom_css')
+
+
+
+
+
 </head>
 
 <body>
@@ -166,6 +177,7 @@
     </script>
 
 
+    @yield('custom_js')
 </body>
 
 </html>

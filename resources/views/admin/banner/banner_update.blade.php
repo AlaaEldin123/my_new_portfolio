@@ -55,11 +55,11 @@
                         <div class="mb-3">
 
                             <label class="form-label" for="basic-default-phone">Seo Image <span class="text-danger"></span></label>
-                            <input type="input" name="alt_imgage" id="basic-default-phone" value="{{$banner->alt_imgage}}"
+                            <input type="input" name="alt_image" id="basic-default-phone" value="{{$banner->alt_image}}"
                                 class="form-control phone-mask">
 
 
-                            @error('alt_imgage')
+                            @error('alt_image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

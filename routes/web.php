@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\BannerController;
+use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,6 +56,47 @@ Route::middleware('auth')->group(function () {
 
 
 
+
+
+
+
+
+ ///////////////////// Feature  ///////////////////////
+
+ Route::get('/feature/card/view', [FeaturesController::class, 'FeatureCardView'])->name('admin_feature_card_view');
+ Route::get('/feature/card/add', [FeaturesController::class, 'AddFeatureCard'])->name('add_feature_card');
+ Route::post('/feature/card/insert', [FeaturesController::class, 'InsertFeatureCard'])->name('feature_card_insert');
+ Route::get('/feature/card/delete/{id}', [FeaturesController::class, 'DeleteFeatureCard'])->name('delete_feature_card');
+ Route::get('/feature/card/edit/{id}', [FeaturesController::class, 'EditFeatureCard'])->name('edit_feature_card');
+ Route::post('/feature/card/update', [FeaturesController::class, 'UpdateFeatureCard'])->name('feature_card_update');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+Route::get('/clear', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('config:clear');
+    Artisan::call('view:clear');
+    return redirect(url('/'));
+});
+
+
+
+
+
 
 require __DIR__ . '/auth.php';

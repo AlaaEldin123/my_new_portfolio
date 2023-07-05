@@ -52,6 +52,15 @@
                         <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
                     </a>
                 </li>
+
+                <li class="menu-item {{ request()->routeIs('admin_feature_card_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_feature_card_view') }}" class="menu-link">
+                        <div data-i18n="Banner Skills Icon">Feature Cards</div>
+                    </a>
+                </li>
+
+
+
             </ul>
         </li>
 

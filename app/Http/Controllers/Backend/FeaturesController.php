@@ -97,7 +97,7 @@ class FeaturesController extends Controller
             $bannerSkillsIcon->delete();
             $notification = array(
                 'message' => 'Social Media Deleted Successfully',
-                'alert-type' => 'info'
+                'alert-type' => 'error'
             );
             DB::commit();
             return redirect()->back()->with($notification);

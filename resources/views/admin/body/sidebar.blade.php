@@ -47,7 +47,8 @@
                     </a>
                 </li>
 
-                <li class="menu-item {{ request()->routeIs('admin.banner.social.media.icon.view') ? 'active open' : '' }}">
+                <li
+                    class="menu-item {{ request()->routeIs('admin.banner.social.media.icon.view') ? 'active open' : '' }}">
                     <a href="{{ route('admin.banner.social.media.icon.view') }}" class="menu-link">
                         <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
                     </a>
@@ -63,6 +64,37 @@
 
             </ul>
         </li>
+
+
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Features Card">Features Card</div>
+                {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin_feature_card_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_feature_card_view') }}" class="menu-link">
+                        <div data-i18n="Features Card">Features Card</div>
+                    </a>
+                </li>
+
+
+
+
+
+            </ul>
+        </li>
+
+
+
+
+
+
+
+
+
+
 
     </ul>
 </aside>

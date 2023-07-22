@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\FeaturesController;
+use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,29 +63,25 @@ Route::middleware('auth')->group(function () {
 
 
 
- ///////////////////// Feature  ///////////////////////
+    ///////////////////// Feature  ///////////////////////
 
- Route::get('/feature/card/view', [FeaturesController::class, 'FeatureCardView'])->name('admin_feature_card_view');
- Route::get('/feature/card/add', [FeaturesController::class, 'AddFeatureCard'])->name('add_feature_card');
- Route::post('/feature/card/insert', [FeaturesController::class, 'InsertFeatureCard'])->name('feature_card_insert');
- Route::get('/feature/card/delete/{id}', [FeaturesController::class, 'DeleteFeatureCard'])->name('delete_feature_card');
- Route::get('/feature/card/edit/{id}', [FeaturesController::class, 'EditFeatureCard'])->name('edit_feature_card');
- Route::post('/feature/card/update', [FeaturesController::class, 'UpdateFeatureCard'])->name('feature_card_update');
-
-
+    Route::get('/feature/card/view', [FeaturesController::class, 'FeatureCardView'])->name('admin_feature_card_view');
+    Route::get('/feature/card/add', [FeaturesController::class, 'AddFeatureCard'])->name('add_feature_card');
+    Route::post('/feature/card/insert', [FeaturesController::class, 'InsertFeatureCard'])->name('feature_card_insert');
+    Route::get('/feature/card/delete/{id}', [FeaturesController::class, 'DeleteFeatureCard'])->name('delete_feature_card');
+    Route::get('/feature/card/edit/{id}', [FeaturesController::class, 'EditFeatureCard'])->name('edit_feature_card');
+    Route::post('/feature/card/update', [FeaturesController::class, 'UpdateFeatureCard'])->name('feature_card_update');
 
 
 
+    ///////////////////// My Portfolio Card ///////////////////////
 
-
-
-
-
-
-
-
-
-
+    Route::get('/portfolio/card/view', [MyPortfolioController::class, 'MyPortfolioView'])->name('admin_my_portfolio_view');
+    Route::get('/portfolio/card/add', [MyPortfolioController::class, 'AddMyPortfolio'])->name('add_my_portfolio');
+    Route::post('/portfolio/card/insert', [MyPortfolioController::class, 'InsertMyPortfolio'])->name('my_portfolio_insert');
+    Route::get('/portfolio/card/delete/{id}', [MyPortfolioController::class, 'DeleteMyPortfolio'])->name('delete_my_portfolio');
+    Route::get('/portfolio/card/edit/{id}', [MyPortfolioController::class, 'EditMyPortfolio'])->name('edit_my_portfolio');
+    Route::post('/portfolio/card/update', [MyPortfolioController::class, 'UpdateMyPortfolio'])->name('my_portfolio_update');
 });
 
 Route::get('/clear', function () {

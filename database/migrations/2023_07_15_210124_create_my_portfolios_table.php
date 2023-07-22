@@ -9,6 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
     public function up(): void
     {
         Schema::create('my_portfolios', function (Blueprint $table) {
@@ -23,7 +24,7 @@ return new class extends Migration
             $table->string('inside_alt_image')->nullable();
             $table->string('link')->nullable();
             $table->string('visibility')->nullable();
-            $table->string('smaill_inside_title')->nullable();
+            $table->string('small_inside_title')->nullable();
             $table->timestamps();
         });
     }

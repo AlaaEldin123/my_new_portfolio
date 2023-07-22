@@ -88,6 +88,20 @@
 
 
 
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="My Portfolio">My Portfolio</div>
+                {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin_my_portfolio_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_my_portfolio_view') }}" class="menu-link">
+                        <div data-i18n="My Portfolio">My Portfolio</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
 
 

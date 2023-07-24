@@ -73,7 +73,7 @@
                             <th>Link</th>
 
                             <th>Short Description</th>
-                            <th>Long Description</th>
+                            {{-- <th>Long Description</th> --}}
 
                             <th>visibility</th>
 
@@ -115,7 +115,7 @@
                                 <td>{{ $item->link }}</td>
                                 <td>{{ $item->short_description }}</td>
 
-                                <td>{{ $item->long_description }}</td>
+                                {{-- <td>{{ $item->long_description }}</td> --}}
 
 
                                 <td>{{ $item->visibility }}</td>

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/editor.css') }}" />
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/katex.css') }}" />
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/typography.css') }}" />
-    <script src="https://cdn.tiny.cloud/1/your-tinymce-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    {{-- <script src="https://cdn.tiny.cloud/1/your-tinymce-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
 @endsection
 
 
@@ -202,9 +202,9 @@
                             <div class="card">
                                 <h5 class="card-header">Full Editor</h5>
                                 <div class="card-body">
-                                    <div id="full-editor">
-                                        <!-- Your full editor input field here -->
-                                        {{-- <textarea name="editor_content" id="editor_content"></textarea> --}}
+                                    <textarea name="full-editor-data" style="display:none" id="full-editor-data"></textarea>
+                                    <div id="full-editor" data-name="content">
+
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
 
 
                         <div class="d-flex justify-content-center mt-3">
-                            <button type="submit"
+                            <button id="btnMySubmit" type="submit"
                                 class="btn btn-primary btn-lg w-25 waves-effect waves-light">Submit</button>
                         </div>
                     </form>
@@ -269,16 +269,16 @@
     <script src="{{ asset('backend/assets/js/forms-editors.js') }}"></script>
     <script src="{{ asset('backend/assets/vendor/libs/quill/quill.js') }}"></script>
 
-    {{--
-    <script>
-        // Initialize the TinyMCE editor
-        tinymce.init({
-            selector: 'textarea[name="long_description"]',
-            plugins: 'advlist autolink lists link image charmap print preview anchor',
-            toolbar: 'undo redo | styleselect | bold italic | link image',
-            height: 300, // Set the desired height of the editor
-        });
-    </script> --}}
+
+<script>
+   $(document).ready(function () {
+    $(document).on('click', '#btnMySubmit', function (e) {
+        e.preventDefault();
+        $("#full-editor-data").val($("#full-editor").html());
+        $(this).parents('form').submit();
+    });
+});
+</script>
 
 
 

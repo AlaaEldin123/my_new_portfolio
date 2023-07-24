@@ -1,41 +1,69 @@
 @extends('admin.admin_master')
 
 @section('admin')
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Banner/</span>Skills Icone</h4>
 
-    <div class="row">
-        <div class="col-xl">
-            <div class="card mb-4">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Banner Skills Icone Insert</h5>
+@section('custom_css')
+    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/editor.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/katex.css') }}" />
+    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/typography.css') }}" />
+    {{-- <script src="https://cdn.tiny.cloud/1/your-tinymce-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
+@endsection
 
-                </div>
-                <div class="card-body">
-                    <form method="POST" action="{{ route('my_portfolio_update') }}" enctype="multipart/form-data">
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">
+        <h5 class="mb-0">EDit</h5>
+        /
+    </span>
+    <h5 class="mb-0">EDit</h5>
+</h4>
 
-                        @csrf
-                        <input type="hidden" value="{{ $banner_ikons->image }}" name="old_img">
-                        <input type="hidden" value="{{ $banner_ikons->id }}" name="id">
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">EDit</h5>
 
+            </div>
+            <div class="card-body">
 
-                        <div class="mb-3">
+                <form method="POST" action="{{ route('my_portfolio_update') }}" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{{ $banner_ikons->id }}">
+                    @csrf
 
-                            <label class="form-label" for="basic-default-phone">Title <span
-                                    class="text-danger"></span></label>
-                            <input value="{{ $banner_ikons->title }}" type="text" name="title" class="form-control">
+                    <div class="row">
+                        <div class="col-md-6">
 
-                            @error('title')
+                            <label class="form-label" for="basic-default-phone">View Title </label>
+                            <input type="text" name="view_title" class="form-control">
+
+                            @error('view_title')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
 
 
-                        <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Short Description <span
-                                    class="text-danger"></span></label>
-                            <input value="{{ $banner_ikons->short_description }}" type="text" name="short_description"
-                                class="form-control">
+                        <div class="col-md-6">
+
+
+                            <label class="form-label" for="basic-default-phone">Inside Title</label>
+                            <input type="text" name="inside_title" class="form-control">
+
+                            @error('inside_title')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="row row ">
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Short Description</label>
+                            <input type="text" name="short_description" class="form-control">
 
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
@@ -44,41 +72,103 @@
 
 
 
+                        <div class="col-md-6">
+
+
+                            <label class="form-label" for="basic-default-phone">Small Inside Title</label>
+                            <input type="text" name="small_inside_title" class="form-control">
+
+                            @error('small_inside_title')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+
+                        </div>
 
 
 
-                        <div class="mb-3">
+                    </div>
 
-                            <label class="form-label" for="basic-default-phone"> Skills Image Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
+
+
+                    <div class="row">
+
+
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Seo View Image </label>
+                            <input type="text" name="view_alt_image" class="form-control">
+
+                            @error('view_alt_image')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Seo Inside Image </label>
+                            <input type="text" name="inside_alt_image" class="form-control">
+
+                            @error('inside_alt_image')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">View Image</label>
+                            <input type="file" name="view_image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
-                            <img src="{{ asset($banner_ikons->image) }}" width="100px" height="100px"
-                                alt="{{ $banner_ikons->alt_image }}">
-
-                            <img src="" name="image" id="mainThmb">
-                            @error('image')
+                            <img src="" id="mainThmb">
+                            @error('view_image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
 
 
-                        <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Seo Image <span
-                                    class="text-danger"></span></label>
-                            <input type="text" value="{{ $banner_ikons->alt_image }}" name="alt_image"
-                                class="form-control">
+                        <div class="col-md-6">
 
-                            @error('alt_image')
+                            <label class="form-label" for="basic-default-phone">Inside Image</label>
+                            <input type="file" name="inside_image" onChange="mainThamUrll(this)"
+                                class="form-control phone-mask">
+                            <img src="" id="mainThmbb">
+                            @error('inside_image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
 
-                        <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Link <span
-                                    class="text-danger"></span></label>
-                            <input type="text" value="{{ $banner_ikons->link }}" name="link" class="form-control">
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="row mb-4">
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">link </label>
+                            <input type="text" name="link" class="form-control">
 
                             @error('link')
                                 <span class="text-danger">{{ $message }}</span>
@@ -86,14 +176,55 @@
                         </div>
 
 
-                        <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
-                    </form>
-                </div>
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">visibility </label>
+                            <input type="number" name="visibility" class="form-control">
+
+                            @error('visibility')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="col-12">
+                        <div class="card">
+                            <h5 class="card-header">Full Editor</h5>
+                            <div class="card-body">
+                                <textarea name="full-editor-data" style="display:none" id="full-editor-data"></textarea>
+                                <div id="full-editor" data-name="content">
+                                    {!! $banner_ikons->long_description !!}
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <button id="btnMySubmit" type="submit"
+                            class="btn btn-primary btn-lg w-25 waves-effect waves-light">Submit</button>
+                    </div>
+                </form>
+
             </div>
         </div>
-
     </div>
 
+</div>
+
+
+@section('custom_js')
     <script type="text/javascript">
         function mainThamUrl(input) {
             if (input.files && input.files[0]) {
@@ -105,4 +236,40 @@
             }
         }
     </script>
+
+
+    <script type="text/javascript">
+        function mainThamUrll(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#mainThmbb').attr('src', e.target.result).width(100).height(100);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+    <!-- Vendors JS -->
+    <script src="{{ asset('backend/assets/vendor/libs/quill/katex.js') }}"></script>
+    <script src="{{ asset('backend/assets/js/forms-editors.js') }}"></script>
+    <script src="{{ asset('backend/assets/vendor/libs/quill/quill.js') }}"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '#btnMySubmit', function(e) {
+                e.preventDefault();
+                $("#full-editor-data").val($("#full-editor").html());
+                $(this).parents('form').submit();
+            });
+        });
+    </script>
+@endsection
 @endsection

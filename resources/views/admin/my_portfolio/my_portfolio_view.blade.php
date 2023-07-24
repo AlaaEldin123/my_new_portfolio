@@ -93,7 +93,7 @@
                             <tr>
 
                                 <td>
-                                    <img width="100px" height="100px" src="{{ asset($item->view_image) }}"
+                                    <img width="100px" height="100px" src="{{ asset("portfolio/$item->view_image") }}"
                                         alt="{{ $item->view_alt_image }}">
                                 </td>
 

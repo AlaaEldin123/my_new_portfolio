@@ -185,19 +185,32 @@ class MyPortfolioController extends Controller
     public function UpdateMyPortfolio(Request $request)
     {
 
-        $request->validate([
-            'view_title' => 'required',
-            'inside_title'  => 'required',
-            'short_description' => 'required',
-            'long_description' => 'required',
-            'view_image' => 'required|mimes:jpeg,png,jpg,gif',
-            'view_alt_image' => 'required',
-            'inside_image' => 'required|mimes:jpeg,png,jpg,gif',
-            'inside_alt_image' => 'required',
-            'link' => 'required',
-            'visibility' => 'required',
-            'small_inside_title' => 'required',
-        ]);
+        // $request->validate([
+        //     'view_title' => 'required',
+        //     'inside_title'  => 'required',
+        //     'short_description' => 'required',
+        //     'long_description' => 'required',
+        //     'view_image' => 'required|mimes:jpeg,png,jpg,gif',
+        //     'view_alt_image' => 'required',
+        //     'inside_image' => 'required|mimes:jpeg,png,jpg,gif',
+        //     'inside_alt_image' => 'required',
+        //     'link' => 'required',
+        //     'visibility' => 'required',
+        //     'small_inside_title' => 'required',
+        // ]);
+
+
+
+
+
+            DB::commit();
+
+            $notification = array(
+                'message' => 'Features Card Updated Successfully',
+                'alert-type' => 'info'
+            );
+
+            return redirect()->route('admin_my_portfolio_view')->with($notification);
 
         DB::beginTransaction();
 
@@ -228,19 +241,19 @@ class MyPortfolioController extends Controller
                 $MyPortfolio->inside_image = $save_url;
             }
 
-            $MyPortfolio->view_alt_image = $request->view_alt_image;
-            $MyPortfolio->inside_title = $request->inside_title;
-            $MyPortfolio->title = $request->title;
-            $MyPortfolio->short_description = $request->short_description;
-            $MyPortfolio->long_description = $request->long_description;
-            $MyPortfolio->inside_image = $request->inside_image;
-            $MyPortfolio->inside_alt_image = $request->inside_alt_image;
-            $MyPortfolio->view_title = $request->view_title;
-            $MyPortfolio->view_image = $request->view_image;
-            $MyPortfolio->link = $request->link;
-            $MyPortfolio->visibility = $request->visibility;
-            $MyPortfolio->smaill_inside_title = $request->smaill_inside_title;
+            $MyPortfolio->view_title = $request['view_title'];
+            $MyPortfolio->inside_title = $request['inside_title'];
+            $MyPortfolio->short_description = $request['short_description'];
+            $MyPortfolio->small_inside_title = $request['small_inside_title'];
+            $MyPortfolio->view_alt_image = $request['view_alt_image'];
+            $MyPortfolio->inside_alt_image = $request['inside_alt_image'];
+            // $MyPortfolio->view_image = $viewImagePath;
+            // $MyPortfolio->inside_image = $insideImagePath;
+            $MyPortfolio->link = $request['link'];
+            $MyPortfolio->visibility = $request['visibility'];
+            $MyPortfolio->long_description = $request['full-editor-data'];
             $MyPortfolio->updated_at = Carbon::now();
+            //dd($MyPortfolio);
             $MyPortfolio->save();
 
             DB::commit();

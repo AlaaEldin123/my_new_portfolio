@@ -9,20 +9,13 @@
     {{-- <script src="https://cdn.tiny.cloud/1/your-tinymce-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
 @endsection
 
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">
-        <h5 class="mb-0">EDit</h5>
-        /
-    </span>
-    <h5 class="mb-0">EDit</h5>
-</h4>
+
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Features Card / </span>Features Card Edit</h4>
 
 <div class="row">
     <div class="col-xl">
         <div class="card mb-4">
-            <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">EDit</h5>
 
-            </div>
             <div class="card-body">
 
                 <form method="POST" action="{{ route('my_portfolio_update') }}" enctype="multipart/form-data">
@@ -33,7 +26,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">View Title </label>
-                            <input type="text" name="view_title" class="form-control" value="{{$my_portfolio->view_title}}">
+                            <input type="text" name="view_title" class="form-control"
+                                value="{{ $my_portfolio->view_title }}">
 
                             @error('view_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -46,7 +40,8 @@
 
 
                             <label class="form-label" for="basic-default-phone">Inside Title</label>
-                            <input type="text" value="{{$my_portfolio->inside_title}}" name="inside_title" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->inside_title }}" name="inside_title"
+                                class="form-control">
 
                             @error('inside_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -63,7 +58,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Short Description</label>
-                            <input type="text" value="{{$my_portfolio->short_description}}" name="short_description" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->short_description }}"
+                                name="short_description" class="form-control">
 
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
@@ -76,7 +72,8 @@
 
 
                             <label class="form-label" for="basic-default-phone">Small Inside Title</label>
-                            <input type="text" value="{{$my_portfolio->small_inside_title}}" name="small_inside_title" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->small_inside_title }}"
+                                name="small_inside_title" class="form-control">
 
                             @error('small_inside_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -98,7 +95,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Seo View Image </label>
-                            <input type="text" value="{{$my_portfolio->view_alt_image}}" name="view_alt_image" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->view_alt_image }}" name="view_alt_image"
+                                class="form-control">
 
                             @error('view_alt_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -108,7 +106,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Seo Inside Image </label>
-                            <input type="text" value="{{$my_portfolio->inside_alt_image}}" name="inside_alt_image" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->inside_alt_image }}" name="inside_alt_image"
+                                class="form-control">
 
                             @error('inside_alt_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -127,10 +126,10 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">View Image</label>
-                            <input type="file"  name="view_image" onChange="mainThamUrl(this)"
+                            <input type="file" name="view_image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
 
-                                <img width="100px" height="100px" src="{{ asset($my_portfolio->view_image) }}"
+                            <img width="100px" height="100px" src="{{ asset($my_portfolio->view_image) }}"
                                 alt="{{ $my_portfolio->view_alt_image }}">
 
                             <img src="" id="mainThmb">
@@ -146,7 +145,7 @@
                             <label class="form-label" for="basic-default-phone">Inside Image</label>
                             <input type="file" name="inside_image" onChange="mainThamUrll(this)"
                                 class="form-control phone-mask">
-                                <img width="100px" height="100px" src="{{ asset($my_portfolio->inside_image) }}"
+                            <img width="100px" height="100px" src="{{ asset($my_portfolio->inside_image) }}"
                                 alt="{{ $my_portfolio->inside_alt_image }}">
                             <img src="" id="mainThmbb">
                             @error('inside_image')
@@ -174,7 +173,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">link </label>
-                            <input type="text" value="{{$my_portfolio->link}}" name="link" class="form-control">
+                            <input type="text" value="{{ $my_portfolio->link }}" name="link"
+                                class="form-control">
 
                             @error('link')
                                 <span class="text-danger">{{ $message }}</span>
@@ -185,7 +185,8 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">visibility </label>
-                            <input type="number" value="{{$my_portfolio->visibility }}" name="visibility" class="form-control">
+                            <input type="number" value="{{ $my_portfolio->visibility }}" name="visibility"
+                                class="form-control">
 
                             @error('visibility')
                                 <span class="text-danger">{{ $message }}</span>
@@ -203,7 +204,7 @@
                         <div class="card">
                             <h5 class="card-header">Full Editor</h5>
                             <div class="card-body">
-                                <textarea name="full-editor-data" style="display:none" id="full-editor-data"></textarea>
+                                <textarea name="full_editor_data" style="display:none" id="full_editor_data"></textarea>
                                 <div id="full-editor" data-name="content">
                                     {!! $my_portfolio->long_description !!}
                                 </div>
@@ -272,7 +273,7 @@
         $(document).ready(function() {
             $(document).on('click', '#btnMySubmit', function(e) {
                 e.preventDefault();
-                $("#full-editor-data").val($("#full-editor").html());
+                $("#full_editor_data").val($("#full-editor").html());
                 $(this).parents('form').submit();
             });
         });

@@ -199,15 +199,15 @@
 
 
                         <div class="col-12">
-                            <div class="card">
-                                <h5 class="card-header">Full Editor</h5>
-                                <div class="card-body">
-                                    <textarea name="full_editor_data" style="display:none" id="full_editor_data" required></textarea>
-                                    <div id="full-editor" data-name="content">
+                                <div class="card">
+                                    <h5 class="card-header">Full Editor</h5>
+                                    <div class="card-body">
+                                        <textarea name="full_editor_data" style="display:none" id="full_editor_data" required></textarea>
+                                        <div id="full-editor" data-name="content">
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
 
 

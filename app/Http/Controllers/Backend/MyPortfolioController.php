@@ -58,8 +58,6 @@ class MyPortfolioController extends Controller
         $insideImagePath = 'upload/feature_card/' . $ins_name_gen;
 
 
-        // $viewImagePath = $request['view_image']->store('public/portfolio');
-        // $insideImagePath = $request['inside_image']->store('public/portfolio');
 
         // Create a new MyPortfolio instance and populate it with the form data
 
@@ -197,8 +195,8 @@ class MyPortfolioController extends Controller
 
     public function EditMyPortfolio($id)
     {
-        $banner_ikons = MyPortfolio::findOrFail($id)->first();
-        return view('admin.my_portfolio.my_portfolio_edit', compact('banner_ikons'));
+        $my_portfolio = MyPortfolio::findOrFail($id)->first();
+        return view('admin.my_portfolio.my_portfolio_edit', compact('my_portfolio'));
     } // END METHOD
 
 

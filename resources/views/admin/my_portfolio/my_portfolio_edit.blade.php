@@ -26,14 +26,14 @@
             <div class="card-body">
 
                 <form method="POST" action="{{ route('my_portfolio_update') }}" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="{{ $banner_ikons->id }}">
+                    <input type="hidden" name="id" value="{{ $my_portfolio->id }}">
                     @csrf
 
                     <div class="row">
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">View Title </label>
-                            <input type="text" name="view_title" class="form-control">
+                            <input type="text" name="view_title" class="form-control" value="{{$my_portfolio->view_title}}">
 
                             @error('view_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -46,7 +46,7 @@
 
 
                             <label class="form-label" for="basic-default-phone">Inside Title</label>
-                            <input type="text" name="inside_title" class="form-control">
+                            <input type="text" value="{{$my_portfolio->inside_title}}" name="inside_title" class="form-control">
 
                             @error('inside_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -63,7 +63,7 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Short Description</label>
-                            <input type="text" name="short_description" class="form-control">
+                            <input type="text" value="{{$my_portfolio->short_description}}" name="short_description" class="form-control">
 
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
@@ -76,7 +76,7 @@
 
 
                             <label class="form-label" for="basic-default-phone">Small Inside Title</label>
-                            <input type="text" name="small_inside_title" class="form-control">
+                            <input type="text" value="{{$my_portfolio->small_inside_title}}" name="small_inside_title" class="form-control">
 
                             @error('small_inside_title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -98,7 +98,7 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Seo View Image </label>
-                            <input type="text" name="view_alt_image" class="form-control">
+                            <input type="text" value="{{$my_portfolio->view_alt_image}}" name="view_alt_image" class="form-control">
 
                             @error('view_alt_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -108,7 +108,7 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">Seo Inside Image </label>
-                            <input type="text" name="inside_alt_image" class="form-control">
+                            <input type="text" value="{{$my_portfolio->inside_alt_image}}" name="inside_alt_image" class="form-control">
 
                             @error('inside_alt_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -127,8 +127,12 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">View Image</label>
-                            <input type="file" name="view_image" onChange="mainThamUrl(this)"
+                            <input type="file"  name="view_image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
+
+                                <img width="100px" height="100px" src="{{ asset($my_portfolio->view_image) }}"
+                                alt="{{ $my_portfolio->view_alt_image }}">
+
                             <img src="" id="mainThmb">
                             @error('view_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -142,6 +146,8 @@
                             <label class="form-label" for="basic-default-phone">Inside Image</label>
                             <input type="file" name="inside_image" onChange="mainThamUrll(this)"
                                 class="form-control phone-mask">
+                                <img width="100px" height="100px" src="{{ asset($my_portfolio->inside_image) }}"
+                                alt="{{ $my_portfolio->inside_alt_image }}">
                             <img src="" id="mainThmbb">
                             @error('inside_image')
                                 <span class="text-danger">{{ $message }}</span>
@@ -168,7 +174,7 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">link </label>
-                            <input type="text" name="link" class="form-control">
+                            <input type="text" value="{{$my_portfolio->link}}" name="link" class="form-control">
 
                             @error('link')
                                 <span class="text-danger">{{ $message }}</span>
@@ -179,7 +185,7 @@
                         <div class="col-md-6">
 
                             <label class="form-label" for="basic-default-phone">visibility </label>
-                            <input type="number" name="visibility" class="form-control">
+                            <input type="number" value="{{$my_portfolio->visibility }}" name="visibility" class="form-control">
 
                             @error('visibility')
                                 <span class="text-danger">{{ $message }}</span>
@@ -199,7 +205,7 @@
                             <div class="card-body">
                                 <textarea name="full-editor-data" style="display:none" id="full-editor-data"></textarea>
                                 <div id="full-editor" data-name="content">
-                                    {!! $banner_ikons->long_description !!}
+                                    {!! $my_portfolio->long_description !!}
                                 </div>
                             </div>
                         </div>

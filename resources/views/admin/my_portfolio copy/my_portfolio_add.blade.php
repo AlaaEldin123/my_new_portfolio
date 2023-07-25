@@ -202,7 +202,7 @@
                             <div class="card">
                                 <h5 class="card-header">Full Editor</h5>
                                 <div class="card-body">
-                                    <textarea name="full_editor_data" style="display:none" id="full_editor_data" required></textarea>
+                                    <textarea name="full-editor-data" style="display:none" id="full-editor-data"></textarea>
                                     <div id="full-editor" data-name="content">
 
                                     </div>
@@ -257,20 +257,6 @@
             }
         }
     </script>
-<!-- Add this script after the HTML code above -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form"); // Replace "form" with your actual form ID or class if needed
-        const editorTextarea = document.getElementById("full_editor_data");
-
-        form.addEventListener("submit", function (event) {
-            if (editorTextarea.value.trim() === "") {
-                alert("Editor content is required.");
-                event.preventDefault(); // Prevent form submission
-            }
-        });
-    });
-</script>
 
 
 
@@ -288,7 +274,7 @@
    $(document).ready(function () {
     $(document).on('click', '#btnMySubmit', function (e) {
         e.preventDefault();
-        $("#full_editor_data").val($("#full-editor").html());
+        $("#full-editor-data").val($("#full-editor").html());
         $(this).parents('form').submit();
     });
 });

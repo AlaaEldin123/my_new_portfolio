@@ -49,8 +49,7 @@
             {{-- <a href=""class="btn rounded-pill btn-info waves-effect waves-light">Info</a> --}}
 
             <div class="d-flex justify-content-end mt-3">
-                <a href="{{ route('add_my_portfolio') }}" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">My
-                    Portfolio</a>
+                <a href="{{ route('add_my_portfolio') }}" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">My Portfolio</a>
             </div>
 
 
@@ -65,20 +64,20 @@
                             <th>view image</th>
                             <th>Seo view Image</th>
 
-                             <th>Inside Image</th>
+                            <th>Inside Image</th>
                             <th>Seo Inside Image</th>
 
                             <th>View Title</th>
                             <th>Inside Title</th>
-                            <th>Small Inside Title</th>
-                          <th>Link</th>
+                            <th>Smaill Inside Title</th>
+                            <th>Link</th>
 
                             <th>Short Description</th>
-
+                            {{-- <th>Long Description</th> --}}
 
                             <th>visibility</th>
 
-                             <th>Created At</th>
+                            <th>Created At</th>
 
 
                             <th>Updated At</th>
@@ -94,7 +93,7 @@
                             <tr>
 
                                 <td>
-                                    <img width="100px" height="100px" src="{{ asset($item->view_image) }}"
+                                    <img width="100px" height="100px" src="{{ asset("portfolio/$item->view_image") }}"
                                         alt="{{ $item->view_alt_image }}">
                                 </td>
 
@@ -112,18 +111,19 @@
 
                                 <td>{{ $item->view_title }}</td>
                                 <td>{{ $item->inside_title }}</td>
-                                <td>{{ $item->small_inside_title }}</td>
-                               <td>{{ $item->link }}</td>
+                                <td>{{ $item->smaill_inside_title }}</td>
+                                <td>{{ $item->link }}</td>
                                 <td>{{ $item->short_description }}</td>
 
-
+                                {{-- <td>{{ $item->long_description }}</td> --}}
 
 
                                 <td>{{ $item->visibility }}</td>
 
+                                <td>{{ $item->long_description }}</td>
 
 
-
+                                <td>{{ $item->visibility }}</td>
 
 
 
@@ -173,7 +173,7 @@
 
 
 
-@section('custom_js')
+    @section('custom_js')
     {{-- <script src="{{ asset('backend/lte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('backend/lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('backend/lte/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>

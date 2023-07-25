@@ -7,7 +7,8 @@ use App\Models\MyPortfolio;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Image;
+use Intervention\Image\Facades\Image;
+
 
 
 class MyPortfolioController extends Controller
@@ -27,46 +28,65 @@ class MyPortfolioController extends Controller
 
     public function InsertMyPortfolio(Request $request)
     {
-        // // Validate the incoming form data
-        // $request = $request->validate([
-        //     'view_title' => 'required|string',
-        //     'inside_title' => 'required|string',
-        //     'short_description' => 'required|string',
-        //     'small_inside_title' => 'required|string',
-        //     'view_alt_image' => 'required|string',
-        //     'inside_alt_image' => 'required|string',
-        //     'view_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        //     'inside_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        //     'link' => 'required|string',
-        //     'visibility' => 'required|integer',
-        //     'full-editor-data' => 'required',
 
-        // ]);
+        // Validate the incoming form data
+         $request->validate([
+            'view_title' => 'required|string',
+            'inside_title' => 'required|string',
+            'short_description' => 'required|string',
+            'small_inside_title' => 'required|string',
+            'view_alt_image' => 'required|string',
+            'inside_alt_image' => 'required|string',
+            'view_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'inside_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'link' => 'required|string',
+            'visibility' => 'required|integer',
+            'full_editor_data' => 'required',
+
+        ]);
 
         // Handle file uploads
-        $viewImagePath = $request->file('view_image')->store('public/portfolio');
-        $insideImagePath = $request->file('inside_image')->store('public/portfolio');
+
+        $image = $request->file('view_image');
+        $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
+        Image::make($image)->save('upload/feature_card/' . $name_gen);
+        $viewImagePath = 'upload/feature_card/' . $name_gen;
+
+        $ins_image = $request->file('inside_image');
+        $ins_name_gen = hexdec(uniqid()) . '.' . $ins_image->getClientOriginalExtension();
+        Image::make($ins_image)->save('upload/feature_card/' . $ins_name_gen);
+        $insideImagePath = 'upload/feature_card/' . $ins_name_gen;
+
+
+        // $viewImagePath = $request['view_image']->store('public/portfolio');
+        // $insideImagePath = $request['inside_image']->store('public/portfolio');
 
         // Create a new MyPortfolio instance and populate it with the form data
-        $portfolio = new MyPortfolio();
-        $portfolio->view_title = $request['view_title'];
-        $portfolio->inside_title = $request['inside_title'];
-        $portfolio->short_description = $request['short_description'];
-        $portfolio->small_inside_title = $request['small_inside_title'];
-        $portfolio->view_alt_image = $request['view_alt_image'];
-        $portfolio->inside_alt_image = $request['inside_alt_image'];
-        $portfolio->view_image = $viewImagePath;
-        $portfolio->inside_image = $insideImagePath;
-        $portfolio->link = $request['link'];
-        $portfolio->visibility = $request['visibility'];
-        $portfolio->long_description = $request['full-editor-data'];
 
-        // Save the portfolio data to the database
-        $portfolio->save();
+        $portfolio = MyPortfolio::insert([
+        'view_title'=> $request->view_title,
+        'inside_title'=> $request->inside_title,
+        'short_description'=> $request->short_description,
+        'small_inside_title'=> $request->small_inside_title,
+        'view_alt_image'=> $request->view_alt_image,
+        'inside_alt_image'=> $request->inside_alt_image,
+        'view_image'=> $viewImagePath,
+        'inside_image'=> $insideImagePath,
+        'link'=> $request->link,
+        'visibility'=> $request->visibility,
+        'long_description' => $request->full_editor_data,
 
-        // Redirect to a success page or do whatever you want after the insert
-        return redirect()->back();
+    ]);
+
+        $notification = array(
+            'message' => 'Features Card Created Successfully',
+            'alert-type' => 'info'
+        );
+
+        return redirect()->route('admin_my_portfolio_view')->with($notification);
     }
+
+
 
     // public function InsertMyPortfolio(Request $request)
     // {

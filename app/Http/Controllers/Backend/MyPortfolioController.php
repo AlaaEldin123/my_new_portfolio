@@ -171,9 +171,12 @@ class MyPortfolioController extends Controller
 
         try {
             $bannerSkillsIcon = MyPortfolio::findOrFail($id);
+            @unlink($bannerSkillsIcon->view_image);
+            @unlink($bannerSkillsIcon->inside_image);
+
             $bannerSkillsIcon->delete();
             $notification = array(
-                'message' => 'Social Media Deleted Successfully',
+                'message' => 'Protfolio Card Deleted Successfully',
                 'alert-type' => 'error'
             );
             DB::commit();

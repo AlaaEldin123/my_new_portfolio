@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\Backend\MyPortfolioController;
+use App\Http\Controllers\Backend\MyResumeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
@@ -82,6 +83,18 @@ Route::middleware('auth')->group(function () {
     Route::get('/portfolio/card/delete/{id}', [MyPortfolioController::class, 'DeleteMyPortfolio'])->name('delete_my_portfolio');
     Route::get('/portfolio/card/edit/{id}', [MyPortfolioController::class, 'EditMyPortfolio'])->name('edit_my_portfolio');
     Route::post('/portfolio/card/update', [MyPortfolioController::class, 'UpdateMyPortfolio'])->name('my_portfolio_update');
+
+
+
+
+    ///////////////////// My Resume  ///////////////////////
+
+    Route::get('/resume/educ/job/view', [MyResumeController::class, 'ViewResumeEducationJob'])->name('admin_my_resume_education_job_view');
+    Route::get('/resume/educ/job/add', [MyResumeController::class, 'AddResumeEducationJob'])->name('add_my_resume_education_job');
+    Route::post('/resume/educ/job/insert', [MyResumeController::class, 'InsertResumeEducationJob'])->name('insert_my_resume_education_job');
+    Route::get('/resume/educ/job/delete/{id}', [MyResumeController::class, 'DeleteResumeEducationJob'])->name('delete_my_resume_education_job');
+    Route::get('/resume/educ/job/edit/{id}', [MyResumeController::class, 'EditResumeEducationJob'])->name('edit_my_resume_education_job');
+    Route::post('/resume/educ/job/update', [MyResumeController::class, 'UpdateResumeEducationJob'])->name('feature_my_resume_education_job');
 });
 
 Route::get('/clear', function () {

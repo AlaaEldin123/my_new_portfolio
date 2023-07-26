@@ -9,7 +9,7 @@ use App\Models\SocialMedia;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Image;
+use Intervention\Image\Facades\Image;
 
 class BannerController extends Controller
 {

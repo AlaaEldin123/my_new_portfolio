@@ -105,6 +105,22 @@
 
 
 
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="My Resume">My Resume</div>
+                {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin_my_resume_education_job_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_my_resume_education_job_view') }}" class="menu-link">
+                        <div data-i18n="Education / Job">Education / Job</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+
 
 
 

@@ -1,17 +1,17 @@
 @extends('admin.admin_master')
 
 @section('admin')
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Banner/</span>Features Card</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table / </span> My Resume Education Job</h4>
 
     <div class="row">
         <div class="col-xl">
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Features Card</h5>
+                    <h5 class="mb-0">My Resume Education Job</h5>
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('feature_card_insert') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('insert_my_resume_education_job') }}" enctype="multipart/form-data">
 
                         @csrf
 
@@ -49,13 +49,16 @@
 
 
 
+
+
+
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Social Media Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
-                                class="form-control phone-mask">
-                            <img src="" id="mainThmb">
-                            @error('image')
+                            <label class="form-label" for="basic-default-phone">Degree<span class="text-danger">It Should
+                                    Be Like This (4.50/5)</span></label>
+                            <input type="text" name="degree" class="form-control">
+
+                            @error('degree')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -63,11 +66,11 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Seo Image <span
+                            <label class="form-label" for="basic-default-phone">Subtitle <span
                                     class="text-danger"></span></label>
-                            <input type="text" name="alt_image" class="form-control">
+                            <input type="text" name="subtitle" class="form-control">
 
-                            @error('alt_image')
+                            @error('subtitle')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -75,15 +78,17 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">link <span
+                            <label class="form-label" for="basic-default-phone">Type<span
                                     class="text-danger"></span></label>
-                            <input type="text" name="link" class="form-control">
+                            <select name="type" class="form-control" required>
 
-                            @error('link')
+                                <option value="Education Quality">Education Quality</option>
+                                <option value="Job Experience">Job Experience</option>
+                            </select>
+                            @error('type')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-
 
 
 

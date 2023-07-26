@@ -1,28 +1,31 @@
 @extends('admin.admin_master')
 
 @section('admin')
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Banner/</span>Skills Icone</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Banner/</span>My Resume Education Job</h4>
 
     <div class="row">
         <div class="col-xl">
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Banner Skills Icone Insert</h5>
+                    <h5 class="mb-0">My Resume Education Job</h5>
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('feature_card_update') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('update_my_resume_education_job') }}" enctype="multipart/form-data">
 
                         @csrf
-                        <input type="hidden" value="{{ $banner_ikons->image }}" name="old_img">
-                        <input type="hidden" value="{{ $banner_ikons->id }}" name="id">
+
+                        <input type="hidden" value="{{ $myresume_educ_job->id }}" name="id">
+
+
 
 
                         <div class="mb-3">
 
                             <label class="form-label" for="basic-default-phone">Title <span
                                     class="text-danger"></span></label>
-                            <input value="{{ $banner_ikons->title }}" type="text" name="title" class="form-control">
+                            <input type="text" value="{{ $myresume_educ_job->title }} " name="title"
+                                class="form-control">
 
                             @error('title')
                                 <span class="text-danger">{{ $message }}</span>
@@ -34,8 +37,8 @@
 
                             <label class="form-label" for="basic-default-phone">Short Description <span
                                     class="text-danger"></span></label>
-                            <input value="{{ $banner_ikons->short_description }}" type="text" name="short_description"
-                                class="form-control">
+                            <input type="text" value="{{ $myresume_educ_job->short_description }} "
+                                name="short_description" class="form-control">
 
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
@@ -47,43 +50,59 @@
 
 
 
-                        <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Skills Image Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
-                                class="form-control phone-mask">
-                            <img src="{{ asset($banner_ikons->image) }}" width="100px" height="100px"
-                                alt="{{ $banner_ikons->alt_image }}">
 
-                            <img src="" name="image" id="mainThmb">
-                            @error('image')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div>
+
+
+
 
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Seo Image <span
-                                    class="text-danger"></span></label>
-                            <input type="text" value="{{ $banner_ikons->alt_image }}" name="alt_image"
+                            <label class="form-label" for="basic-default-phone">Degree<span class="text-danger">It Should
+                                    Be Like This (4.50/5)</span></label>
+                            <input type="text" value="{{ $myresume_educ_job->degree }} " name="degree"
                                 class="form-control">
 
-                            @error('alt_image')
+                            @error('degree')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">Link <span
+                            <label class="form-label" for="basic-default-phone">Subtitle <span
                                     class="text-danger"></span></label>
-                            <input type="text" value="{{ $banner_ikons->link }}" name="link" class="form-control">
+                            <input type="text" value="{{ $myresume_educ_job->subtitle }} " name="subtitle"
+                                class="form-control">
 
-                            @error('link')
+                            @error('subtitle')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Type<span
+                                    class="text-danger"></span></label>
+                            <select name="type" class="form-control" required>
+
+                                <option value="Education Quality"
+                                    {{ $myresume_educ_job->type === 'Education Quality' ? 'selected' : '' }}>Education
+                                    Quality</option>
+                                <option value="Job Experience"
+                                    {{ $myresume_educ_job->type === 'Job Experience' ? 'selected' : '' }}>Job Experience
+                                </option>
+                            </select>
+                            @error('type')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
 
 
                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>

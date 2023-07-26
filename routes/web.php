@@ -94,7 +94,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/resume/educ/job/insert', [MyResumeController::class, 'InsertResumeEducationJob'])->name('insert_my_resume_education_job');
     Route::get('/resume/educ/job/delete/{id}', [MyResumeController::class, 'DeleteResumeEducationJob'])->name('delete_my_resume_education_job');
     Route::get('/resume/educ/job/edit/{id}', [MyResumeController::class, 'EditResumeEducationJob'])->name('edit_my_resume_education_job');
-    Route::post('/resume/educ/job/update', [MyResumeController::class, 'UpdateResumeEducationJob'])->name('feature_my_resume_education_job');
+    Route::post('/resume/educ/job/update', [MyResumeController::class, 'UpdateResumeEducationJob'])->name('update_my_resume_education_job');
 });
 
 Route::get('/clear', function () {

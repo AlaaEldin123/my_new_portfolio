@@ -13,7 +13,7 @@ class MyResumeController extends Controller
 {
     public function ViewResumeEducationJob()
     {
-        $myresume_educ_job = MyResumeEducationJob::latest()->get();
+        $myresume_educ_job = MyResumeEducationJob::where('status', 1)->latest()->get();
 
         return view('admin.my_resume.education_job.education_job_view', compact('myresume_educ_job'));
     } // END METHOD
@@ -25,17 +25,15 @@ class MyResumeController extends Controller
     } // END METHOD
 
 
-
     public function InsertResumeEducationJob(Request $request)
     {
-
-
         $request->validate([
-
-            'alt_image' => 'required',
-            'link' => 'required',
             'title' => 'required',
             'short_description' => 'required',
+            'degree' => 'required',
+            'subtitle' => 'required',
+
+            'type' => 'required',
         ]);
 
 
@@ -44,18 +42,16 @@ class MyResumeController extends Controller
         try {
 
 
-            $image = $request->file('image');
-            $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->save('upload/feature_card/' . $name_gen);
-            $save_url = 'upload/feature_card/' . $name_gen;
 
             MyResumeEducationJob::insert([
-                'image' => $save_url,
-                'alt_image' => $request->alt_image,
-                'updated_at' => Carbon::now(),
-                'link' => $request->link,
                 'title' => $request->title,
                 'short_description' => $request->short_description,
+                'degree' => $request->degree,
+                'subtitle' => $request->subtitle,
+                'status' => 1,
+                'type' => $request->type,
+                'created_at' => Carbon::now('Asia/Dubai'),
+
             ]);
 
 
@@ -64,11 +60,11 @@ class MyResumeController extends Controller
             DB::commit();
 
             $notification = array(
-                'message' => 'Feature Card Inserted Successfully',
+                'message' => 'Education Job Card Inserted Successfully',
                 'alert-type' => 'success'
             );
 
-            return redirect()->route('admin_feature_card_view')->with($notification);
+            return redirect()->route('admin_my_resume_education_job_view')->with($notification);
         } catch (\Exception $e) {
             DB::rollback();
 
@@ -89,8 +85,8 @@ class MyResumeController extends Controller
     {
 
         try {
-            $bannerSkillsIcon = MyResumeEducationJob::findOrFail($id);
-            $bannerSkillsIcon->delete();
+            $myresume_educ_job = MyResumeEducationJob::findOrFail($id);
+            $myresume_educ_job->delete();
             $notification = array(
                 'message' => 'Social Media Deleted Successfully',
                 'alert-type' => 'error'
@@ -101,7 +97,7 @@ class MyResumeController extends Controller
             DB::rollBack();
 
             $notification = array(
-                'message' => 'Failed to delete Feature Card',
+                'message' => 'Failed to delete Education Job Card',
                 'alert-type' => 'error'
             );
 
@@ -114,59 +110,49 @@ class MyResumeController extends Controller
 
     public function EditResumeEducationJob($id)
     {
-        $banner_ikons = MyResumeEducationJob::findOrFail($id)->first();
-        return view('admin.my_resume.education_job.education_job_edit', compact('banner_ikons'));
+        $myresume_educ_job = MyResumeEducationJob::findOrFail($id)->first();
+        return view('admin.my_resume.education_job.education_job_edit', compact('myresume_educ_job'));
     } // END METHOD
 
 
     public function UpdateResumeEducationJob(Request $request)
     {
         $request->validate([
-            'alt_image' => 'required',
-            'link' => 'required',
             'title' => 'required',
             'short_description' => 'required',
+            'degree' => 'required',
+            'subtitle' => 'required',
+            'type' => 'required',
         ]);
 
         DB::beginTransaction();
 
         try {
-            $ResumeEducationJob = MyResumeEducationJob::findOrFail($request->id);
+            MyResumeEducationJob::where('id', $request->id)->update([
+                'title' => $request->title,
+                'short_description' => $request->short_description,
+                'degree' => $request->degree,
+                'subtitle' => $request->subtitle,
+                'type' => $request->type,
+                'status' => 1,
+                'updated_at' => Carbon::now('Asia/Dubai'),
+            ]);
 
-            if ($request->hasFile('image')) {
-                $oldImage = $ResumeEducationJob->image;
-                @unlink($oldImage);
+            DB::commit(); // If everything goes well, commit the changes to the database.
 
-                $image = $request->file('image');
-                $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-                $image->move('upload/feature_card/', $name_gen);
-                $save_url = 'upload/feature_card/' . $name_gen;
-
-                $ResumeEducationJob->image = $save_url;
-            }
-
-            $ResumeEducationJob->alt_image = $request->alt_image;
-            $ResumeEducationJob->link = $request->link;
-            $ResumeEducationJob->title = $request->title;
-            $ResumeEducationJob->short_description = $request->short_description;
-            $ResumeEducationJob->updated_at = Carbon::now();
-            $ResumeEducationJob->save();
-
-            DB::commit();
-
-            $notification = array(
-                'message' => 'Features Card Updated Successfully',
+            $notification = [
+                'message' => 'Education Job Card Updated Successfully',
                 'alert-type' => 'info'
-            );
+            ];
 
-            return redirect()->route('admin_feature_card_view')->with($notification);
+            return redirect()->route('admin_my_resume_education_job_view')->with($notification);
         } catch (\Exception $e) {
-            DB::rollback();
+            DB::rollback(); // If an error occurs, rollback the changes made during the transaction.
 
-            $notification = array(
+            $notification = [
                 'message' => 'Something Went Wrong',
                 'alert-type' => 'error'
-            );
+            ];
 
             return redirect()->back()->with($notification);
         }

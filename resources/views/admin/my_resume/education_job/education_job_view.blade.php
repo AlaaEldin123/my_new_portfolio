@@ -47,7 +47,7 @@
 
 
             <div class="d-flex justify-content-end">
-                <a href="#">
+                <a href="{{route('add_my_resume_education_job')}}">
                     <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Education
                         Job</button>
                 </a>
@@ -86,10 +86,10 @@
                         <td>{{$item->created_at}}</td>
                         <td>{{$item->updated_at}}</td>
                         <td>
-                            <a href="{{ route('edit_my_portfolio', $item->id) }}"
+                            <a href="{{ route('edit_my_resume_education_job', $item->id) }}"
                                 class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
 
-                            <a href="{{ route('delete_my_portfolio', $item->id) }}"
+                            <a href="{{ route('delete_my_resume_education_job', $item->id) }}"
                                 class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
                             </a>
 

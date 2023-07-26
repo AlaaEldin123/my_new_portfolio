@@ -65,20 +65,20 @@
                             <th>view image</th>
                             <th>Seo view Image</th>
 
-                             <th>Inside Image</th>
+                            <th>Inside Image</th>
                             <th>Seo Inside Image</th>
 
                             <th>View Title</th>
                             <th>Inside Title</th>
                             <th>Small Inside Title</th>
-                          <th>Link</th>
+                            <th>Link</th>
 
                             <th>Short Description</th>
 
 
                             <th>visibility</th>
 
-                             <th>Created At</th>
+                            <th>Created At</th>
 
 
                             <th>Updated At</th>
@@ -113,7 +113,7 @@
                                 <td>{{ $item->view_title }}</td>
                                 <td>{{ $item->inside_title }}</td>
                                 <td>{{ $item->small_inside_title }}</td>
-                               <td>{{ $item->link }}</td>
+                                <td>{{ $item->link }}</td>
                                 <td>{{ $item->short_description }}</td>
 
 

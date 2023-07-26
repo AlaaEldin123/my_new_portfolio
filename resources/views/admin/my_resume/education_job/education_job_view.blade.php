@@ -47,7 +47,7 @@
 
 
             <div class="d-flex justify-content-end">
-                <a href="{{route('add_my_resume_education_job')}}">
+                <a href="{{ route('add_my_resume_education_job') }}">
                     <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Education
                         Job</button>
                 </a>
@@ -74,28 +74,43 @@
                 </thead>
                 <tbody>
                     @foreach ($myresume_educ_job as $item)
+                        <tr>
+                            <td>{{ $item->title }}</td>
+                            <td>{{ $item->short_description }}</td>
+                            <td>{{ $item->degree }}</td>
+                            <td>{{ $item->subtitle }}</td>
+                            <td>
+                                @if ($item->status == 1)
+                                    <span class="badge bg-success">Active</span>
+                                @else
+                                    <span class="badge bg-danger">Un Active</span>
+                                @endif
 
 
-                    <tr>
-                        <td>{{$item->title}}</td>
-                        <td>{{$item->short_description}}</td>
-                        <td>{{$item->degree}}</td>
-                        <td>{{$item->subtitle}}</td>
-                        <td>{{$item->status}}</td>
-                        <td>{{$item->type}}</td>
-                        <td>{{$item->created_at}}</td>
-                        <td>{{$item->updated_at}}</td>
-                        <td>
-                            <a href="{{ route('edit_my_resume_education_job', $item->id) }}"
-                                class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
 
-                            <a href="{{ route('delete_my_resume_education_job', $item->id) }}"
-                                class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
-                            </a>
 
-                        </td>
 
-                    </tr>
+                            </td>
+                            <td>{{ $item->type }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>{{ $item->updated_at }}</td>
+                            <td>
+                                <a href="{{ route('edit_my_resume_education_job', $item->id) }}"
+                                    class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
+
+                                <a href="{{ route('delete_my_resume_education_job', $item->id) }}"
+                                    class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
+                                </a>
+                                @if ($item->status == 1)
+                                    <a href="{{ route('unactive_my_resume_education_job', $item->id) }}"
+                                        class="btn btn-warning">Un Active</a>
+                                @else
+                                    <a href="{{ route('active_my_resume_education_job', $item->id) }}"
+                                        class="btn btn-success">Active</a>
+                                @endif
+                            </td>
+
+                        </tr>
                     @endforeach
                 </tbody>
 

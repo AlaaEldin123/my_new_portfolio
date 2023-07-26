@@ -13,7 +13,7 @@ class MyResumeController extends Controller
 {
     public function ViewResumeEducationJob()
     {
-        $myresume_educ_job = MyResumeEducationJob::where('status', 1)->latest()->get();
+        $myresume_educ_job = MyResumeEducationJob::latest()->get();
 
         return view('admin.my_resume.education_job.education_job_view', compact('myresume_educ_job'));
     } // END METHOD
@@ -157,4 +157,35 @@ class MyResumeController extends Controller
             return redirect()->back()->with($notification);
         }
     }
+
+
+    public function ActiveResumeEducationJob($id)
+    {
+        MyResumeEducationJob::where('id',$id)->update([
+            'status' => 1,
+        ]);
+
+        $notification = [
+            'message' => 'Education Job Card Activeted Updated Successfully',
+            'alert-type' => 'info'
+        ];
+
+        return redirect()->route('admin_my_resume_education_job_view')->with($notification);
+
+    }
+
+    public function UnActiveResumeEducationJob($id)
+    {
+
+        MyResumeEducationJob::where('id',$id)->update([
+            'status' => 0,
+        ]);
+
+        $notification = [
+            'message' => 'Education Job Card An Activeted Successfully',
+            'alert-type' => 'info'
+        ];
+
+        return redirect()->route('admin_my_resume_education_job_view')->with($notification);
+       }
 }

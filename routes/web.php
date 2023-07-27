@@ -89,19 +89,27 @@ Route::middleware('auth')->group(function () {
 
     ///////////////////// My Resume  ///////////////////////
 
+    /////// Education Job ///////
     Route::get('/resume/educ/job/view', [MyResumeController::class, 'ViewResumeEducationJob'])->name('admin_my_resume_education_job_view');
     Route::get('/resume/educ/job/add', [MyResumeController::class, 'AddResumeEducationJob'])->name('add_my_resume_education_job');
     Route::post('/resume/educ/job/insert', [MyResumeController::class, 'InsertResumeEducationJob'])->name('insert_my_resume_education_job');
     Route::get('/resume/educ/job/delete/{id}', [MyResumeController::class, 'DeleteResumeEducationJob'])->name('delete_my_resume_education_job');
     Route::get('/resume/educ/job/edit/{id}', [MyResumeController::class, 'EditResumeEducationJob'])->name('edit_my_resume_education_job');
     Route::post('/resume/educ/job/update', [MyResumeController::class, 'UpdateResumeEducationJob'])->name('update_my_resume_education_job');
-
     Route::get('/resume/educ/job/active/{id}', [MyResumeController::class, 'ActiveResumeEducationJob'])->name('active_my_resume_education_job');
     Route::get('/resume/educ/job/unactive/{id}', [MyResumeController::class, 'UnActiveResumeEducationJob'])->name('unactive_my_resume_education_job');
 
 
+    /////// ProfessionalSkills ///////
 
-
+    Route::get('/resume/professional/skill/view', [MyResumeController::class, 'ViewResumeProfessionalSkills'])->name('admin_my_resume_professional_skills_view');
+    Route::get('/resume/professional/skill/add', [MyResumeController::class, 'AddResumeProfessionalSkills'])->name('add_my_resume_professional_skills');
+    Route::post('/resume/professional/skill/insert', [MyResumeController::class, 'InsertResumeProfessionalSkills'])->name('insert_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/delete/{id}', [MyResumeController::class, 'DeleteResumeProfessionalSkills'])->name('delete_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/edit/{id}', [MyResumeController::class, 'EditResumeProfessionalSkills'])->name('edit_my_resume_professional_skills');
+    Route::post('/resume/professional/skill/update', [MyResumeController::class, 'UpdateResumeProfessionalSkills'])->name('update_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/active/{id}', [MyResumeController::class, 'ActiveResumeProfessionalSkills'])->name('active_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/unactive/{id}', [MyResumeController::class, 'UnActiveResumeProfessionalSkills'])->name('unactive_my_resume_professional_skills');
 });
 
 Route::get('/clear', function () {

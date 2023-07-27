@@ -117,6 +117,13 @@
                         <div data-i18n="Education / Job">Education / Job</div>
                     </a>
                 </li>
+
+                <li class="menu-item {{ request()->routeIs('admin_my_resume_professional_skills_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_my_resume_professional_skills_view') }}" class="menu-link">
+                        <div data-i18n="professional Skills">professional Skills</div>
+                    </a>
+                </li>
+
             </ul>
         </li>
 

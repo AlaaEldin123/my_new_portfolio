@@ -110,6 +110,28 @@ Route::middleware('auth')->group(function () {
     Route::post('/resume/professional/skill/update', [MyResumeController::class, 'UpdateResumeProfessionalSkills'])->name('update_my_resume_professional_skills');
     Route::get('/resume/professional/skill/active/{id}', [MyResumeController::class, 'ActiveResumeProfessionalSkills'])->name('active_my_resume_professional_skills');
     Route::get('/resume/professional/skill/unactive/{id}', [MyResumeController::class, 'UnActiveResumeProfessionalSkills'])->name('unactive_my_resume_professional_skills');
+
+
+
+   /////// ProfessionalSkills ///////
+
+   Route::get('/resume/professional/skill/view', [MyResumeController::class, 'ViewResumeProfessionalSkills'])->name('admin_my_resume_professional_skills_view');
+   Route::get('/resume/professional/skill/add', [MyResumeController::class, 'AddResumeProfessionalSkills'])->name('add_my_resume_professional_skills');
+   Route::post('/resume/professional/skill/insert', [MyResumeController::class, 'InsertResumeProfessionalSkills'])->name('insert_my_resume_professional_skills');
+   Route::get('/resume/professional/skill/delete/{id}', [MyResumeController::class, 'DeleteResumeProfessionalSkills'])->name('delete_my_resume_professional_skills');
+   Route::get('/resume/professional/skill/edit/{id}', [MyResumeController::class, 'EditResumeProfessionalSkills'])->name('edit_my_resume_professional_skills');
+   Route::post('/resume/professional/skill/update', [MyResumeController::class, 'UpdateResumeProfessionalSkills'])->name('update_my_resume_professional_skills');
+   Route::get('/resume/professional/skill/active/{id}', [MyResumeController::class, 'ActiveResumeProfessionalSkills'])->name('active_my_resume_professional_skills');
+   Route::get('/resume/professional/skill/unactive/{id}', [MyResumeController::class, 'UnActiveResumeProfessionalSkills'])->name('unactive_my_resume_professional_skills');
+
+
+
+
+
+
+
+
+
 });
 
 Route::get('/clear', function () {

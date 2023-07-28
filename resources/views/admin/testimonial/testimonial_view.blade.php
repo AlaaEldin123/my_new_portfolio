@@ -41,18 +41,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 @endsection -
 <div class="row">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span>My Resume Professional Skills</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"> Testimonial /</span>Testimonial</h4>
     <div class="card">
         <div class="card-header">
 
 
             <div class="d-flex justify-content-end">
-                <a href="{{ route('add_my_resume_professional_skills') }}">
-                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Professional
-                        Skills</button>
+                <a href="{{ route('add_testimonia') }}">
+                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Testimonial
+                    </button>
                 </a>
             </div>
-            <h3 class="card-title">Professional Skills</h3>
+            <h3 class="card-title">Testimonial</h3>
 
         </div>
 
@@ -61,17 +61,20 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        Image
+                        <th>Image</th>
+                        <th>Seo Image</th>
                         <th>Title</th>
 
-                        <th>from_date_to_date</th>
+                        <th>Date</th>
 
 
 
+                        <th>Short Description</th>
 
 
-
-
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Position</th>
 
                         <th>Status</th>
 
@@ -85,10 +88,10 @@
                         <tr>
 
                             <td>
-                                <img width="100px" height="100px" src="{{ asset($item->image) }}"
+                                <img width="100px" height="100px" src="{{ asset($item->testimonial_image) }}"
                                     alt="{{ $item->alt_image }}">
                             </td>
-
+                            <td>{{ $item->alt_image }}</td>
 
                             <td>{{ $item->title }}</td>
 
@@ -100,12 +103,11 @@
 
 
 
-                            <td>{{ $item->from_date_to_date }}</td>
-                            <td>{{ $item->from_date_to_date }}</td>
-                            <td>{{ $item->from_date_to_date }}</td>
-                            <td>{{ $item->from_date_to_date }}</td>
-                            <td>{{ $item->from_date_to_date }}</td>
-                            <td>{{ $item->from_date_to_date }}</td>
+                            <td>{{ $item->short_description }}</td>
+                            <td>{{ $item->testimonial_name }}</td>
+                            <td>{{ $item->testimonial_company }}</td>
+                            <td>{{ $item->testimonial_position }}</td>
+
 
 
 
@@ -124,17 +126,17 @@
                             <td>{{ $item->created_at }}</td>
                             <td>{{ $item->updated_at }}</td>
                             <td>
-                                <a href="{{ route('edit_my_resume_professional_skills', $item->id) }}"
+                                <a href="{{ route('edit_testimonia', $item->id) }}"
                                     class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
 
-                                <a href="{{ route('delete_my_resume_professional_skills', $item->id) }}"
+                                <a href="{{ route('delete_testimonia', $item->id) }}"
                                     class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
                                 </a>
                                 @if ($item->status == 1)
-                                    <a href="{{ route('unactive_my_resume_professional_skills', $item->id) }}"
-                                        class="btn btn-warning">Un Active</a>
+                                    <a href="{{ route('unactive_testimonia', $item->id) }}" class="btn btn-warning">Un
+                                        Active</a>
                                 @else
-                                    <a href="{{ route('active_my_resume_professional_skills', $item->id) }}"
+                                    <a href="{{ route('active_testimonia', $item->id) }}"
                                         class="btn btn-success">Active</a>
                                 @endif
                             </td>

@@ -1,17 +1,17 @@
 @extends('admin.admin_master')
 
 @section('admin')
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Banner/</span>Features Card</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table/</span>Testimonial</h4>
 
     <div class="row">
         <div class="col-xl">
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Features Card</h5>
+                    <h5 class="mb-0">Testimonial</h5>
 
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('feature_card_insert') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('insert_testimonia') }}" enctype="multipart/form-data">
 
                         @csrf
 
@@ -33,7 +33,7 @@
 
                             <label class="form-label" for="basic-default-phone">Short Description <span
                                     class="text-danger"></span></label>
-                            <input type="text" name="short_description" class="form-control">
+                            <textarea type="text" name="short_description" class="form-control"></textarea>
 
                             @error('short_description')
                                 <span class="text-danger">{{ $message }}</span>
@@ -51,11 +51,11 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Social Media Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
+                            <label class="form-label" for="basic-default-phone"> Image </label>
+                            <input type="file" name="testimonial_image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
                             <img src="" id="mainThmb">
-                            @error('image')
+                            @error('testimonial_image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -75,14 +75,54 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone">link <span
-                                    class="text-danger"></span></label>
-                            <input type="text" name="link" class="form-control">
+                            <label class="form-label" for="basic-default-phone">From Date To Date <span
+                                    class="text-danger"> Mar 4, 2015 - Aug 30, 2021</span></label>
+                            <input type="text" name="from_date_to_date" class="form-control">
 
-                            @error('link')
+                            @error('from_date_to_date')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Name <span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="testimonial_name" class="form-control">
+
+                            @error('testimonial_name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Testimonial Company <span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="testimonial_company" class="form-control">
+
+                            @error('testimonial_company')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label" for="basic-default-phone">Testimonial Position<span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="testimonial_position" class="form-control">
+
+                            @error('testimonial_position')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
+
+
+
 
 
 

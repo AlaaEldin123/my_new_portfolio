@@ -4,6 +4,7 @@ use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\Backend\MyResumeController;
+use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
@@ -127,6 +128,16 @@ Route::middleware('auth')->group(function () {
 
 
 
+   /////\\\\\\\\\\\// Testimonial \\\\\\\\\\\\\\\///////
+
+   Route::get('/resume/testimonia/view', [TestimonialController::class, 'ViewTestimonial'])->name('admin_testimonial_view');
+   Route::get('/resume/testimonia/add', [TestimonialController::class, 'AddTestimonial'])->name('add_testimonia');
+   Route::post('/resume/testimonia/insert', [TestimonialController::class, 'InsertTestimonial'])->name('insert_testimonia');
+   Route::get('/resume/testimonia/delete/{id}', [TestimonialController::class, 'DeleteTestimonial'])->name('delete_testimonia');
+   Route::get('/resume/testimonia/edit/{id}', [TestimonialController::class, 'EditTestimonial'])->name('edit_testimonia');
+   Route::post('/resume/testimonia/update', [TestimonialController::class, 'UpdateTestimonial'])->name('update_testimonia');
+   Route::get('/resume/testimonia/active/{id}', [TestimonialController::class, 'ActiveTestimonial'])->name('active_testimonia');
+   Route::get('/resume/testimonia/unactive/{id}', [TestimonialController::class, 'UnActiveTestimonial'])->name('unactive_testimonia');
 
 
 

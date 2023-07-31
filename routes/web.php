@@ -4,6 +4,7 @@ use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\Backend\MyResumeController;
+use App\Http\Controllers\Backend\PricingPackageController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -140,6 +141,17 @@ Route::middleware('auth')->group(function () {
    Route::get('/resume/testimonia/unactive/{id}', [TestimonialController::class, 'UnActiveTestimonial'])->name('unactive_testimonia');
 
 
+
+ /////\\\\\\\\\\\// package price \\\\\\\\\\\\\\\///////
+
+ Route::get('/package/price/view', [PricingPackageController ::class, 'ViewPricingPackage'])->name('view_admin_PricingPackage');
+ Route::get('/package/price/add', [PricingPackageController::class, 'AddPricingPackage'])->name('add_PricingPackage');
+ Route::post('/package/price/insert', [PricingPackageController::class, 'InsertPricingPackage'])->name('insert_PricingPackage');
+ Route::get('/package/price/delete/{id}', [PricingPackageController::class, 'DeletePricingPackage'])->name('delete_PricingPackage');
+ Route::get('/package/price/edit/{id}', [PricingPackageController::class, 'EditPricingPackage'])->name('edit_PricingPackage');
+ Route::post('/package/price/update', [PricingPackageController::class, 'UpdatePricingPackage'])->name('update_PricingPackage');
+ Route::get('/package/price/active/{id}', [PricingPackageController::class, 'ActivePricingPackage'])->name('active_PricingPackage');
+ Route::get('/package/price/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackage'])->name('unactive_PricingPackage');
 
 
 

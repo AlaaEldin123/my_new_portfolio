@@ -154,6 +154,27 @@
 
 
 
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Package Prices">Package Prices</div>
+
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('view_admin_PricingPackage') ? 'active open' : '' }}">
+                    <a href="{{ route('view_admin_PricingPackage') }}" class="menu-link">
+                        <div data-i18n="Packages Titles">Packages Titles</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->routeIs('view_admin_PricingPackage') ? 'active open' : '' }}">
+                    <a href="{{ route('view_admin_PricingPackage') }}" class="menu-link">
+                        <div data-i18n="Package Prices Details">Package Prices Details</div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </li>
 
 
 

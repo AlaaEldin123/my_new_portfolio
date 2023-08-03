@@ -9,4 +9,6 @@ class PricingPackage extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+
 }

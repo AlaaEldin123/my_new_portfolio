@@ -1,135 +1,160 @@
 @extends('admin.admin_master')
 
-
+@section('admin')
 @section('custom_css')
-    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/editor.css') }}" />
-    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/katex.css') }}" />
-    <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/quill/typography.css') }}" />
-    {{-- <script src="https://cdn.tiny.cloud/1/your-tinymce-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> --}}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 @endsection
 
 
 
 
-@section('admin')
 
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Package Category/ </span>Package Category</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table / </span>Pricing Package</h4>
 
-    <div class="row row ">
-        <div class="col-xl">
-            <div class="card mb-4">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Package Category</h5>
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Pricing Package</h5>
 
-                </div>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ route('insert_PricingPackage') }}" enctype="multipart/form-data">
 
-
-
-                <div class="card-body">
-
-
+                    @csrf
+                    <div class="row">
 
 
-                    <form method="POST" action="{{ route('insert_PricingPackage') }}" enctype="multipart/form-data">
+                        <div class="col-md-6">
 
-                        @csrf
+                            <label class="form-label" for="basic-default-phone">Package Category
+                                Title </label>
+                            <input type="text" name="package_header" class="form-control">
 
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <label class="form-label" for="basic-default-phone">Package Category
-                                     Title </label>
-                                <input type="text" name="package_header" class="form-control">
-
-                                @error('package_header')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-
-
-
-
-                        <div class="d-flex justify-content-center mt-3">
-                            <button id="btnMySubmit" type="submit"
-                                class="btn btn-primary btn-lg w-25 waves-effect waves-light">Submit</button>
+                            @error('package_header')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
-                    </form>
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package Title <span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="package_title" class="form-control">
+
+
+                            @error('package_title')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                    </div>
 
 
 
 
-                </div>
 
+
+
+
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package Subtitle<span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="package_subtitle" class="form-control">
+
+                            @error('package_subtitle')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package Short Description <span
+                                    class="text-danger"></span></label>
+                            <textarea type="text" name="package_short_description" class="form-control"></textarea>
+
+                            @error('package_short_description')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <div class="input-group control-group after-add-more">
+                                <input type="text" name="package_feature[]" class="form-control"
+                                    placeholder="Package Feature">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-success add-more" type="button"><i
+                                            class="glyphicon glyphicon-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Copy Fields -->
+                    <div class="copy hide">
+                        <div class="control-group input-group" style="margin-top:10px">
+                            <input type="text" name="package_feature[]" class="form-control"
+                                placeholder="Package Feature">
+                            <div class="input-group-btn">
+                                <button class="btn btn-danger remove" type="button"><i
+                                        class="glyphicon glyphicon-remove"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-center ">
+
+                        <button type="submit"
+                            class="btn btn-primary waves-effect waves-light mt-4 btn-lg w-25">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    </div>
 
-@section('custom_js')
-    <script type="text/javascript">
-        function mainThamUrl(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('#mainThmb').attr('src', e.target.result).width(100).height(100);
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
+</div>
+
+<script type="text/javascript">
+    function mainThamUrl(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#mainThmb').attr('src', e.target.result).width(100).height(100);
+            };
+            reader.readAsDataURL(input.files[0]);
         }
-    </script>
+    }
+</script>
 
+<script type="text/javascript">
+    $(document).ready(function() {
 
-    <script type="text/javascript">
-        function mainThamUrll(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('#mainThmbb').attr('src', e.target.result).width(100).height(100);
-                };
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-    </script>
-<!-- Add this script after the HTML code above -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form"); // Replace "form" with your actual form ID or class if needed
-        const editorTextarea = document.getElementById("full_editor_data");
-
-        form.addEventListener("submit", function (event) {
-            if (editorTextarea.value.trim() === "") {
-                alert("Editor content is required.");
-                event.preventDefault(); // Prevent form submission
-            }
+        $(".add-more").click(function() {
+            var html = $(".copy").html();
+            $(".after-add-more").after(html);
         });
+
+        $("body").on("click", ".remove", function() {
+            $(this).parents(".control-group").remove();
+        });
+
     });
 </script>
-
-
-
-
-
-
-
-    <!-- Vendors JS -->
-    <script src="{{ asset('backend/assets/vendor/libs/quill/katex.js') }}"></script>
-    <script src="{{ asset('backend/assets/js/forms-editors.js') }}"></script>
-    <script src="{{ asset('backend/assets/vendor/libs/quill/quill.js') }}"></script>
-
-
-<script>
-   $(document).ready(function () {
-    $(document).on('click', '#btnMySubmit', function (e) {
-        e.preventDefault();
-        $("#full_editor_data").val($("#full-editor").html());
-        $(this).parents('form').submit();
-    });
-});
-</script>
-
-
-
-
-@endsection
 @endsection

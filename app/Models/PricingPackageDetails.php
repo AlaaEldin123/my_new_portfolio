@@ -9,4 +9,9 @@ class PricingPackageDetails extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function package()
+    {
+        return $this->belongsTo(PricingPackage::class, 'package_id');
+    }
 }

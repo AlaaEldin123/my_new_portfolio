@@ -112,13 +112,15 @@
                 {{-- <div class="badge bg-label-primary rounded-pill ms-auto">3</div> --}}
             </a>
             <ul class="menu-sub">
-                <li class="menu-item {{ request()->routeIs('admin_my_resume_education_job_view') ? 'active open' : '' }}">
+                <li
+                    class="menu-item {{ request()->routeIs('admin_my_resume_education_job_view') ? 'active open' : '' }}">
                     <a href="{{ route('admin_my_resume_education_job_view') }}" class="menu-link">
                         <div data-i18n="Education / Job">Education / Job</div>
                     </a>
                 </li>
 
-                <li class="menu-item {{ request()->routeIs('admin_my_resume_professional_skills_view') ? 'active open' : '' }}">
+                <li
+                    class="menu-item {{ request()->routeIs('admin_my_resume_professional_skills_view') ? 'active open' : '' }}">
                     <a href="{{ route('admin_my_resume_professional_skills_view') }}" class="menu-link">
                         <div data-i18n="professional Skills">professional Skills</div>
                     </a>
@@ -163,11 +165,12 @@
             <ul class="menu-sub">
                 <li class="menu-item {{ request()->routeIs('view_admin_PricingPackage') ? 'active open' : '' }}">
                     <a href="{{ route('view_admin_PricingPackage') }}" class="menu-link">
-                        <div data-i18n="Packages Titles">Packages Titles</div>
+                        <div data-i18n="Packages Titles">Packages Offer</div>
                     </a>
                 </li>
-                <li class="menu-item {{ request()->routeIs('view_admin_PricingPackage') ? 'active open' : '' }}">
-                    <a href="{{ route('view_admin_PricingPackage') }}" class="menu-link">
+                <li
+                    class="menu-item {{ request()->routeIs('view_admin_PricingPackageDetails') ? 'active open' : '' }}">
+                    <a href="{{ route('view_admin_PricingPackageDetails') }}" class="menu-link">
                         <div data-i18n="Package Prices Details">Package Prices Details</div>
                     </a>
                 </li>

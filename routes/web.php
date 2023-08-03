@@ -155,6 +155,43 @@ Route::middleware('auth')->group(function () {
 
 
 
+
+
+
+ /////\\\\\\\\\\\// package price Details \\\\\\\\\\\\\\\///////
+
+ Route::get('/package/price/details/view', [PricingPackageController ::class, 'ViewPricingPackageDetails'])->name('view_admin_PricingPackageDetails');
+ Route::get('/package/price/details/add', [PricingPackageController::class, 'AddPricingPackageDetails'])->name('add_PricingPackageDetails');
+ Route::post('/package/price/details/insert', [PricingPackageController::class, 'InsertPricingPackageDetails'])->name('insert_PricingPackageDetails');
+ Route::get('/package/price/details/delete/{id}', [PricingPackageController::class, 'DeletePricingPackageDetails'])->name('delete_PricingPackageDetails');
+ Route::get('/package/price/details/edit/{id}', [PricingPackageController::class, 'EditPricingPackageDetails'])->name('edit_PricingPackageDetails');
+ Route::post('/package/price/details/update', [PricingPackageController::class, 'UpdatePricingPackageDetails'])->name('update_PricingPackageDetails');
+ Route::get('/package/price/details/active/{id}', [PricingPackageController::class, 'ActivePricingPackageDetails'])->name('active_PricingPackageDetails');
+ Route::get('/package/price/details/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackageDetails'])->name('unactive_PricingPackageDetails');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 Route::get('/clear', function () {

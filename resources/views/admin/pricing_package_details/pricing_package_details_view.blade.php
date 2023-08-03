@@ -38,22 +38,23 @@
     <link rel="stylesheet" href="{{ asset('backend/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
     <!-- Theme style -->
 
-    {{-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> --}}
 @endsection
+
+
+
 <div class="row">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span> Package Offer</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table / </span>Features Package</h4>
     <div class="card">
         <div class="card-header">
 
 
             <div class="d-flex justify-content-end">
-                <a href="{{ route('add_PricingPackage') }}">
-                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">
-                        Package Offer</button>
+                <a href="{{ route('add_PricingPackageDetails') }}">
+                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Features Package</button>
                 </a>
             </div>
 
-            <h3 class="card-title"> Package Offer</h3>
+            <h3 class="card-title">Features Package </h3>
 
         </div>
 
@@ -62,12 +63,9 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
+                        <th>SR</th>
                         <th>Package Header</th>
-                        <th>Package Title</th>
-                        <th>Package Subtitle</th>
-                        <th>Package Short_description</th>
-
-                        <th>Status</th>
+                        <th>Package Feature</th>
 
                         <th>Created At</th>
                         <th>Updated At</th>
@@ -75,40 +73,24 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($PricingPackage as $item)
+                    @foreach ($PricingPackageDetails as $key => $item)
                         <tr>
-                            <td>{{ $item->package_header }}</td>
-                            <td>{{ $item->package_title }}</td>
-                            <td>{{ $item->package_subtitle }}</td>
-                            <td>{{ $item->package_short_description }}</td>
+                            <td>{{++$key}}</td>
+                            <td>{{ $item->package->package_header }}</td>
 
-                            <td>
-                                @if ($item->status == 1)
-                                    <span class="badge bg-success">Active</span>
-                                @else
-                                    <span class="badge bg-danger">Un Active</span>
-                                @endif
-
-
-                            </td>
+                            <td>{{ $item->package_feature }}</td>
 
 
                             <td>{{ $item->created_at }}</td>
                             <td>{{ $item->updated_at }}</td>
                             <td>
-                                <a href="{{ route('edit_PricingPackage', $item->id) }}"
+                                <a href="{{ route('edit_PricingPackageDetails', $item->id) }}"
                                     class="btn rounded-pill btn-info waves-effect waves-light">Edit</a>
 
                                 <a href="{{ route('delete_PricingPackage', $item->id) }}"
                                     class="btn rounded-pill btn-danger waves-effect waves-light" id="delete">Delete
                                 </a>
-                                @if ($item->status == 1)
-                                    <a href="{{ route('unactive_PricingPackage', $item->id) }}"
-                                        class="btn btn-warning">Un Active</a>
-                                @else
-                                    <a href="{{ route('active_PricingPackage', $item->id) }}"
-                                        class="btn btn-success">Active</a>
-                                @endif
+
                             </td>
 
                         </tr>

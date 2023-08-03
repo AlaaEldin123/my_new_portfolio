@@ -1914,6 +1914,7 @@
             </div>
         </div>
         <!-- ENd Mews Area -->
+
         <!-- Start Contact section -->
         <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
             <div class="container">
@@ -2180,11 +2181,7 @@
         </div>
         <!-- Back to top end -->
         <!-- Start Right Demo  -->
-        <div class="rn-right-demo">
-            <button class="demo-button">
-                <span class="text">Demos</span>
-            </button>
-        </div>
+
         <!-- End Right Demo  -->
 
         <!-- Start Modal Area  -->

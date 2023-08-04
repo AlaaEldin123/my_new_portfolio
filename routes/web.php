@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\Backend\MyResumeController;
@@ -188,6 +189,10 @@ Route::middleware('auth')->group(function () {
 
 
 
+    ////////////////////////////////////////////// Contact With Me Routes /////////////////////////////////
+
+    Route::get('/contact/update', [ContactController::class, 'ViewUpdateContactWithMe'])->name('admin_ContactWithMe_view');
+    Route::post('/contact/update', [ContactController::class, 'UpdateContactWithMe'])->name('ContactWithMe_update');
 
 
 

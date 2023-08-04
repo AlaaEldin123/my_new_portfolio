@@ -189,7 +189,22 @@
 
 
 
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Contact">Contact</div>
 
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin_ContactWithMe_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_ContactWithMe_view') }}" class="menu-link">
+                        <div data-i18n="Contact With Me">Contact With Me</div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </li>
 
 
 

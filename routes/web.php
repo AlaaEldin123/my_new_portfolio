@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\BannerController;
+use App\Http\Controllers\Backend\BlogController;
 use App\Http\Controllers\Backend\FeaturesController;
 use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\Backend\MyResumeController;
@@ -173,18 +174,16 @@ Route::middleware('auth')->group(function () {
 
 
 
+ /////\\\\\\\\\\\// Blogs \\\\\\\\\\\\\\\///////
 
-
-
-
-
-
-
-
-
-
-
-
+ Route::get('/blogs/view', [BlogController ::class, 'ViewBlogs'])->name('view_admin_blogs');
+ Route::get('/blogs/add', [BlogController::class, 'AddBlogs'])->name('add_blogs');
+ Route::post('/blogs/insert', [BlogController::class, 'InsertBlogs'])->name('insert_blogs');
+ Route::get('/blogs/delete/{id}', [BlogController::class, 'DeleteBlogs'])->name('delete_blogs');
+ Route::get('/blogs/edit/{id}', [BlogController::class, 'EditBlogs'])->name('edit_blogs');
+ Route::post('/blogs/update', [BlogController::class, 'UpdateBlogs'])->name('update_blogs');
+ Route::get('/blogs/active/{id}', [BlogController::class, 'ActiveBlogs'])->name('active_blogs');
+ Route::get('/blogs/unactive/{id}', [BlogController::class, 'UnActiveBlogs'])->name('unactive_blogs');
 
 
 

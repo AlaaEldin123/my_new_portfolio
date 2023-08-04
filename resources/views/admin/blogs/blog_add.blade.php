@@ -13,13 +13,13 @@
 
 @section('admin')
 
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Features Card / </span>Features Card</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"> Blog / </span> Blog</h4>
 
-    <div class="row row ">
+    <div class="row">
         <div class="col-xl">
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Features Card</h5>
+                    <h5 class="mb-0">Blog</h5>
 
                 </div>
 
@@ -30,96 +30,35 @@
 
 
 
-                    <form method="POST" action="{{ route('my_portfolio_insert') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('insert_blogs') }}" enctype="multipart/form-data">
 
                         @csrf
 
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <label class="form-label" for="basic-default-phone">View Title </label>
-                                <input type="text" name="view_title" class="form-control">
-
-                                @error('view_title')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-
-
-                            <div class="col-md-6">
-
-
-                                <label class="form-label" for="basic-default-phone">Inside Title</label>
-                                <input type="text" name="inside_title" class="form-control">
-
-                                @error('inside_title')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-
-                            </div>
-
-
-
-                        </div>
-
-
-                        <div class="row row ">
-                            <div class="col-md-6">
-
-                                <label class="form-label" for="basic-default-phone">Short Description</label>
-                                <input type="text" name="short_description" class="form-control">
-
-                                @error('short_description')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-
-
-                            <div class="col-md-6">
-
-
-                                <label class="form-label" for="basic-default-phone">Small Inside Title</label>
-                                <input type="text" name="small_inside_title" class="form-control">
-
-                                @error('small_inside_title')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-
-                            </div>
-
-
-
-                        </div>
 
 
 
                         <div class="row">
-
-
-
-
                             <div class="col-md-6">
 
-                                <label class="form-label" for="basic-default-phone">Seo View Image </label>
-                                <input type="text" name="view_alt_image" class="form-control">
+                                <label class="form-label" for="basic-default-phone">Small Title</label>
+                                <input type="text" name="small_title" class="form-control">
 
-                                @error('view_alt_image')
+                                @error('small_title')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
 
                             <div class="col-md-6">
 
-                                <label class="form-label" for="basic-default-phone">Seo Inside Image </label>
-                                <input type="text" name="inside_alt_image" class="form-control">
 
-                                @error('inside_alt_image')
+                                <label class="form-label" for="basic-default-phone">Title</label>
+                                <input type="text" name="title" class="form-control">
+
+                                @error('title')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
-                            </div>
 
+                            </div>
 
                         </div>
 
@@ -128,14 +67,13 @@
 
                         <div class="row">
 
-
                             <div class="col-md-6">
 
-                                <label class="form-label" for="basic-default-phone">View Image</label>
-                                <input type="file" name="view_image" onChange="mainThamUrl(this)"
+                                <label class="form-label" for="basic-default-phone">Image</label>
+                                <input type="file" name="image" onChange="mainThamUrl(this)"
                                     class="form-control phone-mask">
                                 <img src="" id="mainThmb">
-                                @error('view_image')
+                                @error('image')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
@@ -144,49 +82,10 @@
 
                             <div class="col-md-6">
 
-                                <label class="form-label" for="basic-default-phone">Inside Image</label>
-                                <input type="file" name="inside_image" onChange="mainThamUrll(this)"
-                                    class="form-control phone-mask">
-                                <img src="" id="mainThmbb">
-                                @error('inside_image')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
+                                <label class="form-label" for="basic-default-phone">Seo Image </label>
+                                <input type="text" name="alt_image" class="form-control">
 
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-                        <div class="row mb-4">
-
-                            <div class="col-md-6">
-
-                                <label class="form-label" for="basic-default-phone">link </label>
-                                <input type="text" name="link" class="form-control">
-
-                                @error('link')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-
-
-                            <div class="col-md-6">
-
-                                <label class="form-label" for="basic-default-phone">visibility </label>
-                                <input type="number" name="visibility" class="form-control">
-
-                                @error('visibility')
+                                @error('alt_image')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
@@ -194,6 +93,21 @@
 
                         </div>
 
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <label class="form-label" for="basic-default-phone">Created Date</label>
+                                <input type="date" name="created_date" class="form-control">
+
+                                @error('created_date')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+
+
+
+
+                        </div>
 
 
 

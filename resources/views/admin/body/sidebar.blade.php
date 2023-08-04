@@ -176,6 +176,13 @@
                 </li>
 
 
+
+                <li class="menu-item {{ request()->routeIs('view_admin_blogs') ? 'active open' : '' }}">
+                    <a href="{{ route('view_admin_blogs') }}" class="menu-link">
+                        <div data-i18n="Blogs">Blogs</div>
+                    </a>
+                </li>
+
             </ul>
         </li>
 

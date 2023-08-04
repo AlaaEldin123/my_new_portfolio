@@ -202,6 +202,11 @@
                     </a>
                 </li>
 
+                <li class="menu-item {{ request()->routeIs('admin_ContactWithMeForm_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_ContactWithMeForm_view') }}" class="menu-link">
+                        <div data-i18n="Contact With Me Form">Contact With Me Form</div>
+                    </a>
+                </li>
 
             </ul>
         </li>

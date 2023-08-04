@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/', function () {
-    return view('testfront');
+    return view('frontend');
 });
 
 Route::get('/dashboard', function () {
@@ -196,6 +196,21 @@ Route::middleware('auth')->group(function () {
 
 
 
+ /////\\\\\\\\\\\//  Contact With Me Form Routes   \\\\\\\\\\\\\\\///////
+
+ Route::get('/contact/form/view', [ContactController ::class, 'ViewContactMessageForm'])->name('admin_ContactWithMeForm_view');
+
+ Route::get('/contact/form/delete/{id}', [ContactController::class, 'DeleteContactMessageForm'])->name('delete_ContactWithMeForm');
+
+
+
+
+
+
+
+
+
+
 });
 
 Route::get('/clear', function () {
@@ -205,6 +220,13 @@ Route::get('/clear', function () {
     Artisan::call('view:clear');
     return redirect(url('/'));
 });
+
+
+
+  ////////////////////////////////////////////// Contact With Me Form Routes /////////////////////////////////
+
+  Route::post('/contact/with/me/form', [ContactController::class, 'ContactWithMeFormInsert'])->name('contact_with_me_form');
+
 
 
 

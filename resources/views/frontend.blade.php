@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/plugins/feature.css') }}">
     <!-- Style css -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -1492,7 +1495,7 @@
         </div>
         <!-- End Testimonia Area  -->
         <!-- Start Client Area -->
-     {{-- ///////////////////////////////////////////////////////////// --}}
+        {{-- ///////////////////////////////////////////////////////////// --}}
         <!-- End client section -->
         <!-- Pricing Area -->
         <div class="rn-pricing-area rn-section-gap section-separator" id="pricing">
@@ -1960,13 +1963,12 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form"
-                                    method="POST" action="mail.php">
-
+                                <form id="contactForm" class="row" method="POST" action="{{ route('contact_with_me_form') }}">
+                                    @csrf
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="contact-name"
+                                            <input class="form-control form-control-lg" name="name"
                                                 id="contact-name" type="text">
                                         </div>
                                     </div>
@@ -1974,7 +1976,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="contact-phone">Phone Number</label>
-                                            <input class="form-control" name="contact-phone" id="contact-phone"
+                                            <input class="form-control" name="phone" id="contact-phone"
                                                 type="text">
                                         </div>
                                     </div>
@@ -1983,7 +1985,7 @@
                                         <div class="form-group">
                                             <label for="contact-email">Email</label>
                                             <input class="form-control form-control-sm" id="contact-email"
-                                                name="contact-email" type="email">
+                                                name="email" type="email">
                                         </div>
                                     </div>
 
@@ -1998,12 +2000,12 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="contact-message">Your Message</label>
-                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                            <textarea name="message" id="contact-message" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
-                                        <button name="submit" type="submit" id="submit" class="rn-btn">
+                                        <button name="submit" type="submit" class="rn-btn">
                                             <span>SEND MESSAGE</span>
                                             <i data-feather="arrow-right"></i>
                                         </button>
@@ -2968,7 +2970,7 @@
                             </a>
                         </div>
 
-                        <p class="description mt--30">© 2022. All rights reserved by <a target="_blank"
+                        <p class="description mt--30">© 2023. All rights reserved by <a target="_blank"
                                 href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
                     </div>
                 </div>
@@ -2990,6 +2992,58 @@
     <script src="{{ asset('frontend/assets/js/vendor/jquery-one-page-nav.js') }}"></script>
     <!-- main JS -->
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            var message = document.getElementsByName('message')[0].value;
+            if (containsJavaScriptCode(message)) {
+                alert('The message should not contain JavaScript code.');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+
+        function containsJavaScriptCode(text) {
+            // Custom validation to check for JavaScript code
+            var scriptPattern = /<\s*script.*?>.*?<\s*\/\s*script\s*>/i;
+            return scriptPattern.test(text);
+        }
+    </script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+<script>
+    @if (Session::has('message'))
+        var type = "{{ Session::get('alert-type', 'info') }}"
+        switch (type) {
+            case 'info':
+                toastr.info(" {{ Session::get('message') }} ");
+                break;
+
+
+            case 'success':
+                toastr.success(" {{ Session::get('message') }} ");
+                break;
+
+
+            case 'warning':
+                toastr.warning(" {{ Session::get('message') }} ");
+                break;
+
+
+            case 'error':
+                toastr.error(" {{ Session::get('message') }} ");
+                break;
+        }
+    @endif
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+
+
 </body>
 
 </html>

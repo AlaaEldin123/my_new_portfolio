@@ -16,7 +16,7 @@ class WebSiteSettingController extends Controller
     {
         $Setting = WebSiteSetting::where('id', 1)->first();
 
-        return view('admin.contact_with_me.Setting_update', compact('Setting'));
+        return view('admin.website_setting.Setting_update', compact('Setting'));
     } // END METHOD
 
     public function UpdateWebSiteSetting(Request $request)
@@ -34,7 +34,7 @@ class WebSiteSettingController extends Controller
         }
 
         $request->validate([
-
+            'title' => 'required',
             'alt_logo' => 'required',
             'copy_right' => 'required',
             'meta_description' => 'required',
@@ -57,7 +57,7 @@ class WebSiteSettingController extends Controller
 
                 WebSiteSetting::findOrFail($request->id)->update([
                     'logo' => $save_url,
-
+                    'title' => $request->title,
                     'alt_logo' => $request->alt_logo,
                     'copy_right' => $request->copy_right,
                     'meta_description' => $request->meta_description,
@@ -69,7 +69,7 @@ class WebSiteSettingController extends Controller
             }
 
             WebSiteSetting::where('id', $request->id)->update([
-
+                'title' => $request->title,
                 'alt_logo' => $request->alt_logo,
                 'copy_right' => $request->copy_right,
                 'meta_description' => $request->meta_description,

@@ -102,21 +102,21 @@
                                 @enderror
                             </div>
 
-
-
                             <div class="col-md-6 mb-3">
 
-                                <label class="form-label" for="basic-default-phone">Google Analysis <span
+                                <label class="form-label" for="basic-default-phone">Title<span
                                         class="text-danger"></span></label>
-                                <textarea type="email" name="google_analysis" id="basic-default-phone"
-                                     class="form-control phone-mask">
-                                     {{ $Setting->google_analysis }}
-                                </textarea>
 
-                                @error('google_analysis')
+                                <input type="text" name="title" id="basic-default-phone"
+                                    class="form-control phone-mask" value="{{ $Setting->title }}">
+
+
+
+                                @error('title')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+
 
 
                         </div>
@@ -138,6 +138,18 @@
                                 @enderror
                             </div>
 
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label" for="basic-default-phone">Google Analysis <span
+                                        class="text-danger"></span></label>
+                                <textarea type="email" name="google_analysis" id="basic-default-phone" class="form-control phone-mask">
+                                     {{ $Setting->google_analysis }}
+                                </textarea>
+
+                                @error('google_analysis')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
 
 
                         </div>

@@ -8,7 +8,9 @@ use App\Http\Controllers\Backend\MyPortfolioController;
 use App\Http\Controllers\Backend\MyResumeController;
 use App\Http\Controllers\Backend\PricingPackageController;
 use App\Http\Controllers\Backend\TestimonialController;
+use App\Http\Controllers\Backend\WebSiteSettingController;
 use App\Http\Controllers\ProfileController;
+use App\Models\WebSiteSetting;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
@@ -117,74 +119,74 @@ Route::middleware('auth')->group(function () {
 
 
 
-   /////// ProfessionalSkills ///////
+    /////// ProfessionalSkills ///////
 
-   Route::get('/resume/professional/skill/view', [MyResumeController::class, 'ViewResumeProfessionalSkills'])->name('admin_my_resume_professional_skills_view');
-   Route::get('/resume/professional/skill/add', [MyResumeController::class, 'AddResumeProfessionalSkills'])->name('add_my_resume_professional_skills');
-   Route::post('/resume/professional/skill/insert', [MyResumeController::class, 'InsertResumeProfessionalSkills'])->name('insert_my_resume_professional_skills');
-   Route::get('/resume/professional/skill/delete/{id}', [MyResumeController::class, 'DeleteResumeProfessionalSkills'])->name('delete_my_resume_professional_skills');
-   Route::get('/resume/professional/skill/edit/{id}', [MyResumeController::class, 'EditResumeProfessionalSkills'])->name('edit_my_resume_professional_skills');
-   Route::post('/resume/professional/skill/update', [MyResumeController::class, 'UpdateResumeProfessionalSkills'])->name('update_my_resume_professional_skills');
-   Route::get('/resume/professional/skill/active/{id}', [MyResumeController::class, 'ActiveResumeProfessionalSkills'])->name('active_my_resume_professional_skills');
-   Route::get('/resume/professional/skill/unactive/{id}', [MyResumeController::class, 'UnActiveResumeProfessionalSkills'])->name('unactive_my_resume_professional_skills');
-
-
-
-
-   /////\\\\\\\\\\\// Testimonial \\\\\\\\\\\\\\\///////
-
-   Route::get('/resume/testimonia/view', [TestimonialController::class, 'ViewTestimonial'])->name('admin_testimonial_view');
-   Route::get('/resume/testimonia/add', [TestimonialController::class, 'AddTestimonial'])->name('add_testimonia');
-   Route::post('/resume/testimonia/insert', [TestimonialController::class, 'InsertTestimonial'])->name('insert_testimonia');
-   Route::get('/resume/testimonia/delete/{id}', [TestimonialController::class, 'DeleteTestimonial'])->name('delete_testimonia');
-   Route::get('/resume/testimonia/edit/{id}', [TestimonialController::class, 'EditTestimonial'])->name('edit_testimonia');
-   Route::post('/resume/testimonia/update', [TestimonialController::class, 'UpdateTestimonial'])->name('update_testimonia');
-   Route::get('/resume/testimonia/active/{id}', [TestimonialController::class, 'ActiveTestimonial'])->name('active_testimonia');
-   Route::get('/resume/testimonia/unactive/{id}', [TestimonialController::class, 'UnActiveTestimonial'])->name('unactive_testimonia');
-
-
-
- /////\\\\\\\\\\\// package price \\\\\\\\\\\\\\\///////
-
- Route::get('/package/price/view', [PricingPackageController ::class, 'ViewPricingPackage'])->name('view_admin_PricingPackage');
- Route::get('/package/price/add', [PricingPackageController::class, 'AddPricingPackage'])->name('add_PricingPackage');
- Route::post('/package/price/insert', [PricingPackageController::class, 'InsertPricingPackage'])->name('insert_PricingPackage');
- Route::get('/package/price/delete/{id}', [PricingPackageController::class, 'DeletePricingPackage'])->name('delete_PricingPackage');
- Route::get('/package/price/edit/{id}', [PricingPackageController::class, 'EditPricingPackage'])->name('edit_PricingPackage');
- Route::post('/package/price/update', [PricingPackageController::class, 'UpdatePricingPackage'])->name('update_PricingPackage');
- Route::get('/package/price/active/{id}', [PricingPackageController::class, 'ActivePricingPackage'])->name('active_PricingPackage');
- Route::get('/package/price/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackage'])->name('unactive_PricingPackage');
+    Route::get('/resume/professional/skill/view', [MyResumeController::class, 'ViewResumeProfessionalSkills'])->name('admin_my_resume_professional_skills_view');
+    Route::get('/resume/professional/skill/add', [MyResumeController::class, 'AddResumeProfessionalSkills'])->name('add_my_resume_professional_skills');
+    Route::post('/resume/professional/skill/insert', [MyResumeController::class, 'InsertResumeProfessionalSkills'])->name('insert_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/delete/{id}', [MyResumeController::class, 'DeleteResumeProfessionalSkills'])->name('delete_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/edit/{id}', [MyResumeController::class, 'EditResumeProfessionalSkills'])->name('edit_my_resume_professional_skills');
+    Route::post('/resume/professional/skill/update', [MyResumeController::class, 'UpdateResumeProfessionalSkills'])->name('update_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/active/{id}', [MyResumeController::class, 'ActiveResumeProfessionalSkills'])->name('active_my_resume_professional_skills');
+    Route::get('/resume/professional/skill/unactive/{id}', [MyResumeController::class, 'UnActiveResumeProfessionalSkills'])->name('unactive_my_resume_professional_skills');
 
 
 
 
+    /////\\\\\\\\\\\// Testimonial \\\\\\\\\\\\\\\///////
+
+    Route::get('/resume/testimonia/view', [TestimonialController::class, 'ViewTestimonial'])->name('admin_testimonial_view');
+    Route::get('/resume/testimonia/add', [TestimonialController::class, 'AddTestimonial'])->name('add_testimonia');
+    Route::post('/resume/testimonia/insert', [TestimonialController::class, 'InsertTestimonial'])->name('insert_testimonia');
+    Route::get('/resume/testimonia/delete/{id}', [TestimonialController::class, 'DeleteTestimonial'])->name('delete_testimonia');
+    Route::get('/resume/testimonia/edit/{id}', [TestimonialController::class, 'EditTestimonial'])->name('edit_testimonia');
+    Route::post('/resume/testimonia/update', [TestimonialController::class, 'UpdateTestimonial'])->name('update_testimonia');
+    Route::get('/resume/testimonia/active/{id}', [TestimonialController::class, 'ActiveTestimonial'])->name('active_testimonia');
+    Route::get('/resume/testimonia/unactive/{id}', [TestimonialController::class, 'UnActiveTestimonial'])->name('unactive_testimonia');
 
 
- /////\\\\\\\\\\\// package price Details \\\\\\\\\\\\\\\///////
 
- Route::get('/package/price/details/view', [PricingPackageController ::class, 'ViewPricingPackageDetails'])->name('view_admin_PricingPackageDetails');
- Route::get('/package/price/details/add', [PricingPackageController::class, 'AddPricingPackageDetails'])->name('add_PricingPackageDetails');
- Route::post('/package/price/details/insert', [PricingPackageController::class, 'InsertPricingPackageDetails'])->name('insert_PricingPackageDetails');
- Route::get('/package/price/details/delete/{id}', [PricingPackageController::class, 'DeletePricingPackageDetails'])->name('delete_PricingPackageDetails');
- Route::get('/package/price/details/edit/{id}', [PricingPackageController::class, 'EditPricingPackageDetails'])->name('edit_PricingPackageDetails');
- Route::post('/package/price/details/update', [PricingPackageController::class, 'UpdatePricingPackageDetails'])->name('update_PricingPackageDetails');
- Route::get('/package/price/details/active/{id}', [PricingPackageController::class, 'ActivePricingPackageDetails'])->name('active_PricingPackageDetails');
- Route::get('/package/price/details/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackageDetails'])->name('unactive_PricingPackageDetails');
+    /////\\\\\\\\\\\// package price \\\\\\\\\\\\\\\///////
+
+    Route::get('/package/price/view', [PricingPackageController::class, 'ViewPricingPackage'])->name('view_admin_PricingPackage');
+    Route::get('/package/price/add', [PricingPackageController::class, 'AddPricingPackage'])->name('add_PricingPackage');
+    Route::post('/package/price/insert', [PricingPackageController::class, 'InsertPricingPackage'])->name('insert_PricingPackage');
+    Route::get('/package/price/delete/{id}', [PricingPackageController::class, 'DeletePricingPackage'])->name('delete_PricingPackage');
+    Route::get('/package/price/edit/{id}', [PricingPackageController::class, 'EditPricingPackage'])->name('edit_PricingPackage');
+    Route::post('/package/price/update', [PricingPackageController::class, 'UpdatePricingPackage'])->name('update_PricingPackage');
+    Route::get('/package/price/active/{id}', [PricingPackageController::class, 'ActivePricingPackage'])->name('active_PricingPackage');
+    Route::get('/package/price/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackage'])->name('unactive_PricingPackage');
 
 
 
 
 
- /////\\\\\\\\\\\// Blogs \\\\\\\\\\\\\\\///////
 
- Route::get('/blogs/view', [BlogController ::class, 'ViewBlogs'])->name('view_admin_blogs');
- Route::get('/blogs/add', [BlogController::class, 'AddBlogs'])->name('add_blogs');
- Route::post('/blogs/insert', [BlogController::class, 'InsertBlogs'])->name('insert_blogs');
- Route::get('/blogs/delete/{id}', [BlogController::class, 'DeleteBlogs'])->name('delete_blogs');
- Route::get('/blogs/edit/{id}', [BlogController::class, 'EditBlogs'])->name('edit_blogs');
- Route::post('/blogs/update', [BlogController::class, 'UpdateBlogs'])->name('update_blogs');
- Route::get('/blogs/active/{id}', [BlogController::class, 'ActiveBlogs'])->name('active_blogs');
- Route::get('/blogs/unactive/{id}', [BlogController::class, 'UnActiveBlogs'])->name('unactive_blogs');
+    /////\\\\\\\\\\\// package price Details \\\\\\\\\\\\\\\///////
+
+    Route::get('/package/price/details/view', [PricingPackageController::class, 'ViewPricingPackageDetails'])->name('view_admin_PricingPackageDetails');
+    Route::get('/package/price/details/add', [PricingPackageController::class, 'AddPricingPackageDetails'])->name('add_PricingPackageDetails');
+    Route::post('/package/price/details/insert', [PricingPackageController::class, 'InsertPricingPackageDetails'])->name('insert_PricingPackageDetails');
+    Route::get('/package/price/details/delete/{id}', [PricingPackageController::class, 'DeletePricingPackageDetails'])->name('delete_PricingPackageDetails');
+    Route::get('/package/price/details/edit/{id}', [PricingPackageController::class, 'EditPricingPackageDetails'])->name('edit_PricingPackageDetails');
+    Route::post('/package/price/details/update', [PricingPackageController::class, 'UpdatePricingPackageDetails'])->name('update_PricingPackageDetails');
+    Route::get('/package/price/details/active/{id}', [PricingPackageController::class, 'ActivePricingPackageDetails'])->name('active_PricingPackageDetails');
+    Route::get('/package/price/details/unactive/{id}', [PricingPackageController::class, 'UnActivePricingPackageDetails'])->name('unactive_PricingPackageDetails');
+
+
+
+
+
+    /////\\\\\\\\\\\// Blogs \\\\\\\\\\\\\\\///////
+
+    Route::get('/blogs/view', [BlogController::class, 'ViewBlogs'])->name('view_admin_blogs');
+    Route::get('/blogs/add', [BlogController::class, 'AddBlogs'])->name('add_blogs');
+    Route::post('/blogs/insert', [BlogController::class, 'InsertBlogs'])->name('insert_blogs');
+    Route::get('/blogs/delete/{id}', [BlogController::class, 'DeleteBlogs'])->name('delete_blogs');
+    Route::get('/blogs/edit/{id}', [BlogController::class, 'EditBlogs'])->name('edit_blogs');
+    Route::post('/blogs/update', [BlogController::class, 'UpdateBlogs'])->name('update_blogs');
+    Route::get('/blogs/active/{id}', [BlogController::class, 'ActiveBlogs'])->name('active_blogs');
+    Route::get('/blogs/unactive/{id}', [BlogController::class, 'UnActiveBlogs'])->name('unactive_blogs');
 
 
 
@@ -196,11 +198,19 @@ Route::middleware('auth')->group(function () {
 
 
 
- /////\\\\\\\\\\\//  Contact With Me Form Routes   \\\\\\\\\\\\\\\///////
+    /////\\\\\\\\\\\//  Contact With Me Form Routes   \\\\\\\\\\\\\\\///////
 
- Route::get('/contact/form/view', [ContactController ::class, 'ViewContactMessageForm'])->name('admin_ContactWithMeForm_view');
+    Route::get('/contact/form/view', [ContactController::class, 'ViewContactMessageForm'])->name('admin_ContactWithMeForm_view');
 
- Route::get('/contact/form/delete/{id}', [ContactController::class, 'DeleteContactMessageForm'])->name('delete_ContactWithMeForm');
+    Route::get('/contact/form/delete/{id}', [ContactController::class, 'DeleteContactMessageForm'])->name('delete_ContactWithMeForm');
+
+
+   /////\\\\\\\\\\\//  WebSite Setting Routes   \\\\\\\\\\\\\\\///////
+
+   Route::get('/website/setting/edit', [WebSiteSettingController::class, 'EditWebSiteSetting'])->name('admin_WebSetting_view');
+   Route::post('/website/setting/update', [WebSiteSettingController::class, 'UpdateWebSiteSetting'])->name('admin_WebSetting_update');
+
+
 
 
 
@@ -223,9 +233,9 @@ Route::get('/clear', function () {
 
 
 
-  ////////////////////////////////////////////// Contact With Me Form Routes /////////////////////////////////
+////////////////////////////////////////////// Contact With Me Form Routes /////////////////////////////////
 
-  Route::post('/contact/with/me/form', [ContactController::class, 'ContactWithMeFormInsert'])->name('contact_with_me_form');
+Route::post('/contact/with/me/form', [ContactController::class, 'ContactWithMeFormInsert'])->name('contact_with_me_form');
 
 
 

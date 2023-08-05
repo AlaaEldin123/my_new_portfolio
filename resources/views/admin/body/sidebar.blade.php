@@ -213,7 +213,21 @@
 
 
 
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="WebSite Setting">WebSite Setting</div>
 
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('admin_WebSetting_view') ? 'active open' : '' }}">
+                    <a href="{{ route('admin_WebSetting_view') }}" class="menu-link">
+                        <div data-i18n="WebSite Setting">WebSite Setting</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
 
 
 

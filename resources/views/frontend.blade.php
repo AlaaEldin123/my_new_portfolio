@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="auth">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home Default || Inbio - Personal Portfolio Bootstrap-5 Template</title>
     <meta name="robots" content="noindex, follow" />

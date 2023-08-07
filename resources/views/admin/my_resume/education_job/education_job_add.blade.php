@@ -31,6 +31,19 @@
 
                         <div class="mb-3">
 
+                            <label class="form-label" for="basic-default-phone">Subtitle <span
+                                    class="text-danger"></span></label>
+                            <input type="text" name="subtitle" class="form-control">
+
+                            @error('subtitle')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+
+
+                        <div class="mb-3">
+
                             <label class="form-label" for="basic-default-phone">Short Description <span
                                     class="text-danger"></span></label>
                             <input type="text" name="short_description" class="form-control">
@@ -64,16 +77,6 @@
                         </div>
 
 
-                        <div class="mb-3">
-
-                            <label class="form-label" for="basic-default-phone">Subtitle <span
-                                    class="text-danger"></span></label>
-                            <input type="text" name="subtitle" class="form-control">
-
-                            @error('subtitle')
-                                <span class="text-danger">{{ $message }}</span>
-                            @enderror
-                        </div>
 
 
                         <div class="mb-3">

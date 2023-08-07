@@ -35,26 +35,21 @@ class FeaturesController extends Controller
 
 
         $request->validate([
-            'image' => 'required|mimes:jpeg,png,jpg,gif',
-            'alt_image' => 'required',
-            'link' => 'required',
-            'title' => 'required',
+            'image' => 'required|string',
+            'alt_image' => 'required|string',
+            'link' => 'required|string',
+            'title' => 'required|string',
             'short_description' => 'required',
         ]);
-
 
         DB::beginTransaction();
 
         try {
 
 
-            $image = $request->file('image');
-            $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->save('upload/feature_card/' . $name_gen);
-            $save_url = 'upload/feature_card/' . $name_gen;
 
             FeaturesCard::insert([
-                'image' => $save_url,
+                'image' => $request->image,
                 'alt_image' => $request->alt_image,
                 'updated_at' => Carbon::now(),
                 'link' => $request->link,
@@ -84,7 +79,6 @@ class FeaturesController extends Controller
             return redirect()->back()->with($notification);
         }
     } // END METHOD
-
 
 
 

@@ -51,8 +51,8 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Social Media Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
+                            <label class="form-label" for="basic-default-phone"> Features Card Icone <span class="text-danger">Sould be from website: <a target="_blank" href="https://feathericons.com/">https://feathericons.com/</a> </span> </label>
+                            <input type="text" name="image" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
                             <img src="" id="mainThmb">
                             @error('image')

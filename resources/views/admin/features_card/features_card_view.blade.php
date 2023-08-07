@@ -71,11 +71,8 @@
                         @foreach ($banner_icons as $item)
                             <tr>
 
-                                <td>
-                                    <img width="100px" height="100px" src="{{ asset($item->image) }}"
-                                        alt="{{ $item->alt_image }}">
-                                </td>
 
+                                <td>{{ $item->image }}</td>
                                 <td>{{ $item->alt_image }}</td>
                                 <td>{{ $item->link }}</td>
                                 <td>{{ $item->title }}</td>

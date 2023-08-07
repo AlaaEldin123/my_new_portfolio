@@ -43,7 +43,7 @@
                             <input type="file" name="image" onChange="mainThamUrl(this)" id="basic-default-phone"
                                 class="form-control phone-mask">
 
-                            <img src="{{ asset($banner->image) }}" width="100px" height="100px" alt="asd">
+                            <img src="{{ asset($banner->image) }}" width="100px" height="100px" alt="{{ $banner->alt_image }}">
 
                             <img src="" name="image" id="mainThmb">
                             @error('image')

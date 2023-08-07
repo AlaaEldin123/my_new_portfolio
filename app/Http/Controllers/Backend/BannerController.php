@@ -304,7 +304,7 @@ class BannerController extends Controller
 
             $image = $request->file('image');
             $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->save('upload/banner/social_media/' . $name_gen);
+            Image::make($image)->resize(40, 40)->save('upload/banner/social_media/' . $name_gen);
             $save_url = 'upload/banner/social_media/' . $name_gen;
 
             $t =   SocialMedia::insert([
@@ -399,11 +399,12 @@ class BannerController extends Controller
                 @unlink($old_image);
                 $image = $request->file('image');
                 $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-                Image::make($image)->save('upload/banner/skills_icon/' . $name_gen);
+                Image::make($image)->resize(40, 40)->save('upload/banner/skills_icon/' . $name_gen);
                 $save_url = 'upload/banner/skills_icon/' . $name_gen;
 
                 SocialMedia::findOrFail($request->id)->update([
                     'image' => $save_url,
+                    'link' => $request->link,
                     'alt_image' => $request->alt_image,
                     'updated_at' => Carbon::now(),
                 ]);
@@ -411,6 +412,7 @@ class BannerController extends Controller
 
             SocialMedia::where('id', $request->id)->update([
                 'alt_image' => $request->alt_image,
+                'link' => $request->link,
                 'updated_at' => Carbon::now(),
             ]);
 

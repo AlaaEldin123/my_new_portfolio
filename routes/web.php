@@ -9,6 +9,7 @@ use App\Http\Controllers\Backend\MyResumeController;
 use App\Http\Controllers\Backend\PricingPackageController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\WebSiteSettingController;
+use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\ProfileController;
 use App\Models\WebSiteSetting;
 use Illuminate\Support\Facades\Route;
@@ -25,9 +26,8 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend');
-});
+Route::get('/', [IndexController::class, 'Index']);
+
 
 Route::get('/dashboard', function () {
     return view('admin.index');

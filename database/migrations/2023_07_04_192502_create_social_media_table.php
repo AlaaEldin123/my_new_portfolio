@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('social_media', function (Blueprint $table) {
             $table->id();
             $table->string('image')->nullable();
-            $table->string('alt_image')->nullable();
+            $table->string('alt_image')->nullable()->default("ALAA ELDIN ALHALLAK");
             $table->string('link')->nullable();
             $table->timestamps();
         });

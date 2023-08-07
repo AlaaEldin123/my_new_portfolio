@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <meta name="auth">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ALAA ELDIN ALHALLA</title>
+    <title>{{ $WebSiteSetting->title }}</title>
     <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
+    <meta name="description" content="{{ $WebSiteSetting->meta_description }}">
+    <meta name="keywords" content="{!! $WebSiteSetting->meta_keywords !!}">
+    <meta name="author" content="{{ $WebSiteSetting->mete_author }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ $WebSiteSetting->logo }}">
     <!-- CSS
     ============================================ -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
@@ -22,7 +24,10 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6WVN69WCX"></script>
 
+    {!! $WebSiteSetting->google_analysis !!}
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -35,7 +40,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="{{ asset('frontend/assets/images/logo/logo.png') }}" alt="logo">
+                            <img src="{{ asset($WebSiteSetting->logo) }}" alt="{{ $WebSiteSetting->alt_logo }}">
                         </a>
                     </div>
                 </div>
@@ -61,9 +66,8 @@
                     </nav>
                     <!-- Start Header Right  -->
                     <div class="header-right">
-                        <a class="rn-btn" target="_blank"
-                            href="https://themeforest.net/checkout/from_item/33188244?license=regular"><span>BUY
-                                NOW</span></a>
+                        {{-- <a class="rn-btn"
+                            href=""><span></span></a> --}}
                         <div class="hamberger-menu d-block d-xl-none">
                             <i id="menuBtn" class="feather-menu humberger-menu"></i>
                         </div>
@@ -86,8 +90,8 @@
         <div class="inner">
             <div class="menu-top">
                 <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="{{ asset('frontend/assets/images/logo/logos-circle.png') }}" alt="Personal Portfolio">
+                    <a class="logo" href="{{url('/')}}">
+                        <img src="{{ asset($WebSiteSetting->logo) }}" alt="{{ $WebSiteSetting->alt_logo }}">
                     </a>
                     <div class="close-button">
                         <button class="close-menu-activation close"><i data-feather="x"></i></button>
@@ -97,7 +101,8 @@
             </div>
             <div class="content">
                 <ul class="primary-menu nav nav-pills onepagenav">
-                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
@@ -159,17 +164,21 @@
                         <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
                             <div class="content">
                                 <div class="inner">
-                                    <span class="subtitle">Welcome to my world</span>
-                                    <h1 class="title">Hi, I’m <span>Jone Lee</span><br>
+                                    <span class="subtitle">{{ $banner->welcome_title }}</span>
+                                    <h1 class="title">Hi, I’m <span>{{ $banner->name }}</span><br>
                                         <span class="header-caption" id="page-top">
                                             <!-- type headline start-->
                                             <span class="cd-headline clip is-full-width">
                                                 <span>a </span>
                                                 <!-- ROTATING TEXT -->
                                                 <span class="cd-words-wrapper">
-                                                    <b class="is-visible">Developer.</b>
+
+
+                                                    <b class="is-visible">Web Developer.</b>
                                                     <b class="is-hidden">Professional Coder.</b>
-                                                    <b class="is-hidden">Developer.</b>
+                                                    <b class="is-hidden">Lecturer Web Developer</b>
+
+
                                                 </span>
                                             </span>
                                             <!-- type headline end -->
@@ -177,11 +186,7 @@
                                     </h1>
 
                                     <div>
-                                        <p class="description">I use animation as a third dimension by which to
-                                            simplify
-                                            experiences and kuiding thro each and every interaction. I’m not adding
-                                            motion
-                                            just to spruce things up, but doing it in ways that.</p>
+                                        <p class="description">{{ $banner->short_description }}.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -189,15 +194,13 @@
                                         <div class="social-share-inner-left">
                                             <span class="title">find with me</span>
                                             <ul class="social-share d-flex liststyle">
-                                                <li class="facebook"><a href="#"><i
-                                                            data-feather="facebook"></i></a>
-                                                </li>
-                                                <li class="instagram"><a href="#"><i
-                                                            data-feather="instagram"></i></a>
-                                                </li>
-                                                <li class="linkedin"><a href="#"><i
-                                                            data-feather="linkedin"></i></a>
-                                                </li>
+                                                @foreach ($social_icon as $item)
+                                                    <li class="facebook"><a target="_blank"
+                                                            href="{{ $item->link }}"><img
+                                                                src="{{ asset($item->image) }}"
+                                                                alt="{{ $item->alt_image }}"></a>
+                                                    </li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </div>
@@ -205,12 +208,12 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-01.png') }}"
-                                                        alt="Icons Images"></li>
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-02.png') }}"
-                                                        alt="Icons Images"></li>
-                                                <li><img src="{{ asset('frontend/assets/images/icons/icons-03.png') }}"
-                                                        alt="Icons Images"></li>
+
+                                                @foreach ($BannerSkillsIcon as $item)
+                                                    <li><img src="{{ asset($item->image) }}"
+                                                            alt="{{ $item->alt_image }}"></li>
+                                                @endforeach
+
 
                                             </ul>
                                         </div>
@@ -222,8 +225,7 @@
                         <div class="order-1 order-lg-2 col-lg-5">
                             <div class="thumbnail">
                                 <div class="inner">
-                                    <img src="{{ asset('frontend/assets/images/slider/banner-01.png') }}"
-                                        alt="Personal Portfolio Images">
+                                    <img src="{{ asset($banner->image) }}" alt="Personal Portfolio Images">
                                 </div>
                             </div>
                         </div>
@@ -1964,7 +1966,8 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form id="contactForm" class="row" method="POST" action="{{ route('contact_with_me_form') }}">
+                                <form id="contactForm" class="row" method="POST"
+                                    action="{{ route('contact_with_me_form') }}">
                                     @csrf
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -2966,13 +2969,17 @@
 
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('frontend/assets/images/logo/logo-vertical.png') }}"
-                                    alt="logo">
+                                <img src="{{ asset($WebSiteSetting->logo) }}"
+                                    alt="{{ $WebSiteSetting->alt_logo }}">
                             </a>
                         </div>
 
-                        <p class="description mt--30">© 2023. All rights reserved by <a target="_blank"
-                                href="https://themeforest.net/user/rainbow-themes/portfolio">Rainbow-Themes.</a></p>
+                        <p class="description mt--30">© @php
+
+                            echo date('Y');
+                        @endphp.
+                            All rights reserved by <a
+                                href="{{ url('/') }}">{{ $WebSiteSetting->copy_right }}</a></p>
                     </div>
                 </div>
             </div>
@@ -3013,36 +3020,36 @@
 
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 
-<script>
-    @if (Session::has('message'))
-        var type = "{{ Session::get('alert-type', 'info') }}"
-        switch (type) {
-            case 'info':
-                toastr.info(" {{ Session::get('message') }} ");
-                break;
+    <script>
+        @if (Session::has('message'))
+            var type = "{{ Session::get('alert-type', 'info') }}"
+            switch (type) {
+                case 'info':
+                    toastr.info(" {{ Session::get('message') }} ");
+                    break;
 
 
-            case 'success':
-                toastr.success(" {{ Session::get('message') }} ");
-                break;
+                case 'success':
+                    toastr.success(" {{ Session::get('message') }} ");
+                    break;
 
 
-            case 'warning':
-                toastr.warning(" {{ Session::get('message') }} ");
-                break;
+                case 'warning':
+                    toastr.warning(" {{ Session::get('message') }} ");
+                    break;
 
 
-            case 'error':
-                toastr.error(" {{ Session::get('message') }} ");
-                break;
-        }
-    @endif
-</script>
+                case 'error':
+                    toastr.error(" {{ Session::get('message') }} ");
+                    break;
+            }
+        @endif
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
 
 
 </body>

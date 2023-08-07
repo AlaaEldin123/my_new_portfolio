@@ -52,7 +52,7 @@ class WebSiteSettingController extends Controller
                 @unlink($old_image);
                 $image = $request->file('logo');
                 $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
-                Image::make($image)->resize(700, 760)->save('upload/website_setting/' . $name_gen);
+                Image::make($image)->resize(140, 70)->save('upload/website_setting/' . $name_gen);
                 $save_url = 'upload/website_setting/' . $name_gen;
 
                 WebSiteSetting::findOrFail($request->id)->update([

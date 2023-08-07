@@ -50,13 +50,13 @@
                 <li
                     class="menu-item {{ request()->routeIs('admin.banner.social.media.icon.view') ? 'active open' : '' }}">
                     <a href="{{ route('admin.banner.social.media.icon.view') }}" class="menu-link">
-                        <div data-i18n="Banner Skills Icon">Banner Skills Icone</div>
+                        <div data-i18n="Social Media Icons">Social Media Icons</div>
                     </a>
                 </li>
 
                 <li class="menu-item {{ request()->routeIs('admin_feature_card_view') ? 'active open' : '' }}">
                     <a href="{{ route('admin_feature_card_view') }}" class="menu-link">
-                        <div data-i18n="Banner Skills Icon">Feature Cards</div>
+                        <div data-i18n="Feature Cards">Feature Cards</div>
                     </a>
                 </li>
 

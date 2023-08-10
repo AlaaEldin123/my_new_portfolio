@@ -74,16 +74,25 @@ class TestimonialController extends Controller
 
     public function DeleteTestimonial($id)
     {
-
         try {
             $testimonial_image = Testimonial::findOrFail($id);
-            @unlink($testimonial_image->testimonial_image);
 
+            // Check the number of testimonials
+            $testimonialCount = Testimonial::count();
+            if ($testimonialCount <= 1) {
+                $notification = array(
+                    'message' => 'Cannot delete the only testimonial',
+                    'alert-type' => 'error'
+                );
+                return redirect()->back()->with($notification);
+            }
+
+            @unlink($testimonial_image->testimonial_image);
 
             $testimonial_image->delete();
             $notification = array(
                 'message' => 'Testimonial Deleted Successfully',
-                'alert-type' => 'error'
+                'alert-type' => 'success'
             );
             DB::commit();
             return redirect()->back()->with($notification);
@@ -91,15 +100,14 @@ class TestimonialController extends Controller
             DB::rollBack();
 
             $notification = array(
-                'message' => 'Failed to delete Feature Card',
+                'message' => 'Failed to delete Testimonial',
                 'alert-type' => 'error'
             );
 
             return redirect()->back()->with($notification);
-        } // END METHOD
-
-
+        }
     }
+
 
 
     public function EditTestimonial($id)

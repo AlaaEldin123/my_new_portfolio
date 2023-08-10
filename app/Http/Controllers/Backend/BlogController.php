@@ -80,7 +80,23 @@ class BlogController extends Controller
     {
 
         try {
+
+
             $bannerSkillsIcon = Blog::findOrFail($id);
+
+
+            // Check the number of testimonials
+            $bannerSkillsIcon = Blog::count();
+            if ($bannerSkillsIcon <= 1) {
+                $notification = array(
+                    'message' => 'Cannot delete the only Blog',
+                    'alert-type' => 'error'
+                );
+                return redirect()->back()->with($notification);
+            }
+
+
+
             @unlink($bannerSkillsIcon->image);
 
 

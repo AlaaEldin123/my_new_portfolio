@@ -26,14 +26,28 @@ class PricingPackageController extends Controller
     } // END METHOD
 
 
+
+
+
+
+
+
+
+
+
+
     public function InsertPricingPackage(Request $request)
     {
+
+
+
         $request->validate([
             'package_header' => 'required',
             'package_title' => 'required',
             'package_subtitle' => 'required',
             'package_short_description' => 'required',
             'package_feature' => 'required',
+            'days_delivery'=>'required',
 
 
         ]);
@@ -50,7 +64,10 @@ class PricingPackageController extends Controller
                 'package_short_description' => $request->package_short_description,
                 'status' => 1,
                 'created_at' => Carbon::now('Asia/Dubai'),
+                'package_price' => $request->package_price,
+                'days_delivery' => $request->days_delivery,
             ]);
+            dd($request->all());
             $count = count($request['package_feature']);
 
             for ($i = 0; $i < $count; $i++) {
@@ -143,7 +160,8 @@ class PricingPackageController extends Controller
             'package_title' => 'required',
             'package_subtitle' => 'required',
             'package_short_description' => 'required',
-
+            'package_price' => 'required',
+            'days_delivery'=>'required',
 
         ]);
 
@@ -156,8 +174,10 @@ class PricingPackageController extends Controller
                 'package_title' => $request->package_title,
                 'package_subtitle' => $request->package_subtitle,
                 'package_short_description' => $request->package_short_description,
-                'status' => 1,
+
                 'updated_at' => Carbon::now('Asia/Dubai'),
+                'package_price' => $request->package_price,
+                'days_delivery'=>$request->days_delivery,
             ]);
 
 

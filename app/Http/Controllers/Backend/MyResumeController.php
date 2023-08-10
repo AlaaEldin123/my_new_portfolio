@@ -288,13 +288,15 @@ class MyResumeController extends Controller
 
     public function EditResumeProfessionalSkills($id)
     {
-        $myresume_prof_skill = MyResumeprofessionalSkills::findOrFail($id)->first();
+
+        $myresume_prof_skill = MyResumeprofessionalSkills::where('id',$id)->first();
         return view('admin.my_resume.professional_skills.professional_skills_edit', compact('myresume_prof_skill'));
     } // END METHOD
 
 
     public function UpdateResumeProfessionalSkills(Request $request)
     {
+
         $request->validate([
             'title' => 'required',
             'degree' => 'required',

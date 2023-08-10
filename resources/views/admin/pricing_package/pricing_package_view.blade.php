@@ -38,22 +38,21 @@
     <link rel="stylesheet" href="{{ asset('backend/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
     <!-- Theme style -->
 
-    {{-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> --}}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 @endsection
 <div class="row">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table /</span> Package Offer</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"> Table /</span>Package Offer</h4>
     <div class="card">
         <div class="card-header">
 
-
             <div class="d-flex justify-content-end">
                 <a href="{{ route('add_PricingPackage') }}">
-                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">
-                        Package Offer</button>
+                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Package Offer
+                    </button>
                 </a>
             </div>
 
-            <h3 class="card-title"> Package Offer</h3>
+            <h3 class="card-title">Package Offer</h3>
 
         </div>
 
@@ -65,6 +64,7 @@
                         <th>Package Header</th>
                         <th>Package Title</th>
                         <th>Package Subtitle</th>
+                        <th>Package </th>
                         <th>Package Short_description</th>
 
                         <th>Status</th>
@@ -80,6 +80,7 @@
                             <td>{{ $item->package_header }}</td>
                             <td>{{ $item->package_title }}</td>
                             <td>{{ $item->package_subtitle }}</td>
+                            <td>{{ $item->days_delivery }}</td>
                             <td>{{ $item->package_short_description }}</td>
 
                             <td>

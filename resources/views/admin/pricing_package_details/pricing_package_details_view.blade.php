@@ -43,18 +43,18 @@
 
 
 <div class="row">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table / </span>Features Package</h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Table / </span>Features Details Package</h4>
     <div class="card">
         <div class="card-header">
 
 
             <div class="d-flex justify-content-end">
                 <a href="{{ route('add_PricingPackageDetails') }}">
-                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Features Package</button>
+                    <button type="button" class="fw-bold py-3 mb-4 btn rounded-pill btn-success ">Features Details Package</button>
                 </a>
             </div>
 
-            <h3 class="card-title">Features Package </h3>
+            <h3 class="card-title">Features Details Package </h3>
 
         </div>
 
@@ -62,15 +62,16 @@
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
+
                     <tr>
                         <th>SR</th>
                         <th>Package Header</th>
                         <th>Package Feature</th>
-
                         <th>Created At</th>
                         <th>Updated At</th>
                         <th>Action</th>
                     </tr>
+
                 </thead>
                 <tbody>
                     @foreach ($PricingPackageDetails as $key => $item)

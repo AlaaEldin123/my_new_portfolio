@@ -50,19 +50,10 @@
 
 
                         <div class="mb-3">
-
-                            <label class="form-label" for="basic-default-phone">Type<span
-                                    class="text-danger"></span></label>
+                            <label class="form-label" for="basic-default-phone">Type<span class="text-danger"></span></label>
                             <select name="type" class="form-control" required>
-
-                                <option value="Design Skill"
-                                    {{ $myresume_prof_skill->type === 'Design Skill' ? 'selected' : '' }}>Design Skill
-                                </option>
-                                <option value="Development
-                                Skill"
-                                    {{ $myresume_prof_skill->type === 'Development Skill' ? 'selected' : '' }}>Development
-                                    Skill
-                                </option>
+                                <option value="Design Skill" {{ $myresume_prof_skill->type === 'Design Skill' ? 'selected' : '' }}>Design Skill</option>
+                                <option value="Development Skill" {{ $myresume_prof_skill->type === 'Development Skill' ? 'selected' : '' }}>Development Skill</option>
                             </select>
                             @error('type')
                                 <span class="text-danger">{{ $message }}</span>

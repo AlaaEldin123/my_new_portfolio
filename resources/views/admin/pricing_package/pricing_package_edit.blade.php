@@ -87,7 +87,30 @@
                     </div>
 
 
+                    <div class="row">
 
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package  Days Delivery <span
+                                    class="text-danger"></span></label>
+                            <input {{ $PricingPackage->days_delivery }} type="number" name=" days_delivery" class="form-control">
+
+                            @error('days_delivery')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package price <span
+                                    class="text-danger"></span></label>
+                            <input {{ $PricingPackage->package_price }} type="number" name="package_price" class="form-control">
+
+                            @error('package_price')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                    </div>
 
                     <div class="d-flex justify-content-center ">
 

@@ -415,10 +415,10 @@
                                                             <span class="subtitle">2010 - present</span>
                                                             <h4 class="maintitle">Job Experience</h4>
                                                             <div class="experience-list">
-                                                                @if ($MyResumeprofessionalSkills != null)
+                                                                @if ($MyResumeEducationJob != null)
 
 
-                                                                    @foreach ($MyResumeprofessionalSkills as $item)
+                                                                    @foreach ($MyResumeEducationJob as $item)
                                                                         <!-- Start Single List  -->
                                                                         <div class="resume-single-list">
                                                                             <div class="inner">
@@ -459,81 +459,27 @@
                                                             <div class="content">
                                                                 <span class="subtitle">Features</span>
                                                                 <h4 class="maintitle">Design Skill</h4>
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">PHOTOSHOT</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.5s"
-                                                                            data-wow-delay=".3s" role="progressbar"
-                                                                            style="width: 100%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">100%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
 
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">FIGMA</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.6s"
-                                                                            data-wow-delay=".4s" role="progressbar"
-                                                                            style="width: 95%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">95%</span>
+                                                                @foreach ($MyResumeprofessionalSkillsDesignSkill as $item)
+                                                                    <!-- Start Single Progress Charts -->
+                                                                    <div class="progress-charts">
+                                                                        <h6 class="heading heading-h6">
+                                                                            {{ $item->title }}</h6>
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar wow fadeInLeft"
+                                                                                data-wow-duration="0.5s"
+                                                                                data-wow-delay=".3s"
+                                                                                role="progressbar"
+                                                                                style="width: {{ $item->degree }}%"
+                                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                                aria-valuemax="100">
+                                                                                <span
+                                                                                    class="percent-label">{{ $item->degree }}%</span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">ADOBE XD</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.7s"
-                                                                            data-wow-delay=".5s" role="progressbar"
-                                                                            style="width: 60%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">60%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">ADOBE ILLUSTRATOR
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.8s"
-                                                                            data-wow-delay=".6s" role="progressbar"
-                                                                            style="width: 70%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">70%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">DESIGN</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.9s"
-                                                                            data-wow-delay=".7s" role="progressbar"
-                                                                            style="width: 90%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">90%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
+                                                                    <!-- End Single Progress Charts -->
+                                                                @endforeach
 
                                                             </div>
                                                         </div>
@@ -547,78 +493,26 @@
                                                                 <span class="subtitle">Features</span>
                                                                 <h4 class="maintitle">Development Skill</h4>
                                                                 <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">HTML</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.5s"
-                                                                            data-wow-delay=".3s" role="progressbar"
-                                                                            style="width: 85%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">85%</span>
+                                                                @foreach ($MyResumeprofessionalSkillsDevelopmentSkill as $item)
+                                                                    <!-- Start Single Progress Charts -->
+                                                                    <div class="progress-charts">
+                                                                        <h6 class="heading heading-h6">
+                                                                            {{ $item->title }}</h6>
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar wow fadeInLeft"
+                                                                                data-wow-duration="0.5s"
+                                                                                data-wow-delay=".3s"
+                                                                                role="progressbar"
+                                                                                style="width: {{ $item->degree }}%"
+                                                                                aria-valuenow="85" aria-valuemin="0"
+                                                                                aria-valuemax="100">
+                                                                                <span
+                                                                                    class="percent-label">{{ $item->degree }}%</span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">CSS</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.6s"
-                                                                            data-wow-delay=".4s" role="progressbar"
-                                                                            style="width: 80%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">80%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">JAVASCRIPT</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.7s"
-                                                                            data-wow-delay=".5s" role="progressbar"
-                                                                            style="width: 90%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">90%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">SOFTWARE</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.8s"
-                                                                            data-wow-delay=".6s" role="progressbar"
-                                                                            style="width: 75%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">75%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- End Single Progress Charts -->
-
-                                                                <!-- Start Single Progress Charts -->
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">PLUGIN</h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft"
-                                                                            data-wow-duration="0.9s"
-                                                                            data-wow-delay=".7s" role="progressbar"
-                                                                            style="width: 70%" aria-valuenow="85"
-                                                                            aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">70%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                    <!-- End Single Progress Charts -->
+                                                                @endforeach
                                                                 <!-- End Single Progress Charts -->
 
                                                             </div>
@@ -996,6 +890,7 @@
                         </div>
                     </div>
                     <!-- End Resume Area -->
+
                     <!-- Start Testimonia Area  -->
                     <div class="rn-testimonial-area rn-section-gap section-separator" id="testimonial">
                         <div class="container">
@@ -1010,248 +905,57 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="testimonial-activation testimonial-pb mb--30">
-                                        <!-- Start Single testiminail -->
-                                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
-                                            <div class="inner">
-                                                <div class="card-info">
-                                                    <div class="card-thumbnail">
-                                                        <img src="{{ asset('frontend/assets/images/testimonial/final-home--1st.png') }}"
-                                                            alt="Testimonial-image">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <span class="subtitle mt--10">Rainbow-Themes</span>
-                                                        <h3 class="title">Nevine Acotanza</h3>
-                                                        <span class="designation">Chief Operating Officer</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-description">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title">Android App Development</h3>
-                                                            <span class="date">via Upwork - Mar 4, 2015 - Aug 30,
-                                                                2021</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="seperator"></div>
-                                                    <p class="discription">
-                                                        Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
-                                                        aliquam
-                                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-                                                        lobortis mauris
-                                                        hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
-                                                        phasellus smauris
-                                                        .
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Single testiminail -->
-                                        <!-- Start Single testiminail -->
-                                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
-                                            <div class="inner">
-                                                <div class="card-info">
-                                                    <div class="card-thumbnail">
-                                                        <img src="{{ asset('frontend/assets/images/testimonial/final-home--2nd.png') }}"
-                                                            alt="Testimonial-image">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <span class="subtitle mt--10">Bound - Trolola</span>
-                                                        <h3 class="title">Jone Duone Joe</h3>
-                                                        <span class="designation">Operating Officer</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-description">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title">Web App Development</h3>
-                                                            <span class="date">Upwork - Mar 4, 2016 - Aug 30,
-                                                                2021</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="seperator"></div>
-                                                    <p class="discription">
-                                                        Important fact to nec sem ut imperdiet. Ut tincidunt est ac
-                                                        dolor aliquam
-                                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-                                                        lobortis mauris
-                                                        hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
-                                                        phasellus smauris
-                                                        .
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Single testiminail -->
-                                        <!-- Start Single testiminail -->
-                                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
-                                            <div class="inner">
-                                                <div class="card-info">
-                                                    <div class="card-thumbnail">
-                                                        <img src="{{ asset('frontend/assets/images/testimonial/final-home--3rd.png') }}"
-                                                            alt="Testimonial-image">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <span class="subtitle mt--10">Glassfisom</span>
-                                                        <h3 class="title">Nevine Dhawan</h3>
-                                                        <span class="designation">CEO Of Officer</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-description">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title">Android App Design</h3>
-                                                            <span class="date">Fiver - Mar 4, 2015 - Aug 30,
-                                                                2021</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="seperator"></div>
-                                                    <p class="discription">
-                                                        No more question for design. Ut tincidunt est ac dolor aliquam
-                                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-                                                        lobortis mauris
-                                                        hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
-                                                        phasellus smauris
-                                                        .
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Single testiminail -->
 
-                                        <!-- Start Single testiminail -->
-                                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
-                                            <div class="inner">
-                                                <div class="card-info">
-                                                    <div class="card-thumbnail">
-                                                        <img src="{{ asset('frontend/assets/images/testimonial/final-home--4th.png') }}"
-                                                            alt="Testimonial-image">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <span class="subtitle mt--10">NCD - Design</span>
-                                                        <h3 class="title">Mevine Thoda</h3>
-                                                        <span class="designation">Marketing Officer</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-description">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title">CEO - Marketing</h3>
-                                                            <span class="date">Thoda Department - Mar 4, 2018 - Aug
-                                                                30,
-                                                                2021</span>
+                                        @if ($Testimonial != null)
+                                            @foreach ($Testimonial as $item)
+                                                <!-- Start Single testiminail -->
+                                                <div class="testimonial mt--50 mt_md--40 mt_sm--40">
+                                                    <div class="inner">
+                                                        <div class="card-info">
+                                                            <div class="card-thumbnail">
+                                                                <img src="{{ asset($item->testimonial_image) }}"
+                                                                    alt="{{ $item->alt_image }}">
+                                                            </div>
+                                                            <div class="card-content">
+                                                                <span
+                                                                    class="subtitle mt--10">{{ $item->testimonial_name }}</span>
+                                                                <h3 class="title">{{ $item->testimonial_company }}
+                                                                </h3>
+                                                                <span
+                                                                    class="designation">{{ $item->testimonial_position }}</span>
+                                                            </div>
                                                         </div>
-                                                        <div class="rating">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                        </div>
-                                                    </div>
-                                                    <div class="seperator"></div>
-                                                    <p class="discription">
-                                                        Marcent Of Vanice and treatment. Ut tincidunt est ac dolor
-                                                        aliquam
-                                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-                                                        lobortis mauris
-                                                        hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
-                                                        phasellus smauris
-                                                        .
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Single testiminail -->
-
-                                        <!-- Start Single testiminail -->
-                                        <div class="testimonial mt--50 mt_md--40 mt_sm--40">
-                                            <div class="inner">
-                                                <div class="card-info">
-                                                    <div class="card-thumbnail">
-                                                        <img src="{{ asset('frontend/assets/images/testimonial/final-home--5th.png') }}"
-                                                            alt="Testimonial-image">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <span class="subtitle mt--10">Default name</span>
-                                                        <h3 class="title">Davei Luace</h3>
-                                                        <span class="designation">Chief Operating Manager</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-description">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title">Android App Development</h3>
-                                                            <span class="date">via Upwork - Mar 4, 2015 - Aug 30,
-                                                                2021</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
-                                                            <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
-                                                                alt="rating-image">
+                                                        <div class="card-description">
+                                                            <div class="title-area">
+                                                                <div class="title-info">
+                                                                    <h3 class="title">{{ $item->title }}</h3>
+                                                                    <span class="date">via Upwork -
+                                                                        {{ $item->from_date_to_date }}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="rating">
+                                                                    <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                                        alt="rating-image">
+                                                                    <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                                        alt="rating-image">
+                                                                    <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                                        alt="rating-image">
+                                                                    <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                                        alt="rating-image">
+                                                                    <img src="{{ asset('frontend/assets/images/icons/rating.png') }}"
+                                                                        alt="rating-image">
+                                                                </div>
+                                                            </div>
+                                                            <div class="seperator"></div>
+                                                            <p class="discription">
+                                                                {{ $item->short_description }}
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                    <div class="seperator"></div>
-                                                    <p class="discription">
-                                                        When managment is so important. Ut tincidunt est ac dolor
-                                                        aliquam
-                                                        sodales. Phasellus sed mauris hendrerit, laoreet sem in,
-                                                        lobortis mauris
-                                                        hendrerit ante. Ut tincidunt est ac dolor aliquam sodales
-                                                        phasellus smauris
-                                                        .
-                                                    </p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!--End Single testiminail -->
+                                                <!--End Single testiminail -->
+                                            @endforeach
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -1280,300 +984,107 @@
                                 <div class="col-lg-8 col-xl-7">
                                     <!-- Pricing Area -->
                                     <div class="navigation-wrapper">
+
+
                                         <ul class="nav " id="myTab" role="tablist">
-                                            <li class="nav-item ">
-                                                <a class="nav-style" id="test-tab" data-bs-toggle="tab"
-                                                    href="#test" role="tab" aria-controls="test"
-                                                    aria-selected="false">Static</a>
-                                            </li>
 
-
+                                            @foreach ($PricingPackage as $item)
+                                                <li class="nav-item ">
+                                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab"
+                                                        href="#test{{ $item->id }}" role="tab"
+                                                        aria-controls="test"
+                                                        aria-selected="false">{{ $item->package_title }}</a>
+                                                </li>
+                                            @endforeach
 
                                         </ul>
+
                                         <div class="tab-content" id="myTabContent">
+                                            @foreach ($PricingPackage as $item)
+                                                @php
+                                                    $package_details = App\Models\PricingPackageDetails::where('package_id', $item->id)->get();
+                                                    $chunked_packages = $package_details->chunk(10);
 
-                                            <div class="tab-pane fade " id="test" role="tabpanel"
-                                                aria-labelledby="test-tab">
-                                                <!-- Pricing Start -->
-                                                <div class="rn-pricing">
-                                                    <div class="pricing-header">
-                                                        <div class="header-left">
-                                                            <h2 class="title">Make Your Single Page</h2>
-                                                            <span>Elementor</span>
-                                                        </div>
-                                                        <div class="header-right">
-                                                            <span>$30.00</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pricing-body">
-                                                        <p class="description">
-                                                            All the Lorem Ipsum generators on the Internet tend to
-                                                            repeat predefined
-                                                            chunks as necessary
-                                                        </p>
-                                                        <div class="check-wrapper">
-                                                            <div class="left-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>1 Page with Elementor</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Responsive Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>2 Plugins/Extensions</p>
-                                                                </div>
+                                                    $array1 = [];
+                                                    $array2 = [];
+
+                                                    if ($chunked_packages->count() >= 1) {
+                                                        $array1 = $chunked_packages[0]->toArray();
+                                                    }
+
+                                                    if ($chunked_packages->count() >= 2) {
+                                                        $array2 = $chunked_packages[1]->toArray();
+                                                    }
+                                                @endphp
+
+                                                <div class="tab-pane fade " id="test{{ $item->id }}"
+                                                    role="tabpanel" aria-labelledby="test-tab">
+                                                    <!-- Pricing Start -->
+                                                    <div class="rn-pricing">
+                                                        <div class="pricing-header">
+                                                            <div class="header-left">
+                                                                <h2 class="title">{{ $item->package_header }}</h2>
+                                                                <span>{{ $item->package_title }}</span>
                                                             </div>
-                                                            <div class="right-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>multipage Elementor</p>
+                                                            <div class="header-right">
+                                                                <span>${{ $item->package_price }}</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pricing-body">
+                                                            <p class="description">
+
+                                                                {{ $item->package_short_description }}
+
+                                                            </p>
+                                                            <div class="check-wrapper">
+                                                                <div class="left-area">
+                                                                    @if (!empty($array1))
+                                                                        @foreach ($array1 as $details_1)
+                                                                            <div class="check d-flex">
+                                                                                <i data-feather="check"></i>
+                                                                                <p>
+                                                                                    {{ $details_1['package_feature'] }}
+                                                                                </p>
+                                                                            </div>
+                                                                        @endforeach
+                                                                    @endif
                                                                 </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Figma</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>MAintaine Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design With XD</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>8 Plugins/Extensions</p>
+
+                                                                <div class="right-area">
+                                                                    @if (!empty($array2))
+                                                                        @foreach ($array2 as $details_2)
+                                                                            <div class="check d-flex">
+                                                                                <i data-feather="check"></i>
+                                                                                <p>{{ $details_2['package_feature'] }}
+                                                                                </p>
+                                                                            </div>
+                                                                        @endforeach
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="pricing-footer">
-                                                        <a href="#" class="rn-btn d-block">
-                                                            <span>ORDER NOW</span>
-                                                            <i data-feather="arrow-right"></i>
-                                                        </a>
-                                                        <div class="time-line">
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="clock"></i>
-                                                                <span>2 Days Delivery</span>
-                                                            </div>
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="activity"></i>
-                                                                <span>Unlimited Revission</span>
+
+                                                        <div class="pricing-footer">
+                                                            <a href="#" class="rn-btn d-block">
+                                                                <span>ORDER NOW</span>
+                                                                <i data-feather="arrow-right"></i>
+                                                            </a>
+                                                            <div class="time-line">
+                                                                <div class="single-cmt d-flex">
+                                                                    <i data-feather="clock"></i>
+                                                                    <span>{{ $item->days_delivery }} Days
+                                                                        Delivery</span>
+                                                                </div>
+                                                                <div class="single-cmt d-flex">
+                                                                    <i data-feather="activity"></i>
+                                                                    <span>Unlimited Revission</span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- End -->
                                                 </div>
-                                                <!-- End -->
-                                            </div>
-
-                                            <div class="tab-pane fade show active" id="profile" role="tabpanel"
-                                                aria-labelledby="profile-tab">
-                                                <!-- Pricing Start -->
-                                                <div class="rn-pricing">
-                                                    <div class="pricing-header">
-                                                        <div class="header-left">
-                                                            <h2 class="title">Design Make this Page</h2>
-                                                            <span>Elementor</span>
-                                                        </div>
-                                                        <div class="header-right">
-                                                            <span>$50.00</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pricing-body">
-                                                        <p class="description">
-                                                            Making this the first true generator on the Internet. It
-                                                            uses a
-                                                            dictionary & plugin Development.
-                                                        </p>
-                                                        <div class="check-wrapper">
-                                                            <div class="left-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>1 Page with Elementor</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Responsive Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>2 Plugins/Extensions</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="right-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>multipage Elementor</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Figma</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>MAintaine Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design With XD</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>8 Plugins/Extensions</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pricing-footer">
-                                                        <a href="#" class="rn-btn d-block">
-                                                            <span>ORDER NOW</span>
-                                                            <i data-feather="arrow-right"></i>
-                                                        </a>
-                                                        <div class="time-line d-flex">
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="clock"></i>
-                                                                <span>2 Days Delivery</span>
-                                                            </div>
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="activity"></i>
-                                                                <span>Unlimited Revission</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-                                            </div>
-
-                                            <div class="tab-pane fade" id="contact" role="tabpanel"
-                                                aria-labelledby="contact-tab">
-                                                <!-- Pricing Start -->
-                                                <div class="rn-pricing">
-                                                    <div class="pricing-header">
-                                                        <div class="header-left">
-                                                            <h2 class="title">Customize Your Single Page</h2>
-                                                            <span>Elementor</span>
-                                                        </div>
-                                                        <div class="header-right">
-                                                            <span>$90.00</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pricing-body">
-                                                        <p class="description">
-                                                            I will install your desire theme and made like Theme demo
-                                                            and customize
-                                                            your single page( homepage)
-                                                        </p>
-                                                        <div class="check-wrapper">
-                                                            <div class="left-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>1 Page with Elementor</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Responsive Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Customization</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>2 Plugins/Extensions</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="right-area">
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>multipage Elementor</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design Figma</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>MAintaine Design</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Content Upload</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>Design With XD</p>
-                                                                </div>
-                                                                <div class="check d-flex">
-                                                                    <i data-feather="check"></i>
-                                                                    <p>8 Plugins/Extensions</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pricing-footer">
-                                                        <a href="#" class="rn-btn d-block">
-                                                            <span>ORDER NOW</span>
-                                                            <i data-feather="arrow-right"></i>
-                                                        </a>
-                                                        <div class="time-line d-flex">
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="clock"></i>
-                                                                <span>2 Days Delivery</span>
-                                                            </div>
-                                                            <div class="single-cmt d-flex">
-                                                                <i data-feather="activity"></i>
-                                                                <span>Unlimited Revission</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End -->
-                                            </div>
-
+                                            @endforeach
                                         </div>
                                     </div>
                                     <!-- End -->
@@ -1756,16 +1267,16 @@
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label for="contact-phone">Phone Number</label>
-                                                        <input class="form-control" name="phone"
-                                                            id="contact-phone" type="text">
+                                                        <input class="form-control" name="phone" id="contact-phone"
+                                                            type="text">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
                                                         <label for="contact-email">Email</label>
-                                                        <input class="form-control form-control-sm"
-                                                            id="contact-email" name="email" type="email">
+                                                        <input class="form-control form-control-sm" id="contact-email"
+                                                            name="email" type="email">
                                                     </div>
                                                 </div>
 
@@ -1833,8 +1344,7 @@
                                                             {!! $item->long_description !!}
                                                         </div>
                                                         <div class="button-group mt--20">
-                                                            <a href="{{ url('/') }}"
-                                                                class="rn-btn thumbs-icon">
+                                                            <a href="{{ url('/') }}" class="rn-btn thumbs-icon">
                                                                 <span>LIKE THIS</span>
                                                                 <i data-feather="thumbs-up"></i>
                                                             </a>
@@ -1995,9 +1505,9 @@
                                 </div>
                                 <ul class="popuptab-area nav nav-tabs" id="popuptab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active demo-dark" id="demodark-tab"
-                                            data-bs-toggle="tab" href="#demodark" role="tab"
-                                            aria-controls="demodark" aria-selected="true">Dark Demo</a>
+                                        <a class="nav-link active demo-dark" id="demodark-tab" data-bs-toggle="tab"
+                                            href="#demodark" role="tab" aria-controls="demodark"
+                                            aria-selected="true">Dark Demo</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link demo-light" id="demolight-tab" data-bs-toggle="tab"

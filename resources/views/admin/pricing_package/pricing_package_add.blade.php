@@ -91,7 +91,45 @@
                     </div>
 
 
+
+
+
+
+
                     <div class="row">
+
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package  Days Delivery <span
+                                    class="text-danger"></span></label>
+                            <input type="number" name="days_delivery" class="form-control">
+
+                            @error('days_delivery')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="col-md-6">
+
+                            <label class="form-label" for="basic-default-phone">Package price <span
+                                    class="text-danger"></span></label>
+                            <input type="number" name="package_price" class="form-control">
+
+                            @error('package_price')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="row">
+
+
+
                         <div class="col-md-12 mt-3">
                             <div class="input-group control-group after-add-more">
                                 <input type="text" name="package_feature[]" class="form-control"

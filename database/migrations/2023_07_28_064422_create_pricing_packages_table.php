@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('package_short_description')->nullable();
             $table->string('package_feature')->nullable();
             $table->string('package_feature_side')->nullable();
+            $table->string('package_price')->nullable();
+            $table->string('days_delivery')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });

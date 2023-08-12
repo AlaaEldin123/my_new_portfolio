@@ -1342,26 +1342,31 @@
                                         <!-- Comment Section Area Start -->
                                         <div class="comment-inner">
                                             <h3 class="title mb--40 mt--50">Leave a Reply</h3>
-                                            <form action="#">
+                                            <form action="{{ route('contact_with_me_form') }}" method="POST">
+                                                @csrf
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-12 col-12">
-                                                        <div class="rnform-group"><input type="text"
+                                                        <div class="rnform-group"><input name="name" type="text"
                                                                 placeholder="Name">
                                                         </div>
-                                                        <div class="rnform-group"><input type="email"
+                                                        <div class="rnform-group"><input type="email" name="email"
                                                                 placeholder="Email">
                                                         </div>
                                                         <div class="rnform-group"><input type="text"
-                                                                placeholder="Website">
+                                                            name="subject"   placeholder="Website">
                                                         </div>
                                                     </div>
+
+
                                                     <div class="col-lg-6 col-md-12 col-12">
                                                         <div class="rnform-group">
-                                                            <textarea placeholder="Comment"></textarea>
+                                                            <textarea name="message" placeholder="Comment"></textarea>
                                                         </div>
                                                     </div>
+
+
                                                     <div class="col-lg-12">
-                                                        <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
+                                                        <button type="submit" class="rn-btn ">Submit</button>
                                                     </div>
                                                 </div>
                                             </form>

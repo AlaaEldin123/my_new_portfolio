@@ -110,7 +110,45 @@ class ContactController extends Controller
     {
 
 
+        if ($request->phone) {
+            // Validation
+            $request->validate([
+                'name' => ['required', 'string', function ($attribute, $value, $fail) {
+                    // Custom validation to prevent JavaScript code
+                    if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
+                        $fail('The :attribute field should not contain JavaScript code.');
+                    }
+                }],
 
+
+                'phone' => ['required', 'string', function ($attribute, $value, $fail) {
+                    // Custom validation to prevent JavaScript code
+                    if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
+                        $fail('The :attribute field should not contain JavaScript code.');
+                    }
+                }],
+
+
+                'email' => ['required', 'email', function ($attribute, $value, $fail) {
+                    // Custom validation to prevent JavaScript code
+                    if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
+                        $fail('The :attribute field should not contain JavaScript code.');
+                    }
+                }],
+                'subject' => ['required', 'string', function ($attribute, $value, $fail) {
+                    // Custom validation to prevent JavaScript code
+                    if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
+                        $fail('The :attribute field should not contain JavaScript code.');
+                    }
+                }],
+                'message' => ['required', 'string', function ($attribute, $value, $fail) {
+                    // Custom validation to prevent JavaScript code
+                    if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
+                        $fail('The :attribute field should not contain JavaScript code.');
+                    }
+                }],
+            ]);
+        }
 
         // Validation
         $request->validate([
@@ -120,12 +158,10 @@ class ContactController extends Controller
                     $fail('The :attribute field should not contain JavaScript code.');
                 }
             }],
-            'phone' => ['required', 'string', function ($attribute, $value, $fail) {
-                // Custom validation to prevent JavaScript code
-                if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
-                    $fail('The :attribute field should not contain JavaScript code.');
-                }
-            }],
+
+
+
+
             'email' => ['required', 'email', function ($attribute, $value, $fail) {
                 // Custom validation to prevent JavaScript code
                 if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {
@@ -183,7 +219,7 @@ class ContactController extends Controller
     {
 
         try {
-           ContactWithMeForm::where('id', $id)->delete();
+            ContactWithMeForm::where('id', $id)->delete();
 
             $notification = array(
                 'message' => 'Contact With Me Form Deleted Successfully',

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\BannerSkillsIcon;
+use App\Models\Blog;
+use App\Models\ContactWithMe;
 use App\Models\FeaturesCard;
 use App\Models\MyPortfolio;
 use App\Models\MyResumeEducationJob;
@@ -12,6 +14,7 @@ use App\Models\MyResumeprofessionalSkills;
 use App\Models\PricingPackage;
 use App\Models\PricingPackageDetails;
 use App\Models\SocialMedia;
+use App\Models\SocialMediaFooter;
 use App\Models\Testimonial;
 use App\Models\WebSiteSetting;
 use Illuminate\Http\Request;
@@ -31,16 +34,12 @@ class IndexController extends Controller
         $Testimonial = Testimonial::where('status', 1)->where('status', 1)->latest()->get();
         $PricingPackageDetails = PricingPackageDetails::where('status', 1)->where('status', 1)->latest()->get();
         $PricingPackage = PricingPackage::where('status', 1)->where('status', 1)->latest()->get();
-
         $MyResumeprofessionalSkillsDesignSkill = MyResumeprofessionalSkills::where('status', 1)->where('type', "Design Skill")->latest()->get();
-
-
-
-
         $MyResumeprofessionalSkillsDevelopmentSkill = MyResumeprofessionalSkills::where('status', 1)->where('type', "Development Skill")->latest()->get();
+        $blog = Blog::where('status', 1)->latest()->get();
 
-
-
-        return view('frontend', compact('banner', 'social_icon', 'BannerSkillsIcon', 'WebSiteSetting', 'FeaturesCard', 'MyPortfolio', 'MyResumeEducationJob', 'MyResumeprofessionalSkills', 'Testimonial', 'PricingPackage', 'MyResumeprofessionalSkillsDesignSkill', 'MyResumeprofessionalSkillsDevelopmentSkill'));
+        $ContactWithMe = ContactWithMe::where('id', 1)->first();
+$SocialMediaFooter =  SocialMediaFooter::latest()->get();
+        return view('frontend', compact('banner', 'social_icon', 'BannerSkillsIcon', 'WebSiteSetting', 'FeaturesCard', 'MyPortfolio', 'MyResumeEducationJob', 'MyResumeprofessionalSkills', 'Testimonial', 'PricingPackage', 'MyResumeprofessionalSkillsDesignSkill', 'MyResumeprofessionalSkillsDevelopmentSkill','blog','ContactWithMe','SocialMediaFooter'));
     } // END METHOD
 }

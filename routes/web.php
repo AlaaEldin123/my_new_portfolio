@@ -205,10 +205,34 @@ Route::middleware('auth')->group(function () {
     Route::get('/contact/form/delete/{id}', [ContactController::class, 'DeleteContactMessageForm'])->name('delete_ContactWithMeForm');
 
 
+
+
+
+    // ///////////////////  Social Media Footer ///////////////////////
+
+    Route::get('/footer/social/icon/view', [BannerController::class, 'SocialMediaIconeFooterView'])->name('social_mdeia_footer_view');
+    Route::get('/footer/social/icon/add', [BannerController::class, 'AddSocialMediaIconFooter'])->name('add_social_media_footer_icon');
+    Route::post('/footer/social/icon/insert', [BannerController::class, 'InsertSocialMediaIconFooter'])->name('footer_social_media_icon_insert');
+    Route::get('/footer/social/icon/delete/{id}', [BannerController::class, 'DeleteSocialMediaIconFooter'])->name('delete_social_media_footer_icon');
+    Route::get('/footer/social/icon/edit/{id}', [BannerController::class, 'EditSocialMediaIconFooter'])->name('edit_social_media_footer_icon');
+    Route::post('/footer/social/icon/update', [BannerController::class, 'UpdateSocialMediaIconFooter'])->name('footer_social_media_icon_update');
+
+
+
+
+
+
+
+
+
+
    /////\\\\\\\\\\\//  WebSite Setting Routes   \\\\\\\\\\\\\\\///////
 
    Route::get('/website/setting/edit', [WebSiteSettingController::class, 'EditWebSiteSetting'])->name('admin_WebSetting_view');
    Route::post('/website/setting/update', [WebSiteSettingController::class, 'UpdateWebSiteSetting'])->name('admin_WebSetting_update');
+
+
+
 
 
 

@@ -14,7 +14,6 @@
                     <form method="POST" action="{{ route('banner_social_media_icon_update') }}" enctype="multipart/form-data">
 
                         @csrf
-                        <input type="hidden" value="{{ $banner_ikons->image }}" name="old_img">
                         <input type="hidden" value="{{ $banner_ikons->id }}" name="id">
 
                         <div class="mb-3">

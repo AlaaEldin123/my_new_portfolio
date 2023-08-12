@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\BannerSkillsIcon;
 use App\Models\SocialMedia;
+use App\Models\SocialMediaFooter;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -435,6 +436,168 @@ class BannerController extends Controller
             return redirect()->back()->with($notification);
         }
     } // END METHOD
+
+
+
+
+
+
+
+
+
+    // ////////////////////////////// Footer Social Media Icon  Start  //////////////////////////////////////////////
+
+
+
+    public function SocialMediaIconeFooterView()
+    {
+        $social_media_footer = SocialMediaFooter::latest()->get();
+        return view('admin.social_media_footer.social_media_footer_view', compact('social_media_footer'));
+    } // END METHOD
+
+
+    public function AddSocialMediaIconFooter()
+    {
+        return view('admin.social_media_footer.social_media_footer_add');
+    } // END METHOD
+
+
+
+    public function InsertSocialMediaIconFooter(Request $request)
+    {
+
+
+        $request->validate([
+            'icon' => 'required',
+            'link' => 'required',
+        ]);
+
+
+        DB::beginTransaction();
+
+        try {
+
+
+             SocialMediaFooter::insert([
+
+                'icon' => $request->icon,
+                'updated_at' => Carbon::now(),
+                'link' => $request->link,
+            ]);
+
+
+
+
+            DB::commit();
+
+            $notification = array(
+                'message' => 'Footer social media Inserted Successfully',
+                'alert-type' => 'success'
+            );
+
+            return redirect()->route('social_mdeia_footer_view')->with($notification);
+        } catch (\Exception $e) {
+            DB::rollback();
+
+            $notification = array(
+                'message' => 'SomeThing Wrong Heppened',
+                'alert-type' => 'error'
+            );
+
+            return redirect()->back()->with($notification);
+        }
+    } // END METHOD
+
+
+
+
+
+    public function DeleteSocialMediaIconFooter($id)
+    {
+
+        try {
+            $bannerSkillsIcon = SocialMediaFooter::findOrFail($id);
+            $bannerSkillsIcon->delete();
+            $notification = array(
+                'message' => 'Social Media Footer Deleted Successfully',
+                'alert-type' => 'error'
+            );
+            DB::commit();
+            return redirect()->back()->with($notification);
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            $notification = array(
+                'message' => 'Failed to delete Footer Social Media',
+                'alert-type' => 'error'
+            );
+
+            return redirect()->back()->with($notification);
+        } // END METHOD
+
+
+    }
+
+
+    public function EditSocialMediaIconFooter($id)
+    {
+        $social_media_footer = SocialMediaFooter::findOrFail($id)->first();
+        return view('admin.social_media_footer.social_media_footer_edit', compact('social_media_footer'));
+    } // END METHOD
+
+
+    public function UpdateSocialMediaIconFooter(Request $request)
+    {
+
+        $request->validate([
+
+            'link' => 'required',
+            'icon' => 'required',
+
+
+
+        ]);
+
+
+        DB::beginTransaction();
+
+        try {
+
+
+
+            SocialMediaFooter::where('id', $request->id)->update([
+                'icon' => $request->icon,
+                'link' => $request->link,
+                'updated_at' => Carbon::now(),
+            ]);
+
+            DB::commit();
+
+            $notification = array(
+                'message' => ' Social Media Footer Updated Successfully',
+                'alert-type' => 'success'
+            );
+
+            return redirect()->route('social_mdeia_footer_view')->with($notification);
+        } catch (\Exception $e) {
+            DB::rollback();
+
+            $notification = array(
+                'message' => 'SomeThing Wrong Heppened',
+                'alert-type' => 'error'
+            );
+
+            return redirect()->back()->with($notification);
+        }
+    } // END METHOD
+
+
+
+
+
+
+
+
 
 
 }

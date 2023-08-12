@@ -175,9 +175,21 @@
                     </a>
                 </li>
 
+            </ul>
+        </li>
 
 
-                <li class="menu-item {{ request()->routeIs('view_admin_blogs') ? 'active open' : '' }}">
+
+
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Blogs">Blogs</div>
+
+            </a>
+            <ul class="menu-sub">
+
+             <li class="menu-item {{ request()->routeIs('view_admin_blogs') ? 'active open' : '' }}">
                     <a href="{{ route('view_admin_blogs') }}" class="menu-link">
                         <div data-i18n="Blogs">Blogs</div>
                     </a>
@@ -185,6 +197,14 @@
 
             </ul>
         </li>
+
+
+
+
+
+
+
+
 
 
 
@@ -210,6 +230,34 @@
 
             </ul>
         </li>
+
+
+
+        <li class="menu-item active ">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Social Media Footer">Social Media Footer </div>
+
+            </a>
+
+            <ul class="menu-sub">
+
+             <li class="menu-item {{ request()->routeIs('social_mdeia_footer_view') ? 'active open' : '' }}">
+                    <a href="{{ route('social_mdeia_footer_view') }}" class="menu-link">
+                        <div data-i18n="Social Media Footer">Social Media Footer</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+
+
+
+
+
+
+
 
 
 

@@ -117,7 +117,7 @@ class MyPortfolioController extends Controller
 
     public function EditMyPortfolio($id)
     {
-        $my_portfolio = MyPortfolio::findOrFail($id)->first();
+        $my_portfolio = MyPortfolio::where('id',$id)->first();
         return view('admin.my_portfolio.my_portfolio_edit', compact('my_portfolio'));
     } // END METHOD
 

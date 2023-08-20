@@ -49,17 +49,15 @@
 
                         <div class="mb-3">
 
-                            <label class="form-label" for="basic-default-phone"> Skills Image Icone </label>
-                            <input type="file" name="image" onChange="mainThamUrl(this)"
+                            <label class="form-label" for="basic-default-phone"> Features Card Icone <span class="text-danger">Sould be from website: <a target="_blank" href="https://feathericons.com/">https://feathericons.com/</a> </span> </label>
+                            <input type="text" name="image" value="{{$banner_ikons->image}}" onChange="mainThamUrl(this)"
                                 class="form-control phone-mask">
-                            <img src="{{ asset($banner_ikons->image) }}" width="100px" height="100px"
-                                alt="{{ $banner_ikons->alt_image }}">
-
-                            <img src="" name="image" id="mainThmb">
+                            <img src="" id="mainThmb">
                             @error('image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+
 
 
                         <div class="mb-3">

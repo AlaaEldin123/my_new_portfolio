@@ -112,7 +112,7 @@ class FeaturesController extends Controller
 
     public function EditFeatureCard($id)
     {
-        $banner_ikons = FeaturesCard::findOrFail($id)->first();
+        $banner_ikons = FeaturesCard::where('id',$id)->first();
         return view('admin.features_card.features_card_edit', compact('banner_ikons'));
     } // END METHOD
 

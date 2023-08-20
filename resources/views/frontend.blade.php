@@ -263,7 +263,7 @@
                                         </div>
                                         <div class="content">
                                             <h4 class="title"><a href="#">{{ $item->title }}</a></h4>
-                                            <p class="description">{{ $item->short_desctiption }}</p>
+                                            <p class="description">{{ $item->short_description }}</p>
                                             <a class="read-more-button" href="#"><i
                                                     class="feather-arrow-right"></i></a>
                                         </div>

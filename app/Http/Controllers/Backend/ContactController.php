@@ -159,9 +159,6 @@ class ContactController extends Controller
                 }
             }],
 
-
-
-
             'email' => ['required', 'email', function ($attribute, $value, $fail) {
                 // Custom validation to prevent JavaScript code
                 if (preg_match('/<\s*script.*?>.*?<\s*\/\s*script\s*>/i', $value)) {

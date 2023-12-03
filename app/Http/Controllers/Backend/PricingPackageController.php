@@ -47,7 +47,7 @@ class PricingPackageController extends Controller
             'package_subtitle' => 'required',
             'package_short_description' => 'required',
             'package_feature' => 'required',
-            'days_delivery'=>'required',
+            'days_delivery' => 'required',
 
 
         ]);
@@ -161,7 +161,7 @@ class PricingPackageController extends Controller
             'package_subtitle' => 'required',
             'package_short_description' => 'required',
             'package_price' => 'required',
-            'days_delivery'=>'required',
+            'days_delivery' => 'required',
 
         ]);
 
@@ -177,7 +177,7 @@ class PricingPackageController extends Controller
 
                 'updated_at' => Carbon::now('Asia/Dubai'),
                 'package_price' => $request->package_price,
-                'days_delivery'=>$request->days_delivery,
+                'days_delivery' => $request->days_delivery,
             ]);
 
 

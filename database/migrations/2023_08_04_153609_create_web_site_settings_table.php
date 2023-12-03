@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('meta_description')->nullable();
             $table->string('mete_author')->nullable();
             $table->string('meta_keywords')->nullable();
-            $table->long('google_analysis')->nullable();
+            $table->longText('google_analysis')->nullable();
             $table->timestamps();
         });
     }

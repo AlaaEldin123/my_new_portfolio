@@ -983,39 +983,53 @@
                                     <div class="navigation-wrapper">
 
 
-                                        <ul class="nav " id="myTab" role="tablist">
+                                        <div class="navigation-wrapper">
+                                            <ul class="nav" id="myTab" role="tablist">
+                                                @foreach ($PricingPackage as $key => $item)
+                                                    <li class="nav-item ">
+                                                        <a class="nav-style {{ $key == 0 ? 'active' : '' }}" id="test-tab-{{ $item->id }}" data-bs-toggle="tab" href="#test{{ $item->id }}" role="tab"
+                                                           aria-controls="test{{ $item->id }}" aria-selected="{{ $key === 0 ? 'true' : 'false' }}">{{ $item->package_title }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
 
-                                            @foreach ($PricingPackage as $item)
-                                                <li class="nav-item ">
-                                                    <a class="nav-style" id="test-tab" data-bs-toggle="tab"
-                                                        href="#test{{ $item->id }}" role="tab"
-                                                        aria-controls="test"
-                                                        aria-selected="false">{{ $item->package_title }}</a>
-                                                </li>
-                                            @endforeach
+                                            <script>
+                                                document.addEventListener('DOMContentLoaded', function () {
+                                                    var navItems = document.querySelectorAll('.nav-item');
 
-                                        </ul>
+                                                    // Set the first nav-item and its corresponding tab content as active by default
+                                                    var firstNavItem = navItems[0];
+                                                    firstNavItem.classList.add('active');
+                                                    var firstTabId = firstNavItem.querySelector('a').getAttribute('href').substring(1);
+                                                    var firstTabContent = document.getElementById(firstTabId);
+                                                    firstTabContent.classList.add('active', 'show');
+
+                                                    navItems.forEach(function (item) {
+                                                        item.addEventListener('click', function () {
+                                                            // Remove 'active' class from all items
+                                                            navItems.forEach(navItem => navItem.classList.remove('active'));
+
+                                                            // Add 'active' class to the clicked item
+                                                            item.classList.add('active');
+
+                                                            // Get the target tab content ID
+                                                            var targetTabId = item.querySelector('a').getAttribute('href').substring(1);
+
+                                                            // Remove 'active' class from all tab contents
+                                                            document.querySelectorAll('.tab-pane').forEach(tabContent => tabContent.classList.remove('active', 'show'));
+
+                                                            // Add 'active' class to the target tab content
+                                                            document.getElementById(targetTabId).classList.add('active', 'show');
+                                                        });
+                                                    });
+                                                });
+                                            </script>
 
                                         <div class="tab-content" id="myTabContent">
                                             @foreach ($PricingPackage as $item)
-                                                @php
-                                                    $package_details = App\Models\PricingPackageDetails::where('package_id', $item->id)->get();
-                                                    $chunked_packages = $package_details->chunk(10);
 
-                                                    $array1 = [];
-                                                    $array2 = [];
-
-                                                    if ($chunked_packages->count() >= 1) {
-                                                        $array1 = $chunked_packages[0]->toArray();
-                                                    }
-
-                                                    if ($chunked_packages->count() >= 2) {
-                                                        $array2 = $chunked_packages[1]->toArray();
-                                                    }
-                                                @endphp
-
-                                                <div class="tab-pane fade " id="test{{ $item->id }}"
-                                                    role="tabpanel" aria-labelledby="test-tab">
+                                                <div class="tab-pane fade {{ $loop->first ? 'active show' : '' }}" id="test{{ $item->id }}"
+                                                     role="tabpanel" aria-labelledby="test-tab-{{ $item->id }}">
                                                     <!-- Pricing Start -->
                                                     <div class="rn-pricing">
                                                         <div class="pricing-header">

@@ -33,13 +33,13 @@ class IndexController extends Controller
         $MyResumeprofessionalSkills = MyResumeEducationJob::where('status', 1)->where('type', "Job Experience")->latest()->get();
         $Testimonial = Testimonial::where('status', 1)->where('status', 1)->latest()->get();
         $PricingPackageDetails = PricingPackageDetails::where('status', 1)->where('status', 1)->latest()->get();
-        $PricingPackage = PricingPackage::where('status', 1)->where('status', 1)->latest()->get();
+        $PricingPackage = PricingPackage::where('status', 1)->where('status', 1)->first()->get();
         $MyResumeprofessionalSkillsDesignSkill = MyResumeprofessionalSkills::where('status', 1)->where('type', "Design Skill")->latest()->get();
         $MyResumeprofessionalSkillsDevelopmentSkill = MyResumeprofessionalSkills::where('status', 1)->where('type', "Development Skill")->latest()->get();
         $blog = Blog::where('status', 1)->latest()->get();
 
         $ContactWithMe = ContactWithMe::where('id', 1)->first();
-$SocialMediaFooter =  SocialMediaFooter::latest()->get();
-        return view('frontend', compact('banner', 'social_icon', 'BannerSkillsIcon', 'WebSiteSetting', 'FeaturesCard', 'MyPortfolio', 'MyResumeEducationJob', 'MyResumeprofessionalSkills', 'Testimonial', 'PricingPackage', 'MyResumeprofessionalSkillsDesignSkill', 'MyResumeprofessionalSkillsDevelopmentSkill','blog','ContactWithMe','SocialMediaFooter'));
+        $SocialMediaFooter =  SocialMediaFooter::latest()->get();
+        return view('frontend', compact('banner', 'social_icon', 'BannerSkillsIcon', 'WebSiteSetting', 'FeaturesCard', 'MyPortfolio', 'MyResumeEducationJob', 'MyResumeprofessionalSkills', 'Testimonial', 'PricingPackage', 'MyResumeprofessionalSkillsDesignSkill', 'MyResumeprofessionalSkillsDevelopmentSkill', 'blog', 'ContactWithMe', 'SocialMediaFooter'));
     } // END METHOD
 }
